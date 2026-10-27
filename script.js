@@ -24,9 +24,9 @@ document.addEventListener('click', async (event) => {
   const button = event.target.closest('[data-copy]');
   if (!button) return;
   const feedback = document.querySelector('.copy-feedback');
+  const original = button.textContent;
   try {
     await navigator.clipboard.writeText(button.dataset.copy);
-    const original = button.textContent;
     button.textContent = 'Đã sao chép ✓';
     if (feedback) feedback.textContent = 'Mẫu câu đã được sao chép vào bộ nhớ tạm.';
     window.setTimeout(() => { button.textContent = original; }, 1800);
@@ -41,7 +41,7 @@ document.addEventListener('click', async (event) => {
     document.execCommand('copy');
     area.remove();
     button.textContent = 'Đã sao chép ✓';
-    window.setTimeout(() => { button.textContent = 'Sao chép mẫu'; }, 1800);
+    window.setTimeout(() => { button.textContent = original; }, 1800);
   }
 });
 
