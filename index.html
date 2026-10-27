@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cẩm nang ngắn gọn để giao việc cho trợ lý AI, lưu đầu việc trong Notion và báo cáo dựa trên dữ liệu đã ghi.">
+  <meta name="theme-color" content="#0d5c55">
+  <title>Cẩm nang thư ký AI</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#noi-dung">Bỏ qua điều hướng</a>
+  <header class="site-header">
+    <a class="brand" href="#dau-trang" aria-label="Về đầu trang">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>Cẩm nang thư ký AI</span>
+    </a>
+    <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">Mục lục</button>
+    <nav id="site-nav" aria-label="Điều hướng chính">
+      <a href="#bat-dau">Bắt đầu</a>
+      <a href="#mau-cau">Mẫu câu</a>
+      <a href="#nhip-lam-viec">Nhịp làm việc</a>
+      <a href="#nguyen-tac">Nguyên tắc</a>
+    </nav>
+  </header>
+
+  <main id="noi-dung">
+    <section class="hero" id="dau-trang">
+      <div class="hero-copy">
+        <p class="eyebrow">Nói tự nhiên · Ghi có cấu trúc · Báo cáo có căn cứ</p>
+        <h1>Giao việc cho AI<br><em>nhẹ đầu hơn mỗi ngày.</em></h1>
+        <p class="lead">Bạn nói như đang nhắn cho một người thư ký. Dot giúp làm rõ và tổ chức; Notion giữ đầu việc; cẩm nang này giúp bạn dùng cả hai nhất quán.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#mau-cau">Xem mẫu câu</a>
+          <a class="button secondary" href="#nhip-lam-viec">Xem chu trình ngày</a>
+        </div>
+      </div>
+      <aside class="quick-search" aria-labelledby="search-title">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <div>
+          <h2 id="search-title">Tìm nhanh trong cẩm nang</h2>
+          <label class="sr-only" for="search-input">Nhập từ khóa</label>
+          <input id="search-input" type="search" placeholder="Ví dụ: báo cáo, ý tưởng, chờ…" autocomplete="off">
+          <p id="search-status" class="search-status" aria-live="polite">Gõ từ khóa để lọc nội dung.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section class="section searchable" id="bat-dau" data-search="dot notion website vai trò bắt đầu nguồn lưu">
+      <div class="section-heading">
+        <p class="step">01 / Hiểu đúng vai trò</p>
+        <h2>Ba nơi, ba nhiệm vụ rõ ràng</h2>
+      </div>
+      <div class="role-grid">
+        <article class="role-card accent-teal">
+          <span class="role-number">01</span><h3>Dot — nơi trò chuyện</h3>
+          <p>Nhận lời nói tự nhiên, hỏi lại khi thiếu thông tin, giúp phân loại và tổng hợp.</p>
+        </article>
+        <article class="role-card accent-gold">
+          <span class="role-number">02</span><h3>Notion — nguồn sự thật</h3>
+          <p>Lưu đầu việc, trạng thái, hạn và ghi chú thực tế. Lịch cá nhân chi tiết cũng nằm ở đây.</p>
+        </article>
+        <article class="role-card accent-ink">
+          <span class="role-number">03</span><h3>Website — cẩm nang</h3>
+          <p>Chứa quy tắc và mẫu câu. Không đồng bộ dữ liệu, không thay thế Notion, không lưu nội dung bạn nhập.</p>
+        </article>
+      </div>
+      <div class="note"><strong>Luồng chuẩn:</strong> Bạn nhắn Dot → AI làm rõ → đầu việc được ghi vào Notion → báo cáo đọc từ những gì đã ghi.</div>
+    </section>
+
+    <section class="section searchable" id="nhap-tu-nhien" data-search="nhập tự nhiên nhãn việc ý tưởng nhật ký chi tiêu xong chờ">
+      <div class="section-heading split">
+        <div><p class="step">02 / Nhập tự nhiên</p><h2>Không cần nhớ cú pháp</h2></div>
+        <p>Nhãn giúp nói nhanh hơn nhưng hoàn toàn tùy chọn. Nếu câu đã rõ, cứ nhắn bình thường.</p>
+      </div>
+      <div class="tags" aria-label="Các nhãn gợi ý">
+        <span>VIỆC</span><span>Ý TƯỞNG</span><span>NHẬT KÝ</span><span>CHI TIÊU</span><span>XONG</span><span>CHỜ</span>
+      </div>
+      <div class="examples compact">
+        <blockquote>“VIỆC — chuẩn bị bản tóm tắt cuộc họp vào chiều mai.”</blockquote>
+        <blockquote>“XONG — đã gửi bản nháp cho người liên quan.”</blockquote>
+        <blockquote>“CHỜ — đang đợi phản hồi về tài liệu.”</blockquote>
+      </div>
+      <p class="privacy-line">Với chi tiêu, chỉ ghi thông tin cần thiết. Không đưa mật khẩu, số thẻ đầy đủ hay dữ liệu tài chính nhạy cảm vào hội thoại.</p>
+    </section>
+
+    <section class="section searchable dark-section" id="mau-cau" data-search="mẫu câu giao việc đầu ra người liên quan hạn sao chép copy báo cáo ý tưởng">
+      <div class="section-heading split">
+        <div><p class="step">03 / Mẫu câu dùng ngay</p><h2>Nói đủ để AI hành động đúng</h2></div>
+        <p>Một yêu cầu tốt thường có: việc cần làm, đầu ra mong muốn, người liên quan và hạn — nếu bạn đã biết.</p>
+      </div>
+      <div class="template-grid">
+        <article class="template-card">
+          <p class="template-label">Giao một việc</p>
+          <p class="template-text">VIỆC — [việc cần làm]. Đầu ra: [kết quả mong muốn]. Liên quan: [người/nhóm nếu có]. Hạn: [thời điểm nếu biết]. Nếu còn thiếu, hãy hỏi tôi trước khi ghi.</p>
+          <button class="copy-button" type="button" data-copy="VIỆC — [việc cần làm]. Đầu ra: [kết quả mong muốn]. Liên quan: [người/nhóm nếu có]. Hạn: [thời điểm nếu biết]. Nếu còn thiếu, hãy hỏi tôi trước khi ghi.">Sao chép mẫu</button>
+        </article>
+        <article class="template-card">
+          <p class="template-label">Ghi một ý tưởng</p>
+          <p class="template-text">Ý TƯỞNG — [mô tả ngắn]. Hãy ghi vào danh sách ý tưởng, chưa đặt deadline. Đề xuất một thử nghiệm nhỏ để kiểm chứng khi phù hợp.</p>
+          <button class="copy-button" type="button" data-copy="Ý TƯỞNG — [mô tả ngắn]. Hãy ghi vào danh sách ý tưởng, chưa đặt deadline. Đề xuất một thử nghiệm nhỏ để kiểm chứng khi phù hợp.">Sao chép mẫu</button>
+        </article>
+        <article class="template-card">
+          <p class="template-label">Báo cáo có căn cứ</p>
+          <p class="template-text">Tổng hợp các việc thực sự đã ghi trong Notion hôm nay: đã xong, đang làm, đang chờ, trễ hạn và bước tiếp theo. Nêu rõ mục nào thiếu dữ liệu.</p>
+          <button class="copy-button" type="button" data-copy="Tổng hợp các việc thực sự đã ghi trong Notion hôm nay: đã xong, đang làm, đang chờ, trễ hạn và bước tiếp theo. Nêu rõ mục nào thiếu dữ liệu.">Sao chép mẫu</button>
+        </article>
+        <article class="template-card">
+          <p class="template-label">Làm rõ ưu tiên</p>
+          <p class="template-text">Dựa trên các việc đã ghi, giúp tôi chọn tối đa 3 ưu tiên hôm nay. Giải thích ngắn theo hạn, mức quan trọng và việc đang chặn người khác.</p>
+          <button class="copy-button" type="button" data-copy="Dựa trên các việc đã ghi, giúp tôi chọn tối đa 3 ưu tiên hôm nay. Giải thích ngắn theo hạn, mức quan trọng và việc đang chặn người khác.">Sao chép mẫu</button>
+        </article>
+      </div>
+      <p class="copy-feedback" aria-live="polite"></p>
+    </section>
+
+    <section class="section searchable" id="nhip-lam-viec" data-search="chu trình sáng trong ngày cuối ngày tuần điểm danh đọc sách bài tập bắt buộc">
+      <div class="section-heading"><p class="step">04 / Nhịp làm việc</p><h2>Một chu trình đủ nhẹ để duy trì</h2></div>
+      <ol class="timeline">
+        <li><span class="time-dot">Sáng</span><div><h3>Chọn trọng tâm</h3><p>Xem việc đến hạn và các thói quen bắt buộc đã ghi trong Notion; chọn tối đa ba ưu tiên.</p></div></li>
+        <li><span class="time-dot">Trong ngày</span><div><h3>Ghi ngay khi phát sinh</h3><p>Nhắn việc, ý tưởng, khoản chi hoặc trạng thái mới. Không cần chờ đến cuối ngày.</p></div></li>
+        <li><span class="time-dot">Cuối ngày</span><div><h3>Khép vòng</h3><p>Đánh dấu việc đã xong, việc đang chờ; xin bản tóm tắt chỉ từ dữ liệu thực sự có.</p></div></li>
+        <li><span class="time-dot">Hằng tuần</span><div><h3>Nhìn lại hệ thống</h3><p>Xem xu hướng hoàn tất, trễ hạn và thời gian tiết kiệm có bằng chứng; điều chỉnh quy tắc nếu cần.</p></div></li>
+      </ol>
+      <div class="note gold"><strong>Việc bắt buộc:</strong> điểm danh, đọc sách hoặc bài tập nên được ghi như các đầu việc định kỳ. Giờ và lịch thật được giữ riêng trong Notion, không công khai trên website.</div>
+    </section>
+
+    <section class="section searchable" id="y-tuong" data-search="ý tưởng cam kết deadline thử nhỏ kiểm chứng">
+      <div class="section-heading split">
+        <div><p class="step">05 / Ý tưởng ≠ cam kết</p><h2>Nuôi ý tưởng, đừng biến mọi thứ thành hạn chót</h2></div>
+        <p>Một ý tưởng chỉ trở thành việc khi bạn chủ động chọn làm và xác định bước tiếp theo.</p>
+      </div>
+      <div class="compare">
+        <div><span class="compare-kicker">Khi mới nảy ra</span><h3>Ghi để không quên</h3><p>Lưu bối cảnh, giá trị có thể có và câu hỏi cần kiểm chứng.</p></div>
+        <span class="arrow" aria-hidden="true">→</span>
+        <div><span class="compare-kicker">Khi muốn khám phá</span><h3>Thử thật nhỏ</h3><p>Chọn một cuộc hỏi ý kiến, một bản nháp hoặc một phép đo ngắn.</p></div>
+        <span class="arrow" aria-hidden="true">→</span>
+        <div><span class="compare-kicker">Khi đã quyết định</span><h3>Tạo cam kết</h3><p>Chỉ lúc này mới thêm đầu ra, người liên quan và hạn phù hợp.</p></div>
+      </div>
+    </section>
+
+    <section class="section searchable" id="nguyen-tac" data-search="nguyên tắc an toàn hỏi không rõ xác minh nguồn gửi thư chi tiền cấp quyền riêng tư">
+      <div class="section-heading"><p class="step">06 / Lan can an toàn</p><h2>AI hỗ trợ, bạn giữ quyền quyết định</h2></div>
+      <div class="rules-grid">
+        <article><span aria-hidden="true">?</span><h3>Không rõ thì hỏi</h3><p>AI cần xác nhận khi yêu cầu mơ hồ, thiếu hạn hoặc chưa rõ đâu là cam kết.</p></article>
+        <article><span aria-hidden="true">✓</span><h3>Xác minh nguồn</h3><p>Dữ kiện quan trọng phải có nguồn hoặc được đánh dấu là chưa xác minh.</p></article>
+        <article><span aria-hidden="true">⊘</span><h3>Không tự ý hành động</h3><p>Không tự gửi thư, chi tiền, cấp quyền hay cam kết thay bạn nếu chưa được cho phép rõ ràng.</p></article>
+        <article><span aria-hidden="true">◇</span><h3>Tôn trọng riêng tư</h3><p>Không đưa bí mật, hồ sơ cá nhân hoặc liên kết database riêng vào nội dung công khai.</p></article>
+      </div>
+    </section>
+
+    <section class="section searchable score-section" id="danh-gia" data-search="đánh giá lợi ích tuần hoàn tất trễ hạn thời gian tiết kiệm căn cứ">
+      <div class="section-heading split">
+        <div><p class="step">07 / Đánh giá hằng tuần</p><h2>Đo điều có thể kiểm chứng</h2></div>
+        <p>Không cần bảng điểm phức tạp. So sánh với tuần trước và ghi rõ dữ liệu đến từ đâu.</p>
+      </div>
+      <div class="metric-grid">
+        <article><strong>01</strong><h3>Việc hoàn tất</h3><p>Số đầu việc chuyển sang “xong” trong tuần.</p></article>
+        <article><strong>02</strong><h3>Việc trễ hạn</h3><p>Số việc qua hạn nhưng chưa hoàn tất, cùng nguyên nhân.</p></article>
+        <article><strong>03</strong><h3>Thời gian tiết kiệm</h3><p>Chỉ ước tính khi có mốc so sánh hợp lý; ghi cách tính, không tự suy đoán.</p></article>
+      </div>
+      <div class="final-prompt">
+        <div><span>Mẫu tổng kết tuần</span><p>“So sánh tuần này với tuần trước bằng dữ liệu đã ghi. Nêu 3 thay đổi đáng chú ý, nguyên nhân có bằng chứng và 1 điều chỉnh nhỏ cho tuần tới.”</p></div>
+        <button class="copy-button light" type="button" data-copy="So sánh tuần này với tuần trước bằng dữ liệu đã ghi. Nêu 3 thay đổi đáng chú ý, nguyên nhân có bằng chứng và 1 điều chỉnh nhỏ cho tuần tới.">Sao chép</button>
+      </div>
+    </section>
+
+    <section class="empty-state" id="no-results" hidden>
+      <h2>Chưa tìm thấy nội dung phù hợp</h2><p>Thử từ khóa ngắn hơn như “báo cáo”, “ý tưởng”, “chi tiêu” hoặc “tuần”.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div><strong>Cẩm nang thư ký AI</strong><p>Quy tắc rõ · Dữ liệu đúng · Quyền quyết định thuộc về bạn.</p></div>
+    <a href="#dau-trang">Về đầu trang ↑</a>
+  </footer>
+</body>
+</html>
