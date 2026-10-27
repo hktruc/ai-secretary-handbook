@@ -8,7 +8,7 @@ Mở trực tiếp `index.html`, hoặc chạy một HTTP server tĩnh trong th�
 
 ## Triển khai GitHub Pages
 
-Mã nguồn hỗ trợ đường dẫn con của GitHub Pages vì mọi tài nguyên dùng đường dẫn tương đối. Tuy nhiên repo được giữ ở chế độ **private**. Không bật Pages hoặc đổi repo sang public nếu chưa xác nhận chính sách tài khoản/gói và chưa được chủ sở hữu đồng ý.
+Mã nguồn hỗ trợ đường dẫn con của GitHub Pages vì mọi tài nguyên dùng đường dẫn tương đối. Nội dung trong repo chỉ là cẩm nang chung; đầu việc, báo cáo và dữ liệu cá nhân không được lưu tại đây.
 
 ## Cấu hình liên kết Notion cá nhân
 
