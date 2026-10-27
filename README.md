@@ -1,6 +1,6 @@
-# Cẩm nang thư ký AI
+# Cẩm nang công nghệ
 
-Website tĩnh bằng HTML/CSS/JS, giải thích cách dùng trợ lý AI để tiếp nhận công việc tự nhiên, tổ chức đầu việc trong Notion và tạo báo cáo có căn cứ.
+Website tĩnh bằng HTML/CSS/JS với các hướng dẫn AI thực hành cho học tập, sáng tạo, tổ chức cá nhân, hành chính tiền bạc và đời sống. Mỗi bài có bước làm, prompt, ví dụ minh họa, checklist, giới hạn và nguồn chính.
 
 ## Chạy tại máy
 
