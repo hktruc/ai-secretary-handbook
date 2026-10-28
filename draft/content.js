@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-10-27',
+  updated: '2026-10-28',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -170,6 +170,49 @@ window.HANDBOOK_CONTENT = {
       checklist: ['Tự tạo câu thay vì nhận diện đáp án.', 'Kể đúng ý chính bằng lời của mình.', 'Dùng được ít nhất một cách diễn đạt không cần gợi ý.', 'Chỉ ghi đạt khi thật sự nhớ.', 'Không chia sẻ chuyện gia đình có tên thật.'],
       limits: { cost: 'Văn bản ngắn, không cần giả định gói trả phí; hạn mức tùy công cụ.', privacy: 'Không tải cả sách có bản quyền hoặc câu chuyện riêng có tên thật; dùng nhân vật giả khi cần.', caution: 'AI có thể sửa quá tay hoặc giải thích sắc thái sai. Giữ ý của bạn và tra từ điển đáng tin khi chưa chắc.' },
       sources: [{ title: 'Chat with sources and inspect citations', publisher: 'Google Support', date: 'Truy cập 27/10/2026', url: 'https://support.google.com/gemininotebook/answer/16179559?hl=en' }]
+    },
+    {
+      slug: 'tao-the-nho-tu-ghi-chu', type: 'tutorial', topic: 'learning',
+      title: 'Biến ghi chú thành thẻ nhớ tương tác mà không học thuộc lỗi của AI',
+      dek: 'Tạo một bộ flashcard nhỏ từ ghi chú đã kiểm chứng, tự nhớ trước khi lật thẻ và sửa ngay những câu mơ hồ hoặc sai nguồn.',
+      updated: '2026-10-28', readTime: '8 phút', level: 'Cơ bản',
+      outcome: 'Một bộ 12–20 thẻ hỏi–đáp ngắn trong ChatGPT, có nhãn nguồn ở từng thẻ, danh sách thẻ cần sửa và một lượt ôn chỉ tập trung vào phần chưa nhớ.',
+      preparation: [
+        'Một trang ghi chú hoặc đề cương bạn được phép sử dụng và đã đối chiếu với tài liệu gốc.',
+        'Chọn một mục tiêu hẹp, chẳng hạn 10 khái niệm của một chương; không đưa cả môn học vào một bộ.',
+        'Xóa tên người, thông tin lớp học và dữ liệu riêng trước khi tải hoặc dán nội dung.'
+      ],
+      steps: [
+        { title: 'Chốt phạm vi và nguồn', body: 'Ghi tên tài liệu, chương hoặc trang được dùng. Đánh dấu chỗ còn nghi ngờ để AI không biến chúng thành đáp án chắc chắn.' },
+        { title: 'Tạo bộ thẻ ngay trong cuộc trò chuyện', body: 'Mở một chat ChatGPT, dán đoạn ghi chú ngắn hoặc tải tệp khi tài khoản cho phép, rồi yêu cầu tạo 12–20 flashcard. ChatGPT hiển thị thẻ tương tác trong câu trả lời.' },
+        { title: 'Kiểm từng mặt sau trước khi học', body: 'Mở toàn bộ đáp án một lượt và so với ghi chú gốc. Sửa thẻ thiếu điều kiện, có hai ý trong một câu hoặc dùng từ tuyệt đối mà nguồn không nói.' },
+        { title: 'Tự nhớ rồi mới lật', body: 'Đọc mặt trước, nói hoặc viết câu trả lời của mình trước khi chạm để lật thẻ. Chọn dấu kiểm khi thực sự nhớ; chọn dấu X khi cần luyện lại.' },
+        { title: 'Đảo thứ tự và ôn phần chưa nhớ', body: 'Dùng Shuffle để tránh nhớ theo vị trí. Mở nhóm thẻ chưa biết trong Library hoặc yêu cầu ChatGPT đưa bộ thẻ trở lại, rồi ôn riêng nhóm đó.' },
+        { title: 'Sửa bộ thẻ sau lượt ôn', body: 'Yêu cầu tách thẻ quá dài, viết lại định nghĩa khó hiểu hoặc thêm một thẻ cho lỗ hổng vừa phát hiện. So lại thay đổi với nguồn trước khi giữ.' }
+      ],
+      prompt: 'Từ phần ghi chú tôi được phép sử dụng dưới đây, hãy tạo 15 flashcard tương tác để tôi tự nhớ trước khi xem đáp án. Mỗi thẻ chỉ kiểm tra một ý. Mặt trước là câu hỏi ngắn; mặt sau gồm câu trả lời 1–2 câu và nhãn “Nguồn: [mục/trang]”. Chỉ dùng nội dung tôi cung cấp. Chỗ nào ghi chú chưa đủ hoặc còn mâu thuẫn, không tạo đáp án chắc chắn; hãy đưa vào danh sách “Cần kiểm tra lại”. Trước khi tạo thẻ, hãy nêu 3 điểm dễ bị hiểu sai. Sau khi tôi ôn, giúp tôi tách thẻ quá dài và ôn lại riêng các thẻ tôi đánh dấu chưa nhớ. [Dán ghi chú đã giảm thông tin riêng tư]',
+      example: {
+        label: 'Ví dụ minh họa — không phải dữ liệu thật',
+        input: 'Một trang ghi chú giả định về vòng tuần hoàn nước, có ghi rõ ba mục và số trang.',
+        output: '15 thẻ tương tác; mỗi thẻ hỏi một ý, mặt sau có nhãn nguồn, cùng danh sách hai câu cần kiểm tra lại thay vì tự điền.'
+      },
+      checklist: [
+        'Mỗi thẻ chỉ hỏi một ý và có thể trả lời ngắn.',
+        'Mặt sau khớp ghi chú gốc, giữ nguyên điều kiện và từ phủ định.',
+        'Không có thẻ nào biến suy luận thành dữ kiện.',
+        'Bạn tự trả lời trước khi lật và chỉ đánh dấu biết khi không cần gợi ý.',
+        'Thẻ sai hoặc mơ hồ đã được sửa trong cuộc trò chuyện và kiểm lại với nguồn.'
+      ],
+      limits: {
+        cost: 'Theo tài liệu OpenAI kiểm tra ngày 28/10/2026, flashcards có trên web và mobile cho các gói ChatGPT; hạn mức sử dụng và tải tệp vẫn tùy tài khoản.',
+        privacy: 'Thẻ được tự động lưu vào Library. Không đưa ghi chú có dữ liệu cá nhân, tài liệu nội bộ hoặc nội dung chưa được phép lên dịch vụ.',
+        caution: 'ChatGPT có thể tạo thẻ sai hoặc đơn giản hóa quá mức. Flashcard giúp luyện nhớ, không chứng minh bạn đã hiểu sâu; luôn kiểm đáp án với nguồn trước kỳ thi hay quyết định quan trọng.'
+      },
+      sources: [
+        { title: 'Flashcards in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 28/10/2026', url: 'https://help.openai.com/en/articles/20001533-flashcards-in-chatgpt' },
+        { title: 'ChatGPT release notes — Create flashcards in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 28/10/2026', url: 'https://help.openai.com/en/articles/6825453-chatgpt-release-notes' },
+        { title: 'Data controls in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 28/10/2026', url: 'https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt' }
+      ]
     }
   ],
   cases: [
