@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-10-28',
+  updated: '2026-10-29',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -212,6 +212,50 @@ window.HANDBOOK_CONTENT = {
         { title: 'Flashcards in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 28/10/2026', url: 'https://help.openai.com/en/articles/20001533-flashcards-in-chatgpt' },
         { title: 'ChatGPT release notes — Create flashcards in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 28/10/2026', url: 'https://help.openai.com/en/articles/6825453-chatgpt-release-notes' },
         { title: 'Data controls in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 28/10/2026', url: 'https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt' }
+      ]
+    },
+    {
+      slug: 'luyen-phan-xa-ngoai-ngu-bang-voice', type: 'tutorial', topic: 'learning',
+      title: 'Luyện phản xạ ngoại ngữ 10 phút bằng Voice rồi tự kiểm tra transcript',
+      dek: 'Tập một tình huống giao tiếp ngắn, yêu cầu AI chờ bạn nói hết và dùng phần chữ sau cuộc gọi để tìm đúng hai điểm cần sửa.',
+      updated: '2026-10-29', readTime: '9 phút', level: 'Cơ bản',
+      outcome: 'Một lượt hội thoại 6–8 câu theo tình huống, transcript để đối chiếu, hai cách diễn đạt được sửa và một lượt nói lại ngắn hơn nhưng rõ hơn.',
+      preparation: [
+        'Tai nghe hoặc nơi tương đối yên tĩnh; tiếng ồn và lời nói chồng lên nhau có thể làm Voice nghe sai.',
+        'Một tình huống hẹp như hỏi đường, đặt món hoặc giới thiệu công việc; không luyện nhiều chủ đề cùng lúc.',
+        'Ba từ hoặc mẫu câu bạn muốn chủ động dùng và một tờ ghi chú để tự chấm sau buổi tập.',
+        'Không dùng tên thật, địa chỉ, lịch trình riêng hoặc nội dung bí mật trong tình huống luyện nói.'
+      ],
+      steps: [
+        { title: 'Chọn đúng ngôn ngữ trước khi nói', body: 'Nếu Voice thường nhận sai, mở Settings → Voice → Language và chọn ngôn ngữ bạn luyện. Bạn cũng có thể yêu cầu đổi ngôn ngữ ngay trong cuộc gọi.' },
+        { title: 'Mở Voice và đặt luật cho phiên 10 phút', body: 'Trên web hoặc ứng dụng, chọn biểu tượng Voice ở ô nhập. Nói prompt bên dưới: AI đóng một vai, hỏi từng câu, chờ bạn nói “xong” rồi mới phản hồi.' },
+        { title: 'Tự trả lời trước khi nhận gợi ý', body: 'Mỗi lượt hãy nói 1–3 câu bằng vốn hiện có. Nếu bí, xin một từ khóa chứ không xin cả câu hoàn chỉnh; mục tiêu là tạo phản xạ của bạn.' },
+        { title: 'Chỉ sửa hai điểm có tác động lớn', body: 'Sau 6–8 lượt, yêu cầu AI nêu hai lỗi làm người nghe khó hiểu nhất và một cách nói tự nhiên hơn. Không để AI sửa mọi câu thành giọng của nó.' },
+        { title: 'Kết thúc và đọc transcript', body: 'Thoát Voice rồi mở lại cuộc trò chuyện. Transcript được thêm vào lịch sử nhưng có thể không khớp nguyên văn; đánh dấu nơi hệ thống nghe sai và nơi chính bạn dùng sai.' },
+        { title: 'Nói lại một lượt có mục tiêu', body: 'Chọn ba câu quan trọng, nói lại chậm hơn với hai sửa đổi vừa kiểm chứng. Tự ghi: đã dùng được mẫu câu nào, chỗ nào vẫn cần tra từ điển hoặc hỏi người giỏi ngôn ngữ.' }
+      ],
+      prompt: 'Hãy luyện hội thoại [ngôn ngữ] với tôi trong 10 phút. Tình huống: [ví dụ: hỏi đường đến nhà ga]. Trình độ hiện tại của tôi: [mô tả việc làm được]. Bạn đóng vai [vai đối thoại] và chỉ hỏi một câu mỗi lượt. Hãy chờ đến khi tôi nói “xong” mới phản hồi; nếu tôi im lặng, cho một từ khóa, không nói hộ cả câu. Trong lúc nói, ưu tiên hiểu ý và giữ cuộc trò chuyện tự nhiên. Sau 6–8 lượt, chỉ chọn hai lỗi làm người nghe khó hiểu nhất, giải thích ngắn và cho một cách diễn đạt tự nhiên hơn. Sau khi tôi nói lại, tóm tắt ba mẫu câu tôi đã tự dùng được. Không chấm điểm phát âm chuẩn hóa và không suy đoán trình độ từ một buổi tập.',
+      example: {
+        label: 'Ví dụ minh họa — không phải dữ liệu thật',
+        input: 'Người học giả định luyện tiếng Anh ở tình huống hỏi đường, muốn dùng “Could you tell me…?”, “Is it within walking distance?” và “Thank you for your help”.',
+        output: 'Bảy lượt hỏi–đáp ngắn; AI chờ tín hiệu “xong”, chỉ gợi một từ khi bí, sau đó nêu hai lỗi ảnh hưởng khả năng hiểu và yêu cầu nói lại ba câu.'
+      },
+      checklist: [
+        'Bạn nói phần lớn thời gian và tự tạo câu trước khi xin gợi ý.',
+        'AI không ngắt khi bạn chưa nói “xong”.',
+        'Phản hồi chỉ tập trung vào hai lỗi quan trọng, không viết lại toàn bộ lời nói.',
+        'Transcript được xem là bản tham khảo, không phải bản ghi nguyên văn.',
+        'Từ mới hoặc cách phát âm chưa chắc đã được kiểm lại bằng từ điển hay nguồn ngôn ngữ đáng tin.',
+        'Không có thông tin riêng tư xuất hiện trong cuộc trò chuyện.'
+      ],
+      limits: {
+        cost: 'Theo OpenAI ngày 29/10/2026: Free có quyền truy cập Voice giới hạn; Go và Plus có tối đa 3 giờ Live trong 24 giờ; các gói Pro và workspace có hạn mức/đơn giá khác. Kiểm tra màn hình gói trước khi dùng dài.',
+        privacy: 'Live/Advanced lưu clip âm thanh cùng transcript xuất hiện trong lịch sử; clip được giữ 30 ngày. Việc chia sẻ clip để huấn luyện có điều khiển riêng trong Data Controls. Không luyện bằng dữ liệu cá nhân hoặc hội thoại thật của người khác.',
+        caution: 'Voice có thể nghe nhầm vì tiếng ồn, ngắt quãng hoặc nói chồng. Transcript không nhất thiết nguyên văn, và phản hồi phát âm không thay giáo viên hay bài đánh giá ngôn ngữ chuẩn hóa.'
+      },
+      sources: [
+        { title: 'ChatGPT Voice', publisher: 'OpenAI Help Center', date: 'Cập nhật và truy cập 29/10/2026', url: 'https://help.openai.com/en/articles/20001274-chatgpt-voice' },
+        { title: 'Data controls in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 29/10/2026', url: 'https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt' }
       ]
     }
   ],
