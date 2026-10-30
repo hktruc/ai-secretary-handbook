@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-10-29',
+  updated: '2026-10-30',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -256,6 +256,51 @@ window.HANDBOOK_CONTENT = {
       sources: [
         { title: 'ChatGPT Voice', publisher: 'OpenAI Help Center', date: 'Cập nhật và truy cập 29/10/2026', url: 'https://help.openai.com/en/articles/20001274-chatgpt-voice' },
         { title: 'Data controls in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 29/10/2026', url: 'https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt' }
+      ]
+    },
+    {
+      slug: 'tao-poster-bang-chatgpt-images', type: 'tutorial', topic: 'creativity',
+      title: 'Tạo poster từ mẫu rồi kiểm chữ và sửa đúng vùng bằng ChatGPT Images',
+      dek: 'Dùng một mẫu có sẵn để làm poster minh họa, khóa nội dung trước khi trang trí và kiểm từng dòng chữ trước khi lưu bản nháp.',
+      updated: '2026-10-30', readTime: '9 phút', level: 'Cơ bản',
+      outcome: 'Một poster nháp đúng tỷ lệ, có tiêu đề và thông tin tối thiểu đã kiểm, kèm danh sách thay đổi để tránh mỗi lần sửa lại làm hỏng phần đang đúng.',
+      preparation: [
+        'Một mục tiêu duy nhất cho poster, chẳng hạn thông báo buổi đọc sách giả định.',
+        'Nội dung đã chốt gồm tiêu đề, ngày, giờ và lời kêu gọi hành động; dùng dữ liệu minh họa nếu chỉ tập quy trình.',
+        'Tỷ lệ cần dùng như 4:5 cho bài đăng hoặc 16:9 cho màn hình.',
+        'Màu chủ đạo và mô tả phong cách bằng từ chung; không yêu cầu bắt chước tác phẩm hoặc nhân vật có bản quyền.'
+      ],
+      steps: [
+        { title: 'Khóa nội dung trước khi tạo ảnh', body: 'Viết riêng từng dòng chữ và tự kiểm chính tả. Chỉ giữ thông tin bắt buộc; poster càng nhiều chữ càng khó rà và dễ phát sinh lỗi.' },
+        { title: 'Mở Images và chọn một mẫu gần mục tiêu', body: 'Trong thanh bên chọn Images → Templates, mở nhóm phù hợp như poster rồi chọn mẫu. Templates chưa có trong Work mode theo tài liệu kiểm tra ngày 30/10/2026.' },
+        { title: 'Mô tả cả nội dung lẫn bố cục', body: 'Dán prompt bên dưới, ghi rõ tỷ lệ, thứ bậc tiêu đề, vùng trống và nguyên văn từng dòng. Nếu công cụ hỏi thêm, chỉ trả lời các chi tiết thực sự quan trọng.' },
+        { title: 'Kiểm chữ trước khi đánh giá vẻ đẹp', body: 'Phóng to ảnh và đối chiếu từng ký tự, con số, dấu tiếng Việt và thứ tự thông tin với bản nội dung đã khóa. Nếu một dòng sai, chưa dùng poster.' },
+        { title: 'Sửa từng vùng nhỏ', body: 'Mở ảnh, chọn Select và tô đúng vùng cần đổi; mô tả một thay đổi mỗi lượt. Vùng chọn có thể không chính xác và chỉnh sửa có thể lan ra ngoài, nên so cả phần xung quanh.' },
+        { title: 'Chốt tỷ lệ và lưu bản nháp', body: 'Dùng Aspect ratio khi cần định dạng khác, rồi kiểm lại chữ và mép ảnh vì tái tạo tỷ lệ có thể làm bố cục đổi. Chọn Save để tải bản nháp; chưa đăng tự động lên mạng xã hội.' }
+      ],
+      prompt: 'Tạo một poster minh họa bằng tiếng Việt cho [mục đích]. Tỷ lệ: [4:5 hoặc 16:9]. Đối tượng xem: [nhóm chung]. Phong cách: nền sáng, rõ ràng, thân thiện, tương phản cao. Thứ bậc: tiêu đề lớn ở trên, thông tin chính ở giữa, lời kêu gọi ngắn ở cuối. Chỉ dùng nguyên văn các dòng sau, không tự thêm tên, ngày, logo hoặc lời hứa: 1) “[tiêu đề]”; 2) “[ngày và giờ minh họa]”; 3) “[địa điểm hoặc hình thức]”; 4) “[lời kêu gọi]”. Giữ vùng trống quanh chữ, không đặt chữ lên chi tiết rối. Đây là dữ liệu minh họa. Sau khi tạo, hãy liệt kê lại chính xác các dòng chữ đã đưa vào để tôi đối chiếu.',
+      example: {
+        label: 'Ví dụ minh họa — không phải dữ liệu thật',
+        input: 'Poster giả định 4:5 cho “15 phút đọc cùng nhau”, ngày 05/11/2026, hình thức trực tuyến, màu kem và xanh teal.',
+        output: 'Một poster nháp có bốn dòng chữ theo thứ bậc; người làm đối chiếu từng dòng, khoanh vùng một lỗi dấu tiếng Việt và sửa riêng vùng đó trước khi lưu.'
+      },
+      checklist: [
+        'Mọi chữ, số, ngày và dấu tiếng Việt khớp bản nội dung đã khóa.',
+        'Không có tên, logo, địa điểm hoặc lời hứa do AI tự thêm.',
+        'Vùng vừa sửa đúng và phần xung quanh không bị biến đổi ngoài ý muốn.',
+        'Tỷ lệ, độ tương phản và khoảng trống đọc được trên màn hình đích.',
+        'Hình tham chiếu, biểu tượng và phông chữ dùng trong phạm vi bạn có quyền.',
+        'Tệp đang là bản nháp; một người khác đã nhìn lại trước khi công bố.'
+      ],
+      limits: {
+        cost: 'ChatGPT Images có trên mọi gói ở web, iOS và Android; hạn mức tạo/chỉnh ảnh phụ thuộc gói. Images with thinking hiện có cho Plus, Pro và Business. Không cần nâng gói chỉ để thử một poster nhỏ.',
+        privacy: 'Ảnh tạo ra được tự động lưu trong Images. Ảnh tải lên tuân theo Data Controls của tài khoản; không dùng chân dung riêng, giấy tờ, ảnh trẻ em hoặc hình chưa được phép. Xóa cuộc trò chuyện nếu muốn xóa ảnh khỏi My images.',
+        caution: 'Vùng chọn không luôn chính xác và sửa có thể lan ra ngoài. AI có thể viết sai chữ hoặc tạo chi tiết không phù hợp; đây là công cụ làm nháp, không thay bước kiểm nội dung, quyền sử dụng và duyệt trước khi đăng.'
+      },
+      sources: [
+        { title: 'Images in ChatGPT', publisher: 'OpenAI Help Center', date: 'Cập nhật 28/10/2026; truy cập 30/10/2026', url: 'https://help.openai.com/en/articles/11084440-images-in-chatgpt' },
+        { title: 'ChatGPT Image Inputs FAQ', publisher: 'OpenAI Help Center', date: 'Truy cập 30/10/2026', url: 'https://help.openai.com/en/articles/8400551-chatgpt-image-inputs-faq' },
+        { title: 'Data controls in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 30/10/2026', url: 'https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt' }
       ]
     }
   ],
