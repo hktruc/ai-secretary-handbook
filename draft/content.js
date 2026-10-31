@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-10-30',
+  updated: '2026-10-31',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -301,6 +301,52 @@ window.HANDBOOK_CONTENT = {
         { title: 'Images in ChatGPT', publisher: 'OpenAI Help Center', date: 'Cập nhật 28/10/2026; truy cập 30/10/2026', url: 'https://help.openai.com/en/articles/11084440-images-in-chatgpt' },
         { title: 'ChatGPT Image Inputs FAQ', publisher: 'OpenAI Help Center', date: 'Truy cập 30/10/2026', url: 'https://help.openai.com/en/articles/8400551-chatgpt-image-inputs-faq' },
         { title: 'Data controls in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 30/10/2026', url: 'https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt' }
+      ]
+    },
+    {
+      slug: 'ho-so-lam-viec-bang-chatgpt-projects', type: 'tutorial', topic: 'organization',
+      title: 'Gom một việc dài hạn vào ChatGPT Projects mà không trộn ngữ cảnh',
+      dek: 'Tạo một hồ sơ làm việc nhỏ gồm hướng dẫn, nguồn tham chiếu và các cuộc trò chuyện liên quan; dùng Project-only memory để giới hạn ngữ cảnh khi cần.',
+      updated: '2026-10-31', readTime: '10 phút', level: 'Cơ bản',
+      outcome: 'Một Project thử nghiệm cho kế hoạch đọc bốn tuần, có mục tiêu rõ, quy tắc trả lời, hai nguồn giả lập và một bản chốt quyết định được lưu lại để dùng ở cuộc trò chuyện sau.',
+      preparation: [
+        'Một mục tiêu kéo dài nhiều buổi nhưng đủ hẹp, chẳng hạn lập kế hoạch đọc bốn tuần bằng dữ liệu minh họa.',
+        'Tối đa hai tệp không nhạy cảm hoặc hoàn toàn giả lập; không dùng hồ sơ cá nhân, tài liệu nội bộ hay đường dẫn riêng.',
+        'Ba quy tắc muốn ChatGPT giữ ổn định, ví dụ: hỏi khi thiếu, tách sự kiện khỏi đề xuất và ghi nguồn cho kết luận.',
+        'Quyết định trước Project này là riêng tư hay cần chia sẻ; bài thực hành này dùng Project riêng tư.'
+      ],
+      steps: [
+        { title: 'Tạo Project cho đúng một kết quả', body: 'Trong thanh bên ChatGPT, tạo Project mới và đặt tên theo kết quả, không theo một chủ đề quá rộng. Ví dụ minh họa: “Kế hoạch đọc 4 tuần”, không phải “Mọi việc của tôi”.' },
+        { title: 'Chọn ranh giới bộ nhớ trước khi thêm nội dung', body: 'Mở menu ba chấm → Project settings → Memory. Chọn Project-only memory nếu muốn các chat trong Project chỉ tham chiếu ngữ cảnh bên trong và không dùng ký ức hoặc chat bên ngoài. Thay đổi có thể mất vài giờ mới có hiệu lực.' },
+        { title: 'Viết Project instructions ngắn và kiểm tra được', body: 'Ghi mục tiêu, định dạng đầu ra và ba điều AI không được tự làm. Instructions của Project áp dụng trong Project; đừng chôn lịch thật, mật khẩu hoặc dữ liệu nhận dạng vào đây.' },
+        { title: 'Thêm nguồn tối thiểu', body: 'Tải hai tệp giả lập/đã giảm thiểu hoặc thêm nguồn được phép. Nếu dùng liên kết Google Drive hay Slack được hỗ trợ, quyền truy cập hiện có vẫn quan trọng; Google Drive trong Project có thể tìm và mở nội dung nhưng không đồng bộ trước để truy xuất.' },
+        { title: 'Chạy một cuộc trò chuyện thử và buộc nêu căn cứ', body: 'Dùng prompt bên dưới. Kiểm từng kết luận với nguồn gốc; nếu câu trả lời lẫn kiến thức ngoài Project, yêu cầu đánh dấu rõ hoặc trả lời lại chỉ từ nguồn đã thêm.' },
+        { title: 'Lưu đầu ra đã duyệt thành nguồn', body: 'Ở menu của câu trả lời đã kiểm, chọn Save to project hoặc Add to project sources (nhãn có thể khác). Chỉ lưu bản chốt, không lưu mọi bản nháp; mở cuộc trò chuyện mới và hỏi lại một quyết định để kiểm tra Project có dùng đúng nguồn đã lưu.' },
+        { title: 'Dọn và rà quyền trước khi chia sẻ', body: 'Xóa nguồn cũ hoặc không cần thiết, kiểm lại instructions và danh sách chat. Nếu chuyển sang Project chia sẻ, nhớ rằng nội dung trong Project có thể được người tham gia dùng làm ngữ cảnh; Project chia sẻ tự dùng Project-only memory.' }
+      ],
+      prompt: 'Bạn đang làm việc trong Project thử nghiệm “[tên mục tiêu]”. Chỉ dùng Project instructions và các nguồn tôi đã thêm cho những kết luận thực tế. Hãy: (1) nhắc lại mục tiêu trong một câu; (2) lập kế hoạch 4 tuần, mỗi tuần một kết quả; (3) dưới mỗi kết quả ghi nguồn hỗ trợ hoặc “Chưa có nguồn trong Project”; (4) tách rõ dữ kiện, đề xuất của bạn và quyết định cần tôi xác nhận; (5) không tự thêm lịch thật, tên người, cam kết hoặc dữ liệu bên ngoài. Cuối cùng, tạo mục “Bản chốt cần lưu” gồm tối đa 5 dòng để tôi kiểm trước khi Save to project.',
+      example: {
+        label: 'Ví dụ minh họa — không phải dữ liệu thật',
+        input: 'Project riêng tư giả định “Kế hoạch đọc 4 tuần”, hai tệp mẫu gồm danh sách bốn bài đọc công khai và bảng thời gian trống.',
+        output: 'Kế hoạch bốn tuần có nguồn cho từng bài, các ô thời gian còn trống được ghi “Chưa có nguồn trong Project”, cùng bản chốt năm dòng được người dùng duyệt rồi mới lưu.'
+      },
+      checklist: [
+        'Tên và instructions mô tả một kết quả hẹp, không gom mọi mặt đời sống.',
+        'Memory đang ở chế độ dự định; với Project-only, chat thử không dựa vào chat hoặc ký ức bên ngoài.',
+        'Mỗi kết luận thực tế có nguồn trong Project hoặc được đánh dấu chưa có nguồn.',
+        'Chỉ bản chốt đã kiểm được lưu thành Project source; bản nháp mâu thuẫn không được coi là nguồn.',
+        'Không có dữ liệu nhận dạng, đường dẫn riêng, lịch thật hoặc tài liệu chưa được phép.',
+        'Trước khi chia sẻ, danh sách người tham gia, nguồn và instructions đã được rà lại.'
+      ],
+      limits: {
+        cost: 'OpenAI cho biết Projects được bao gồm trong mọi gói ChatGPT đủ điều kiện; model, công cụ và credits dùng trong Project vẫn chịu hạn mức hoặc phí như chat thường. Số tệp phụ thuộc gói; khi chạm giới hạn, xóa nguồn cũ, gộp dữ liệu hoặc tách Project.',
+        privacy: 'Project-only memory giới hạn nơi ngữ cảnh được tham chiếu, nhưng không biến nội dung thành nơi lưu bí mật. Không tải dữ liệu nhạy cảm; rà Data Controls và chính sách workspace. Khi chia sẻ Project, người tham gia có thể dùng nội dung chung làm ngữ cảnh.',
+        caution: 'Projects giúp giữ ngữ cảnh, không bảo đảm câu trả lời đúng hay nguồn luôn mới. Google Drive được thêm trong Project không đồng bộ trước; thay đổi Memory có thể mất vài giờ. ChatGPT Work không có trong Project-only memory theo tài liệu kiểm tra ngày 31/10/2026.'
+      },
+      sources: [
+        { title: 'Projects in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 31/10/2026', url: 'https://help.openai.com/en/articles/10169521-projects-in-chatgpt' },
+        { title: 'Memory in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 31/10/2026', url: 'https://help.openai.com/en/articles/8590148-memory-in-chatgpt' },
+        { title: 'Data controls in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 31/10/2026', url: 'https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt' }
       ]
     }
   ],
