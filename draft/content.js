@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-10-31',
+  updated: '2026-11-01',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -347,6 +347,54 @@ window.HANDBOOK_CONTENT = {
         { title: 'Projects in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 31/10/2026', url: 'https://help.openai.com/en/articles/10169521-projects-in-chatgpt' },
         { title: 'Memory in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 31/10/2026', url: 'https://help.openai.com/en/articles/8590148-memory-in-chatgpt' },
         { title: 'Data controls in ChatGPT', publisher: 'OpenAI Help Center', date: 'Truy cập 31/10/2026', url: 'https://help.openai.com/en/articles/7730893-data-controls-in-chatgpt' }
+      ]
+    },
+    {
+      slug: 'dich-chu-trong-anh-bang-google-translate', type: 'tutorial', topic: 'daily',
+      title: 'Dịch chữ trong ảnh bằng Google Translate mà vẫn đối chiếu được bản gốc',
+      dek: 'Dùng camera hoặc ảnh có sẵn để dịch đúng một vùng chữ, bật lại lớp nguyên bản và kiểm tên riêng, con số cùng câu phủ định trước khi sử dụng.',
+      updated: '2026-11-01', readTime: '8 phút', level: 'Cơ bản',
+      outcome: 'Một bản dịch ngắn từ ảnh rõ nét, kèm phần chữ gốc đã chọn, ba chi tiết quan trọng được đối chiếu và danh sách chỗ còn chưa chắc; không cần đưa cả tài liệu vào chatbot.',
+      preparation: [
+        'Ứng dụng Google Translate trên điện thoại và quyền camera chỉ khi bạn muốn chụp trực tiếp; tên nút có thể khác nhẹ giữa Android và iPhone/iPad.',
+        'Một biển báo, nhãn hoặc đoạn in ngắn được phép chụp; để tập quy trình, dùng nội dung công khai hoặc hoàn toàn giả lập.',
+        'Ảnh đủ sáng, thẳng và không bị lóa; chữ nhỏ, mờ hoặc kiểu chữ trang trí làm độ chính xác giảm.',
+        'Không dùng giấy tờ tùy thân, thư riêng, hồ sơ sức khỏe, mã đăng nhập hoặc ảnh có người khác nếu chưa được phép.'
+      ],
+      steps: [
+        { title: 'Chọn đúng cặp ngôn ngữ', body: 'Mở Google Translate, chọn ngôn ngữ nguồn và đích. Chỉ dùng Detect language khi bạn thực sự không biết ngôn ngữ nguồn; sau lần nhận diện đầu, kiểm lại và chọn thủ công nếu công cụ đoán sai.' },
+        { title: 'Mở Camera và chọn nguồn ảnh', body: 'Chạm Camera. Trên Android, chọn All images nếu dùng ảnh đã có; trên iPhone/iPad, chọn Gallery. Nếu chụp trực tiếp, giữ máy song song với mặt chữ và chạm nút chụp để cố định khung.' },
+        { title: 'Thu hẹp đúng phần cần dịch', body: 'Mở Translate options nếu cần, bật Show original text rồi chạm một từ và kéo hai đầu vùng chọn. Chỉ lấy một câu hoặc một mục thay vì để công cụ dịch cả ảnh lẫn tiêu đề, logo và chữ nền.' },
+        { title: 'Đối chiếu trước khi sao chép', body: 'Đặt nguyên bản cạnh bản dịch. Kiểm riêng tên người/địa điểm, ngày giờ, đơn vị, số tiền và các từ phủ định như “không”, “chưa”, “ngoại trừ”. Nếu một chi tiết quan trọng không khớp, chụp lại rõ hơn hoặc tra nguồn khác.' },
+        { title: 'Sao chép kèm dấu vết kiểm tra', body: 'Chọn Copy text cho đúng đoạn đã duyệt, rồi dán vào mẫu ghi chú bên dưới. Giữ câu gốc cạnh câu dịch để lần sau có thể kiểm lại; không chỉ lưu một câu dịch tách khỏi ngữ cảnh.' },
+        { title: 'Nghe hoặc tải ngôn ngữ khi thật sự cần', body: 'Có thể chọn Listen để nghe phần dịch. Trên iPhone/iPad, tài liệu Google cho phép tải ngôn ngữ để dùng dịch camera ngoại tuyến; kiểm dung lượng và tải bằng mạng phù hợp trước chuyến đi.' },
+        { title: 'Rà quyền và lịch sử sau khi dùng', body: 'Nếu không cần camera/ảnh thường xuyên, xem lại quyền của ứng dụng trong cài đặt điện thoại. Với Google Lens, Visual Search History quyết định ảnh tìm kiếm đủ điều kiện có được lưu trong Web & App Activity; cài đặt này mặc định tắt theo tài liệu Google và có thể xem/xóa trong My Activity.' }
+      ],
+      prompt: 'MẪU GHI CHÚ KIỂM BẢN DỊCH\nNguồn ảnh: [biển báo/nhãn/đoạn công khai]\nNgôn ngữ nguồn → đích: [___] → [___]\nChữ gốc đã chọn: “[dán nguyên văn]”\nBản dịch máy: “[dán bản dịch]”\nĐã kiểm: tên riêng [có/không]; số & đơn vị [có/không]; từ phủ định/ngoại lệ [có/không]\nChỗ chưa chắc: [___]\nNguồn đối chiếu thứ hai hoặc người xác nhận: [___/chưa có]\nQuyết định: [chỉ tham khảo/đủ dùng cho việc ít rủi ro/cần hỏi người biết ngôn ngữ]',
+      example: {
+        label: 'Ví dụ minh họa — không phải dữ liệu thật',
+        input: 'Ảnh giả định của biển thông báo bảo tàng: một câu về giờ đóng cửa, có ngày “01/11” và từ “except”.',
+        output: 'Người dùng chỉ chọn câu thông báo, bật Show original, kiểm lại ngày và nghĩa ngoại lệ của “except”, rồi lưu cả câu gốc, câu dịch và nhãn “cần hỏi lại” nếu giờ chưa rõ.'
+      },
+      checklist: [
+        'Ngôn ngữ nguồn và đích đúng, không chỉ tin Detect language.',
+        'Vùng chọn không lẫn chữ nền, logo hoặc dòng ngoài ngữ cảnh.',
+        'Tên riêng, ngày giờ, số, đơn vị và từ phủ định/ngoại lệ khớp ảnh gốc.',
+        'Ảnh mờ hoặc chữ trang trí đã được chụp lại thay vì đoán.',
+        'Ghi chú giữ cả nguyên bản và bản dịch, đồng thời đánh dấu chỗ chưa chắc.',
+        'Không dùng bản dịch camera một mình cho quyết định y tế, pháp lý, tài chính hoặc an toàn.'
+      ],
+      limits: {
+        cost: 'Các trang trợ giúp Google được kiểm tra ngày 01/11/2026 không nêu gói trả phí riêng cho thao tác dịch ảnh. Việc cài ứng dụng, tải ngôn ngữ và xử lý ảnh vẫn dùng dung lượng thiết bị hoặc dữ liệu mạng; kiểm Play Store/App Store và cước mạng của bạn.',
+        privacy: 'Camera và thư viện ảnh là quyền có thể cho phép hoặc từ chối trong cài đặt điện thoại. Google xử lý nội dung để cung cấp dịch vụ theo Privacy Policy. Không đưa ảnh nhạy cảm vào công cụ chỉ vì thao tác nhanh; với Lens, kiểm Web & App Activity và Visual Search History nếu bạn dùng tìm kiếm bằng ảnh.',
+        caution: 'Google cảnh báo chữ nhỏ, mờ hoặc kiểu chữ trang trí có thể dịch không chính xác. Bản dịch giữ được ý chung chưa chắc giữ đúng điều kiện, phủ định hay thuật ngữ; bài này dựa trên tài liệu chính thức, không phải thử nghiệm độ chính xác độc lập.'
+      },
+      sources: [
+        { title: 'Translate images — Android', publisher: 'Google Translate Help', date: 'Truy cập 01/11/2026', url: 'https://support.google.com/translate/answer/6142483?co=GENIE.Platform%3DAndroid&hl=en' },
+        { title: 'Translate images — iPhone & iPad', publisher: 'Google Translate Help', date: 'Truy cập 01/11/2026', url: 'https://support.google.com/translate/answer/6142483?co=GENIE.Platform%3DiOS&hl=en' },
+        { title: 'Change app permissions on Android', publisher: 'Google Play Help', date: 'Truy cập 01/11/2026', url: 'https://support.google.com/googleplay/answer/9431959?hl=en' },
+        { title: 'Manage Visual Search History', publisher: 'Google Search Help', date: 'Truy cập 01/11/2026', url: 'https://support.google.com/websearch/answer/14601082?hl=en' },
+        { title: 'Google Privacy Policy', publisher: 'Google', date: 'Truy cập 01/11/2026', url: 'https://policies.google.com/privacy' }
       ]
     }
   ],
