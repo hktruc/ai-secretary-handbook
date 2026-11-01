@@ -27,3 +27,7 @@ Mọi bài viết tiếp tục miễn phí tại `#bai-viet/<slug>`. Mục lục
 ### Trạng thái thành viên
 
 Đăng nhập Google **chưa hoạt động**. Nút được vô hiệu hóa và giải thích công khai; không giả lập đăng nhập, không thu thập đăng ký, không có dữ liệu thành viên hoặc nội dung riêng trong mã tĩnh. Để mở chức năng này cần chọn và cấu hình dịch vụ xác thực/backend, OAuth callback/origin, bảo vệ dữ liệu phía máy chủ, và quyết định chính sách thành viên (tự động hoặc xét duyệt). Không đặt OAuth secret/token trong mã nguồn công khai. Chưa thay đổi hosting hoặc tạo dịch vụ mới.
+
+## Thêm hoặc sửa bài viết
+
+Mỗi bài bắt buộc có WHY (lợi ích + 2–3 tình huống cụ thể) trước HOW. Xem [mẫu và checklist biên tập](docs/article-template.md). Chạy `node scripts/validate-content.cjs` trước khi xuất bản; kiểm tra này không thay thế việc đọc duyệt tính chính xác.
