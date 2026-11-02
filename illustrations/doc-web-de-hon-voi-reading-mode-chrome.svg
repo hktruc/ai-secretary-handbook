@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+<title id="title">Bớt phần gây xao nhãng, giữ nội dung cần đọc</title>
+<desc id="desc">Trang nội dung nhiều khối ở bên trái chuyển sang một cột đọc thoáng ở bên phải. Các dòng chữ có khoảng cách rõ; biểu tượng tai nghe nhỏ gợi tùy chọn nghe khi có. Ba điểm cần kiểm là đọc rõ, nghe đúng và giữ nguồn. Đây là sơ đồ khái niệm, không phải giao diện Chrome.</desc>
+<rect width="960" height="540" fill="#faf5e9"/>
+<rect x="24" y="24" width="912" height="492" rx="20" fill="none" stroke="#d9d1c0" stroke-width="2"/>
+<g font-family="DejaVu Sans, sans-serif" fill="#14283d">
+<text x="48" y="62" font-size="23" font-weight="700">Bớt xao nhãng, đọc theo nhịp của bạn</text>
+<path d="M48 84H912" stroke="#3a8c83" stroke-width="3"/>
+<text x="70" y="126" font-size="14" font-weight="700" fill="#637787" letter-spacing="1">NHIỀU KHỐI NỘI DUNG</text>
+<!-- Abstract page composition, deliberately without browser chrome or app controls. -->
+<rect x="70" y="145" width="324" height="262" rx="6" fill="#eae8e0" stroke="#bbc3c5" stroke-width="2"/>
+<rect x="86" y="162" width="292" height="26" rx="3" fill="#c9cdcb"/>
+<rect x="86" y="202" width="55" height="122" rx="3" fill="#d7d9d3"/>
+<path d="M96 216h35m-35 14h27m-27 14h35m-35 14h22m-22 14h31m-31 14h35" stroke="#aeb8bb" stroke-width="3"/>
+<rect x="155" y="202" width="143" height="178" rx="3" fill="#fffdf7" stroke="#d6ad63" stroke-width="2"/>
+<path d="M169 220h113" stroke="#14283d" stroke-width="6"/>
+<path d="M169 244h111m-111 16h98m-98 16h111m-111 16h106m-106 26h111m-111 16h97m-97 16h111" stroke="#7f9199" stroke-width="3"/>
+<rect x="311" y="202" width="67" height="66" rx="3" fill="#cfdbd7"/>
+<circle cx="345" cy="229" r="12" fill="#b0c4bb"/>
+<path d="M320 251h49" stroke="#a7bdb3" stroke-width="4"/>
+<rect x="311" y="281" width="67" height="99" rx="3" fill="#dbd5c8"/>
+<path d="M322 299h44m-44 16h35m-35 16h44m-44 16h28m-28 16h39" stroke="#b9b3a5" stroke-width="3"/>
+<rect x="86" y="340" width="55" height="40" rx="3" fill="#d2dbda"/>
+<!-- Selection flows into an expanded reading surface, not an AI generation effect. -->
+<path d="M410 275H483m-11-10 11 10-11 10" fill="none" stroke="#3a8c83" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="445" y="308" font-size="14" fill="#3a8c83" text-anchor="middle">Tập trung</text>
+<text x="445" y="330" font-size="14" fill="#3a8c83" text-anchor="middle">vào bài</text>
+<text x="518" y="126" font-size="14" font-weight="700" fill="#637787" letter-spacing="1">MỘT CỘT ĐỌC THOÁNG</text>
+<rect x="518" y="145" width="372" height="262" rx="12" fill="#14283d"/>
+<rect x="541" y="167" width="5" height="198" rx="2" fill="#d6ad63"/>
+<path d="M567 185h225" stroke="#faf5e9" stroke-width="8" stroke-linecap="round"/>
+<path d="M567 221h242m-242 26h221m-221 26h242m-242 38h242m-242 26h203" stroke="#c4d0d2" stroke-width="4" stroke-linecap="round"/>
+<path d="M567 375h83" stroke="#d6ad63" stroke-width="2"/>
+<text x="664" y="381" font-size="14" fill="#d6ad63">Nguồn gốc</text>
+<!-- Discreet listening motif, outside the abstract reading surface. -->
+<circle cx="852" cy="153" r="33" fill="#f2e2bf" stroke="#d6ad63" stroke-width="2"/>
+<path d="M835 156v-5a17 17 0 0 1 34 0v5" fill="none" stroke="#14283d" stroke-width="3"/>
+<rect x="832" y="151" width="8" height="17" rx="4" fill="#14283d"/>
+<rect x="864" y="151" width="8" height="17" rx="4" fill="#14283d"/>
+<!-- Editorial checks, not product controls. -->
+<g fill="none" stroke="#3a8c83" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="m124 441 6 6 11-13"/><path d="m401 441 6 6 11-13"/><path d="m678 441 6 6 11-13"/>
+</g>
+<text x="156" y="450" font-size="21" font-weight="600">Đọc rõ</text>
+<text x="433" y="450" font-size="21" font-weight="600">Nghe đúng</text>
+<text x="710" y="450" font-size="21" font-weight="600">Giữ nguồn</text>
+<text x="48" y="493" font-size="13" fill="#637787" font-weight="600">AI DẠO CHƠI / SƠ ĐỒ MINH HỌA</text>
+<text x="912" y="493" font-size="13" fill="#637787" text-anchor="end">Không phải ảnh chụp ứng dụng</text>
+</g>
+</svg>

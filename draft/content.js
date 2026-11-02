@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-01',
+  updated: '2026-11-02',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -408,6 +408,100 @@ window.HANDBOOK_CONTENT = {
         { title: 'Manage Visual Search History', publisher: 'Google Search Help', date: 'Truy cập 01/11/2026', url: 'https://support.google.com/websearch/answer/14601082?hl=en' },
         { title: 'Google Privacy Policy', publisher: 'Google', date: 'Truy cập 01/11/2026', url: 'https://policies.google.com/privacy' }
       ]
+    },
+    {
+      "slug": "doc-web-de-hon-voi-reading-mode-chrome",
+      "type": "tutorial",
+      "topic": "daily",
+      "title": "Đọc web dễ hơn với Reading mode trong Chrome",
+      "dek": "Trang nhiều khối nội dung khiến bạn khó theo dõi? Thử chỉnh cách hiển thị và nghe một đoạn ngắn, rồi trở lại trang gốc để kiểm điều quan trọng.",
+      "why": {
+        "benefit": "Bạn mở một bài hướng dẫn để tìm đúng một thông tin, nhưng mắt cứ chuyển từ nội dung chính sang các khối bên cạnh. Đọc đến cuối đoạn lại phải quay lên: con số vừa thấy áp dụng cho trường hợp nào?",
+        "situations": [
+          "Đọc một bài hướng dẫn công khai trên máy tính, muốn tập trung vào phần chữ và giữ đường về nguồn gốc.",
+          "Thử nghe một đoạn ngắn rồi tự ghi lại ý chính, tên riêng và điều kiện cần kiểm."
+        ],
+        "context": "Reading mode trong Chrome cho phép đổi phông, khoảng cách chữ và độ tương phản; công cụ đọc thành tiếng giúp bạn nghe nội dung trang. Hãy thử trên một bài công khai trước, chọn cách trình bày vừa mắt rồi so lại những chi tiết quan trọng. Bài này hướng dẫn thao tác trên máy tính, không dùng AI để viết lại nội dung."
+      },
+      "updated": "2026-11-02",
+      "readTime": "6 phút",
+      "level": "Cơ bản",
+      "outcome": "Một đoạn đọc thử có ba chi tiết đã đối chiếu với trang gốc, kèm ghi chú cài đặt phù hợp và chỗ còn thiếu ngữ cảnh.",
+      "preparation": [
+        "Chrome trên máy tính và một bài web công khai chủ yếu là chữ.",
+        "Chọn trước một đoạn có thông tin cụ thể để tập, không dùng hồ sơ, thư riêng hay trang tài khoản.",
+        "Tai nghe nếu muốn thử âm thanh ở nơi có người khác; không cần sao chép cả bài sang chatbot."
+      ],
+      "steps": [
+        {
+          "title": "Chọn đoạn bạn thực sự cần hiểu",
+          "body": "Ghi trước một câu hỏi, chẳng hạn: “Điều kiện để tham gia hoạt động này là gì?”. Chọn một đoạn liên quan và ghi tiêu đề, URL của trang. Bước nhỏ này giúp bạn nhận ra khi mình đã đọc đủ, thay vì tiếp tục lướt mà không giữ được ý chính."
+        },
+        {
+          "title": "Mở chế độ đọc ngay trên trang",
+          "body": "Nhấp phải trang, chọn Open in reading mode. Muốn đặt cạnh trang gốc, mở Settings trong Reading mode → View → Side panel. Nếu thiếu nội dung, thử bôi chọn đoạn trên trang gốc; vẫn thiếu thì đọc trực tiếp ở đó."
+        },
+        {
+          "title": "Chỉnh chữ vừa đủ, đừng đổi tất cả cùng lúc",
+          "body": "Dùng Font size để chỉnh cỡ chữ; Settings có tùy chọn phông, màu và khoảng cách. Thử đổi một yếu tố rồi đọc lại cùng đoạn. Giữ cách nhìn dễ theo dõi với chính bạn, không cần bắt chước một cấu hình được quảng cáo là tối ưu cho mọi người."
+        },
+        {
+          "title": "Nghe một đoạn rồi tự nhắc lại",
+          "body": "Chọn Play; Playback speed chỉnh tốc độ, còn Settings → Voice selection chọn giọng. Chỉ nghe một đoạn ngắn trước. Dừng lại và tự viết một câu về điều vừa hiểu; nếu còn lúng túng, quay về đoạn chữ thay vì tăng tốc để nghe hết bài."
+        },
+        {
+          "title": "Đối chiếu ba chi tiết trên trang gốc",
+          "body": "Chọn một tên riêng, một con số và một điều kiện hoặc ngoại lệ để kiểm. Đọc thêm câu trước, câu sau và chú thích liên quan. Nếu thấy thiếu hình, bảng hay phần giải thích, trở lại bản gốc. Đọc thuận mắt hơn không chứng minh nội dung đáng tin hơn."
+        },
+        {
+          "title": "Lưu ghi chú có đường quay lại",
+          "body": "Dùng mẫu dưới đây để lưu điều đã hiểu cùng URL và chỗ chưa chắc. Chỉ chép đoạn ngắn cần đối chiếu, không sao lưu nguyên bài của người khác. Lần sau mở lại, kiểm ngày bài và điều kiện áp dụng trước khi dùng thông tin cho việc của mình."
+        }
+      ],
+      "prompt": "MẪU GHI CHÚ SAU KHI ĐỌC — không cần gửi cho AI\nTên bài và URL: [___]\nCâu hỏi tôi cần trả lời: [___]\nÝ chính bằng lời của tôi: [___]\nBa chi tiết đã đối chiếu: tên riêng [___]; con số [___]; điều kiện/ngoại lệ [___]\nChỗ phải quay về trang gốc để xem thêm: [___]\nCách hiển thị tôi thấy dễ đọc: [___]\nĐiều còn chưa chắc: [___]",
+      "example": {
+        "label": "Ví dụ giả định — không phải kết quả thử nghiệm",
+        "input": "Một thông báo công khai giả định về buổi đọc sách, có giờ bắt đầu, tên phòng và yêu cầu đăng ký trước.",
+        "output": "Người đọc ghi lại ba chi tiết rồi kiểm từng chi tiết ở trang gốc, phát hiện yêu cầu đăng ký nằm ở câu sau và bổ sung vào ghi chú."
+      },
+      "checklist": [
+        "Câu hỏi ban đầu đã có câu trả lời hoặc được ghi rõ là chưa tìm thấy.",
+        "Tên, số và ngoại lệ được so với bản gốc, không chỉ dựa vào điều nghe được.",
+        "Chú thích hoặc nội dung ngoài đoạn chọn đã được xem khi cần.",
+        "Ghi chú có URL, không biến lời kể lại của mình thành trích dẫn nguyên văn.",
+        "Không ghi dữ liệu riêng tư vào ví dụ hoặc ảnh minh họa."
+      ],
+      "limits": {
+        "cost": "Tài liệu hướng dẫn được kiểm tra ngày 02/11/2026 không nêu gói trả phí riêng cho Reading mode. Đây không phải cam kết về mọi chi phí: truy cập nội dung có thể cần thuê bao của website; thiết bị và kết nối mạng vẫn do bạn chi trả.",
+        "privacy": "Chỉ dùng nội dung công khai để tập. Theo chính sách Google, việc thu thập dữ liệu phụ thuộc cách dùng dịch vụ và cài đặt riêng tư; bài này không xác nhận toàn bộ xử lý diễn ra trên máy. Không coi giao diện đọc gọn hơn là chế độ bảo vệ bí mật hoặc quyền bỏ qua giới hạn truy cập.",
+        "caution": "Không phải website nào cũng tương thích; biểu mẫu, bản đồ và trang đăng nhập có thể không phù hợp. Google hiện ghi chưa hỗ trợ Googlebook. Nhãn nút có thể khác theo giao diện. Bài dựa trên tài liệu chính thức, chưa thử độc lập; không bảo đảm mọi giọng/ngôn ngữ, phát âm hay khả năng ngoại tuyến."
+      },
+      "sources": [
+        {
+          "title": "Use reading mode in Chrome — Computer",
+          "publisher": "Google Chrome Help",
+          "date": "Truy cập 02/11/2026",
+          "url": "https://support.google.com/chrome/answer/14218344?hl=en"
+        },
+        {
+          "title": "5 ways to upgrade your study habits with Chrome",
+          "publisher": "Google Chrome Blog",
+          "date": "24/09/2026; truy cập 02/11/2026",
+          "url": "https://blog.google/products-and-platforms/products/chrome/tips-for-school-and-studying/"
+        },
+        {
+          "title": "Google Privacy Policy",
+          "publisher": "Google",
+          "date": "Hiệu lực 16/10/2026; truy cập 02/11/2026",
+          "url": "https://policies.google.com/privacy"
+        }
+      ],
+      "illustration": {
+        "src": "illustrations/doc-web-de-hon-voi-reading-mode-chrome.svg",
+        "alt": "Sơ đồ từ trang web nhiều khối sang một cột đọc thoáng, có dấu nguồn gốc và biểu tượng tai nghe nhỏ; ba điểm cần kiểm là đọc rõ, nghe đúng, giữ nguồn.",
+        "caption": "Sơ đồ minh họa: tập trung vào phần bài viết, điều chỉnh cách đọc và đối chiếu nội dung khi dùng tùy chọn nghe nếu có. Minh họa nguyên gốc: AI dạo chơi, 02/11/2026; không phải ảnh chụp Chrome hay kết quả thử nghiệm."
+      },
+      "promptLabel": "Mẫu ghi chú"
     }
   ],
   cases: [

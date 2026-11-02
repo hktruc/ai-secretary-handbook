@@ -20,3 +20,9 @@ for(const topic of topics){vm.runInContext(`showCategory(${JSON.stringify(topic)
 for(const slug of slugs){vm.runInContext(`showArticle(allArticles.find(a=>a.slug===${JSON.stringify(slug)}))`,c);const html=element('#kh-article').innerHTML;links(html,slug);assert(html.includes('kh-breadcrumb'));assert.equal((html.match(/class="kh-card"/g)||[]).length,3);assert(html.indexOf('id="vi-sao"')<html.indexOf('id="chuan-bi"'));for(const id of ['vi-sao','ket-qua','chuan-bi','cac-buoc','mau-lenh','kiem-tra','gioi-han','nguon'])assert(html.includes(`id="${id}"`),`${slug}: lost ${id}`)}
 assert(!/google-button|Tiếp tục với Google/.test(body.innerHTML),'deferred login should not be a primary action');
 console.log(`PASS editorial navigation: ${topics.length} topic pages, ${slugs.length} article routes, related links, legacy anchors and public-only calls to action.`);
+// Optional original artwork must load safely without changing unillustrated guides.
+for(const a of vm.runInContext('allArticles.filter(a=>a.illustration)',c)){
+ assert.equal(a.illustration.src,`illustrations/${a.slug}.svg`);assert(a.illustration.alt.length>35);assert(/minh họa/i.test(a.illustration.caption));const svg=fs.readFileSync(a.illustration.src,'utf8');assert(/viewBox="0 0 960 540"/.test(svg));assert(!/<script|<foreignObject|(?:href|src)="https?:/i.test(svg));
+ vm.runInContext(`showArticle(allArticles.find(a=>a.slug===${JSON.stringify(a.slug)}))`,c);const html=element('#kh-article').innerHTML;assert(html.includes(`src="${a.illustration.src}"`));assert(html.includes('<figcaption>'));if(a.promptLabel)assert(html.includes(`<h2>${a.promptLabel}</h2>`));
+}
+console.log('PASS optional individual artwork, captions and copy-template labels.');
