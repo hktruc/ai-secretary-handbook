@@ -19,3 +19,5 @@ main#main{margin-left:230px;max-width:none}.kh-topbar{min-height:80px;border-bot
 
 /* A natural opening before outcomes and instructions; no framework labels. */
 .kh-intro{border-bottom:1px solid var(--kl);margin-bottom:38px;padding-bottom:28px;scroll-margin-top:100px}.kh-intro p{font-size:1.05rem;line-height:1.85}.kh-intro p:last-child{color:var(--km)}
+
+.kh-outcome-wrap{margin:0 0 45px;scroll-margin-top:100px}

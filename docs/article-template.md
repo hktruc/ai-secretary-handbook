@@ -27,7 +27,7 @@ Viết như một bài blog chia sẻ kiến thức: mở bằng hoàn cảnh qu
 
 ## Thứ tự hiển thị bắt buộc
 
-Hai đoạn mở đầu tự nhiên (lợi ích, hoàn cảnh áp dụng; không có nhãn công thức) → Kết quả → Chuẩn bị → Các bước → Mẫu lệnh → Kiểm tra → Giới hạn → Nguồn.
+Hai đoạn mở đầu tự nhiên (lợi ích, hoàn cảnh áp dụng; không có nhãn công thức) → đoạn kết quả cụ thể không đề mục → Chuẩn bị → Các bước → Mẫu lệnh → Kiểm tra → Giới hạn → Nguồn.
 
 Trước mỗi lần xuất bản:
 
@@ -38,3 +38,5 @@ node --check knowledge.js
 ```
 
 Sau đó kiểm tra liên kết bài, mục lục các phần hướng dẫn, nội dung trên màn hình hẹp và tìm kiếm. Không xuất bản khi thiếu WHY hoặc dùng nội dung mẫu chưa được viết lại.
+
+Không hiển thị nhãn “Kết quả / Bạn sẽ làm được gì?” hoặc mục lục tương ứng. Giữ nguyên đoạn `outcome` cụ thể trong phần mở bài và anchor cũ; chỉ giữ các tiêu đề hướng dẫn hữu ích như Chuẩn bị, Làm từng bước. Khi rà giao diện, kiểm cả nhãn nhỏ, thẻ, mục lục và tiêu đề trang chủ, không chỉ trường `why`.

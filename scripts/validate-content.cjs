@@ -27,7 +27,16 @@ for(const a of articles){
 }
 const ui=fs.readFileSync('knowledge.js','utf8');
 assert(ui.includes('<div id="vi-sao" class="kh-intro">'),'Natural intro is required');
-assert(ui.indexOf('<div id="vi-sao"')<ui.indexOf('<section id="ket-qua"'),'Intro must precede outcome and instructions');
+assert(ui.indexOf('<div id="vi-sao"')<ui.indexOf('<div id="ket-qua"'),'Intro must precede outcome and instructions');
 assert(!/Vì sao nên học|Vì sao tìm hiểu|Khi nào có thể áp dụng|Bắt đầu từ lý do/.test(ui),'Do not display formulaic editorial headings');
 assert(!ui.includes('href="#bai-viet/${a.slug}/vi-sao"'),'Do not add an editorial-framework TOC label');
 console.log(`PASS: ${articles.length} natural intros, concrete contexts, unique slugs, topics, steps/sources and no formulaic headings.`);
+
+// Regression: screenshot report included an outcome heading, not just WHY.
+const forbiddenLabels=/Vì sao nên học|Vì sao tìm hiểu|Khi nào có thể áp dụng|Bắt đầu từ lý do|Bạn sẽ làm được gì/iu;
+for(const path of ['knowledge.js','index.html'])assert(!forbiddenLabels.test(fs.readFileSync(path,'utf8')),`${path}: forbidden public framework label`);
+assert(!ui.includes('href="#bai-viet/${a.slug}/ket-qua"'),'Outcome text must flow without a generic TOC entry');
+assert(!ui.includes('<p class="kh-eyebrow">Kết quả</p>'),'Do not duplicate outcome as a framework heading');
+assert(ui.includes('<div id="ket-qua" class="kh-outcome-wrap"><p class="kh-outcome">${a.outcome}</p></div>'),'Preserve concrete outcome text and old anchor without heading');
+
+require("./test-rendered-labels.cjs");
