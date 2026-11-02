@@ -20,7 +20,7 @@ window.HANDBOOK_CONTENT = {
         { title: 'Làm sạch nguồn', body: 'Đặt tên tệp rõ, kiểm tra chữ có chọn được và xóa dữ liệu cá nhân thật sự thay vì chỉ phủ hình chữ nhật.' },
         { title: 'Tạo notebook và thêm nguồn', body: 'Mở notebooklm.google.com, tạo notebook mới, thêm hai PDF rồi đợi chúng xuất hiện trong danh sách nguồn. Chỉ dùng địa chỉ chính thức.' },
         { title: 'Đối chiếu một đoạn khó', body: 'Mở từng nguồn đã nhập và so một đoạn quan trọng với PDF gốc. Nếu bảng sai, thêm bản chép lại đã kiểm chứng và ghi rõ nguồn của bản chép.' },
-        { title: 'Hỏi trên đúng nguồn', body: 'Chỉ chọn hai nguồn cần dùng, chạy prompt và mở từng trích dẫn để đọc cả câu gốc lẫn đoạn xung quanh.' },
+        { title: 'Hỏi trên đúng nguồn', body: 'Chỉ chọn hai nguồn cần dùng, chạy prompt và mở từng trích dẫn để đọc cả câu gốc lẫn đoạn xung quanh. Đọc thêm câu trước và câu sau để xem quy định áp dụng cho ai, trong điều kiện nào. Một trích dẫn dẫn đúng trang vẫn có thể bị dùng để rút ra kết luận rộng hơn đoạn gốc.' },
         { title: 'Tự trả lời trước', body: 'Trả lời câu ôn tập rồi mới xin phản hồi. Khi hai PDF mâu thuẫn, đặt hai phát biểu cạnh nhau kèm phiên bản để người phụ trách quyết định.' },
         { title: 'Lưu kết quả đã kiểm chứng', body: 'Chép ghi chú sang nơi riêng, giữ tên tài liệu và vị trí đoạn; không biến câu trả lời AI thành nguồn gốc mới.' }
       ],

@@ -11,3 +11,12 @@ check(body.innerHTML,'dashboard');check(element('#kh-grid').innerHTML,'article c
 const slugs=vm.runInContext('allArticles.map(a=>a.slug)',c);
 for(const slug of slugs){vm.runInContext(`showArticle(allArticles.find(a=>a.slug===${JSON.stringify(slug)}))`,c);const html=element('#kh-article').innerHTML;check(html,slug);assert(html.includes('<div id="ket-qua" class="kh-outcome-wrap">'),`${slug}: missing outcome`);assert(!/<(?:h[1-6]|p)[^>]*>Kết quả<\//u.test(html),`${slug}: generic outcome label`);assert.equal((html.match(/<div id="vi-sao" class="kh-intro">/g)||[]).length,1);const toc=html.match(/<aside>(.*?)<\/aside>/s)?.[1]||'';assert(!/vi-sao|ket-qua/.test(toc),`${slug}: framework TOC entry`);assert(toc.includes('Chuẩn bị'),`${slug}: useful section navigation lost`)}
 console.log(`PASS rendered labels: dashboard, cards, all ${slugs.length} article openings, headings and TOCs.`);
+// Every editorial doorway must retain a real article or an existing topic route.
+const known=new Set(slugs);
+const topics=vm.runInContext('data.topics.map(t=>t.id)',c);
+function links(html,label){for(const [,slug] of html.matchAll(/href="#bai-viet\/([^/"#]+)(?:\/[^"#]+)?"/g))assert(known.has(slug),`${label}: unknown article ${slug}`);for(const [,topic]of html.matchAll(/href="#chu-de\/([^"#]+)"/g))assert(topics.includes(topic),`${label}: unknown topic ${topic}`)}
+links(body.innerHTML,'home');
+for(const topic of topics){vm.runInContext(`showCategory(${JSON.stringify(topic)})`,c);const html=element('#kh-category').innerHTML;check(html,topic);links(html,topic);assert(html.includes('category-grid'));const expected=vm.runInContext(`allArticles.filter(a=>a.topic===${JSON.stringify(topic)}).length`,c);assert.equal((html.match(/class="kh-card"/g)||[]).length,expected)}
+for(const slug of slugs){vm.runInContext(`showArticle(allArticles.find(a=>a.slug===${JSON.stringify(slug)}))`,c);const html=element('#kh-article').innerHTML;links(html,slug);assert(html.includes('kh-breadcrumb'));assert.equal((html.match(/class="kh-card"/g)||[]).length,3);assert(html.indexOf('id="vi-sao"')<html.indexOf('id="chuan-bi"'));for(const id of ['vi-sao','ket-qua','chuan-bi','cac-buoc','mau-lenh','kiem-tra','gioi-han','nguon'])assert(html.includes(`id="${id}"`),`${slug}: lost ${id}`)}
+assert(!/google-button|Tiếp tục với Google/.test(body.innerHTML),'deferred login should not be a primary action');
+console.log(`PASS editorial navigation: ${topics.length} topic pages, ${slugs.length} article routes, related links, legacy anchors and public-only calls to action.`);
