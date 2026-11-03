@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-02',
+  updated: '2026-11-03',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -8,6 +8,87 @@ window.HANDBOOK_CONTENT = {
     { id: 'daily', label: 'Đời sống hằng ngày', icon: '☼' }
   ],
   articles: [
+{
+  "slug": "chep-chu-tu-anh-windows-11",
+  "type": "tutorial",
+  "topic": "daily",
+  "title": "Chép chữ từ ảnh trên Windows 11, không phải gõ lại từng dòng",
+  "dek": "Lấy một đoạn chữ trong ảnh bằng Snipping Tool, rồi rà lại những chi tiết dễ sai trước khi đem dùng.",
+  "why": {
+    "benefit": "Một thông báo được gửi dưới dạng ảnh. Bạn chỉ cần lấy ba dòng để đưa vào ghi chú, nhưng con trỏ không chọn được chữ. Gõ lại thì mất công, còn đưa cả ảnh lên chatbot lại thừa một bước.",
+    "context": "Snipping Tool trên Windows 11 có thể giúp lấy phần chữ cần dùng ngay trên máy. Cách này hợp với thông báo hoặc trang PDF chỉ chứa hình: chép đoạn ngắn trước, rồi dành sự chú ý cho những chi tiết mà nhận dạng tự động dễ bỏ sót.",
+    "situations": [
+      "Lấy vài dòng từ ảnh thông báo công khai để đưa vào ghi chú cá nhân.",
+      "Chép một đoạn hướng dẫn trong PDF dạng ảnh để đối chiếu, không cần tải toàn bộ tài liệu lên chatbot."
+    ]
+  },
+  "updated": "2026-11-03",
+  "readTime": "5 phút",
+  "level": "Cơ bản",
+  "outcome": "Một đoạn văn bản có thể chỉnh sửa, đã được so từng dòng với ảnh gốc.",
+  "preparation": [
+    "Máy Windows 11 có Snipping Tool và một ảnh rõ chữ được phép sử dụng.",
+    "Dùng thông báo không nhạy cảm để tập; mở ảnh đủ lớn để đọc rõ dấu."
+  ],
+  "steps": [
+    {
+      "title": "Khoanh đúng đoạn cần chép",
+      "body": "Nhấn Windows + Shift + S và kéo vùng chụp quanh đoạn chữ. Mở ảnh vừa chụp trong Snipping Tool. Với ảnh hai cột, làm từng cột riêng để dễ giữ thứ tự."
+    },
+    {
+      "title": "Lấy chữ ra khỏi ảnh",
+      "body": "Chọn Text actions, chọn đoạn cần lấy hoặc Copy all text, rồi dán vào Notepad. Nhãn nút có thể khác theo ngôn ngữ. Đây là thao tác sau khi chụp, không phụ thuộc Text Extractor thử nghiệm trên thanh chụp."
+    },
+    {
+      "title": "Rà nơi sai một chữ là đổi cả ý",
+      "body": "Đặt ảnh cạnh phần chữ vừa dán. So tên riêng, dấu tiếng Việt, ngày giờ và các từ “không”, “chưa”, “trừ”. Đọc trôi chảy chưa chắc là chép đúng. Nếu ảnh mờ, tìm bản rõ hơn thay vì đoán ký tự."
+    },
+    {
+      "title": "Chỉ sắp lại dòng khi dữ kiện đã rõ",
+      "body": "Vài dòng thì sửa trực tiếp thường dễ kiểm soát. Nếu muốn dùng prompt bên dưới, chỉ gửi văn bản được phép chia sẻ. Sau khi AI sắp lại, đối chiếu lần nữa; đừng giao luôn việc đoán tên và số cho nó."
+    },
+    {
+      "title": "Giữ bản chữ đã kiểm, rà nơi lưu ảnh",
+      "body": "Ghi tên nguồn cạnh đoạn chữ để còn quay lại. Microsoft cho biết Snipping Tool có thể tự lưu ảnh vào Screenshots; kiểm tra Settings và thư mục lưu nếu ảnh có nội dung riêng. Khi chưa thấy Text actions, kiểm tra cập nhật trong Microsoft Store, không tải ứng dụng trùng tên từ nơi lạ."
+    }
+  ],
+  "prompt": "Sắp lại xuống dòng cho đoạn OCR dưới đây để dễ đọc. Không thêm nội dung, không tự sửa tên riêng, ngày giờ, con số hoặc từ phủ định. Chỗ nghi lỗi hãy giữ nguyên và liệt kê để tôi kiểm tra với ảnh gốc. Đây là văn bản: [dán đoạn chữ được phép chia sẻ].",
+  "example": {
+    "label": "Ví dụ tự tạo — không phải kết quả thử nghiệm",
+    "input": "Nhận hồ sơ đến 16:30 ngày 12/11; không nhận bản thiếu chữ ký.",
+    "output": "Sau khi chép, đối chiếu riêng “16:30”, “12/11” và chữ “không” trên ảnh. Nếu một ký tự chưa rõ, đánh dấu để kiểm tra thay vì tự đoán."
+  },
+  "checklist": [
+    "Đoạn chữ và thứ tự dòng khớp ảnh gốc.",
+    "Tên, dấu, ngày giờ và từ phủ định đã được rà.",
+    "Không đưa dữ liệu riêng vào chatbot để thử."
+  ],
+  "limits": {
+    "cost": "Theo Microsoft Windows Learning Center, Snipping Tool có sẵn và miễn phí trên Windows 11; không cần mua gói AI riêng cho thao tác này.",
+    "privacy": "Microsoft Support xác nhận nhận dạng chữ diễn ra trên thiết bị. Điều đó không bảo vệ bản ảnh hoặc chữ nếu bạn tự gửi sang dịch vụ khác. Quick redact hỗ trợ email và số điện thoại, không thay việc rà toàn ảnh trước khi chia sẻ.",
+    "caution": "Tính năng và hỗ trợ ngôn ngữ có thể khác theo phiên bản hoặc khu vực; không bảo đảm nhận đúng mọi dấu tiếng Việt, chữ viết tay hay bảng phức tạp. Bài dựa trên tài liệu chính thức kiểm tra ngày 03/11/2026, chưa phải thử nghiệm trực tiếp."
+  },
+  "sources": [
+    {
+      "title": "Use Snipping Tool to capture screenshots",
+      "publisher": "Microsoft Support",
+      "date": "Kiểm tra 03/11/2026",
+      "url": "https://support.microsoft.com/en-us/windows/apps/use-snipping-tool-to-capture-screenshots"
+    },
+    {
+      "title": "How to use Snipping Tool on Windows 11",
+      "publisher": "Microsoft Windows Learning Center",
+      "date": "26/02/2026; kiểm tra 03/11/2026",
+      "url": "https://www.microsoft.com/en-us/windows/learning-center/how-to-use-snipping-tool-on-windows-screenshots-shortcuts-and-screen-recordings"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/chep-chu-tu-anh-windows-11.svg",
+    "alt": "Ba khung minh họa: chọn vùng ảnh, chép chữ, so lại ngày giờ và từ phủ định.",
+    "caption": "Sơ đồ minh họa nguyên gốc: AI dạo chơi, 03/11/2026. Dữ liệu ví dụ tự tạo, không phải ảnh chụp giao diện Windows."
+  },
+  "promptLabel": "Prompt tùy chọn để sắp dòng"
+},
     {
       slug: 'hoc-pdf-voi-notebooklm', type: 'tutorial', topic: 'learning',
       title: 'Học một bộ PDF bằng NotebookLM mà vẫn kiểm tra được nguồn',
