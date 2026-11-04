@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-03',
+  updated: '2026-11-04',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -8,6 +8,100 @@ window.HANDBOOK_CONTENT = {
     { id: 'daily', label: 'Đời sống hằng ngày', icon: '☼' }
   ],
   articles: [
+{
+  "slug": "tai-ban-do-ngoai-tuyen-google-maps",
+  "type": "tutorial",
+  "topic": "daily",
+  "title": "Tải bản đồ trước chuyến đi, đừng đợi mất sóng mới mở Google Maps",
+  "dek": "Chuẩn bị một vùng bản đồ trên Android và thử khi ngắt mạng, để biết trước phần nào còn dùng được.",
+  "why": {
+    "benefit": "Vừa rời nơi có Wi-Fi, bạn mới mở bản đồ để xem đường đến điểm hẹn. Màn hình chờ tải đúng lúc cần quyết định rẽ hướng nào. Chuẩn bị từ tối hôm trước giúp bạn tránh phải tìm cách tải bản đồ ở chỗ không có mạng.",
+    "context": "Điểm dễ nhầm là lưu một địa điểm chưa có nghĩa đã tải cả vùng xung quanh. Bản đồ ngoại tuyến cũng không giữ đủ mọi loại chỉ đường. Ta sẽ chọn một vùng nhỏ, thử ở nhà và ghi rõ phương án dự phòng trước khi lên đường.",
+    "situations": [
+      "Chuẩn bị chuyến đi bằng ô tô qua khu vực có thể sóng yếu.",
+      "Tải trước vùng quanh một điểm đến công khai để xem bản đồ khi không có dữ liệu di động."
+    ]
+  },
+  "updated": "2026-11-04",
+  "readTime": "6 phút",
+  "level": "Cơ bản",
+  "outcome": "Một vùng bản đồ đã tải, một lần kiểm tra khi ngắt mạng và ghi chú về phần tuyến đường chưa được bao phủ.",
+  "preparation": [
+    "Điện thoại Android có Google Maps, đã đăng nhập và có kết nối để tải bản đồ.",
+    "Wi-Fi tin cậy, dung lượng trống và đủ pin; tập bằng hai địa điểm công khai thay vì địa chỉ nhà.",
+    "Xác định phương tiện: bài hướng dẫn chuẩn bị bản đồ, không bảo đảm chỉ đường ngoại tuyến cho mọi cách đi."
+  ],
+  "steps": [
+    {
+      "title": "Khoanh vùng theo cả hành trình",
+      "body": "Viết điểm đầu, điểm cuối và một điểm dừng dự kiến. Đừng chỉ nhìn chấm đích: tuyến đường có thể vòng ra ngoài vùng bạn định lưu. Nếu chưa rõ đường đi, xem khi còn mạng và chọn khoảng bao phủ dư quanh hành trình."
+    },
+    {
+      "title": "Tải vùng bạn tự chọn",
+      "body": "Theo Google Maps Help cho Android: mở ảnh hồ sơ → Offline maps → Select your own map. Điều chỉnh vùng rồi chọn Download. Chờ tải xong trước khi rời Wi-Fi. Một số quốc gia hoặc khu vực không cho tải; nếu không có tùy chọn, đừng mặc định thao tác đã thành công."
+    },
+    {
+      "title": "Cân đối vùng tải và bộ nhớ",
+      "body": "Google cho biết ứng dụng hiện dung lượng ước tính trước khi tải. Chọn vùng vừa đủ dùng để tránh lưu quá rộng, nhưng không thu nhỏ đến mức mất phần đường nối. Hãy ưu tiên một hành trình cụ thể thay vì cố lưu mọi nơi có thể ghé."
+    },
+    {
+      "title": "Thử ngắt mạng khi vẫn ở nhà",
+      "body": "Tạm tắt Wi-Fi và dữ liệu di động, mở lại vùng đã tải rồi thử tìm đường lái xe giữa hai điểm công khai bên trong vùng. Không cần bắt đầu lái xe để làm phép thử. Nếu không thấy tuyến, ghi lại lỗi và bật mạng để kiểm phạm vi, trạng thái tải. Kết quả trên máy của bạn mới là điều cần lưu; bài này chưa thử trực tiếp trên thiết bị."
+    },
+    {
+      "title": "Biết phần nào không còn khi mất mạng",
+      "body": "Theo Google, toàn bộ tuyến phải nằm trong vùng ngoại tuyến. Không có chỉ đường đi bộ, xe đạp hay phương tiện công cộng khi ngoại tuyến; lái xe cũng thiếu thông tin giao thông và tuyến thay thế. Nếu chuyến đi cần xe buýt hoặc đi bộ, chuẩn bị thông tin riêng khi còn mạng. Không đổi sang chế độ ô tô để suy ra đường đi bộ."
+    },
+    {
+      "title": "Rà lại sát ngày đi",
+      "body": "Trong Offline maps, kiểm vùng đã tải và cập nhật nếu sắp hết hạn. Giữ một ghi chú ngắn về điểm hẹn cùng phương án liên hệ khi cần. Trên đường, tuân theo biển báo và điều kiện thực tế; dừng ở nơi an toàn trước khi thao tác điện thoại."
+    }
+  ],
+  "promptLabel": "Mẫu ghi chú trước chuyến đi",
+  "prompt": "GHI CHÚ TỰ LƯU — không cần gửi AI\nVùng đã tải: [tên vùng]\nĐiểm đầu / điểm cuối công khai để thử: [___]\nNgày kiểm tra khi ngắt mạng: [___]\nPhương tiện đã thử: [___]\nPhần hành trình ngoài vùng hoặc chưa kiểm: [___]\nThông tin cần xem lại khi có mạng: [___]\nPhương án dự phòng: [___]",
+  "example": {
+    "label": "Ví dụ tự tạo — không phải kết quả thử nghiệm",
+    "input": "Một hành trình giả định từ bến xe A đến bảo tàng B bằng ô tô, có điểm dừng C ở rìa vùng tải.",
+    "output": "Trước khi đi, người đọc kiểm cả đường qua C. Nếu C nằm ngoài vùng, mở rộng vùng khi còn Wi-Fi rồi thử lại; không coi việc thấy A và B là đủ."
+  },
+  "checklist": [
+    "Tải đã hoàn tất, không chỉ lưu tên địa điểm.",
+    "Đã thử khi cả Wi-Fi và dữ liệu di động đều tắt, rồi khôi phục kết nối.",
+    "Phương tiện cần dùng phù hợp với giới hạn ngoại tuyến.",
+    "Cả tuyến và điểm dừng nằm trong vùng đã chuẩn bị.",
+    "Có phương án dự phòng, đủ pin và thông tin cập nhật."
+  ],
+  "limits": {
+    "cost": "Các tài liệu Google được kiểm tra ngày 04/11/2026 không nêu gói trả phí riêng cho tải bản đồ ngoại tuyến. Vẫn cần bộ nhớ thiết bị và dữ liệu mạng để tải hoặc cập nhật; kiểm cước mạng, nhất là khi chuyển vùng.",
+    "privacy": "Ngoại tuyến không đồng nghĩa ẩn danh. Chính sách Google nêu việc xử lý dữ liệu vị trí và hoạt động phụ thuộc dịch vụ, thiết bị và cài đặt tài khoản. Dùng địa điểm công khai để tập; không đưa ảnh bản đồ có nhà riêng hoặc lịch trình cá nhân lên nơi công khai.",
+    "caution": "Nhãn menu có thể khác theo phiên bản/ngôn ngữ. Bài dựa trên tài liệu hãng, không phải kiểm thử độ chính xác tuyến đường. Bản đồ tải sẵn không thay biển báo, đánh giá điều kiện thực tế hoặc phương án an toàn khi đường thay đổi."
+  },
+  "sources": [
+    {
+      "title": "Download areas & navigate offline in Google Maps — Android",
+      "publisher": "Google Maps Help",
+      "date": "Kiểm tra 04/11/2026",
+      "url": "https://support.google.com/maps/answer/6291838?co=GENIE.Platform%3DAndroid&hl=en"
+    },
+    {
+      "title": "How to keep using Google Maps even when your phone is offline",
+      "publisher": "Google Blog",
+      "date": "20/03/2023; kiểm tra 04/11/2026",
+      "url": "https://blog.google/products-and-platforms/products/maps/google-maps-offline/"
+    },
+    {
+      "title": "Google Privacy Policy",
+      "publisher": "Google",
+      "date": "Hiệu lực 16/10/2026; kiểm tra 04/11/2026",
+      "url": "https://policies.google.com/privacy"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/tai-ban-do-ngoai-tuyen-google-maps.svg",
+    "alt": "Sơ đồ vùng tải chứa điểm A và B nhưng bỏ sót điểm dừng C; vùng mở rộng bao phủ cả ba điểm.",
+    "caption": "Sơ đồ minh họa nguyên gốc: AI dạo chơi, 04/11/2026. Địa điểm A, B, C hoàn toàn giả định; không phải bản đồ thật hoặc ảnh chụp Google Maps."
+  }
+},
 {
   "slug": "chep-chu-tu-anh-windows-11",
   "type": "tutorial",
