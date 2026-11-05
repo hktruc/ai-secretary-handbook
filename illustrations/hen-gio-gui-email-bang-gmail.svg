@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Hẹn giờ rồi kiểm lại</title>
+  <desc id="desc">Ba điểm kiểm tra của thư hẹn giờ: nội dung, ngày giờ, trạng thái. Hủy lịch đưa thư trở về bản nháp.</desc>
+  <rect width="960" height="540" rx="24" fill="#eef3ee"/>
+  <circle cx="880" cy="50" r="160" fill="#dce8df"/>
+  <g font-family="Arial, sans-serif" fill="#183c35">
+    <text x="56" y="67" font-size="17" font-weight="700" letter-spacing="3">AI DẠO CHƠI · TỔ CHỨC CÁ NHÂN</text>
+    <text x="56" y="123" font-size="40" font-weight="700">Hẹn giờ rồi kiểm lại</text>
+    <text x="56" y="162" font-size="21">Nội dung chốt hôm nay. Giờ gửi do bạn chọn.</text>
+    <g fill="#fff" stroke="#b8ccc0" stroke-width="2">
+      <rect x="56" y="213" width="246" height="157" rx="18"/>
+      <rect x="357" y="213" width="246" height="157" rx="18"/>
+      <rect x="658" y="213" width="246" height="157" rx="18"/>
+    </g>
+    <g fill="#9b633e" font-size="19" font-weight="700">
+      <text x="80" y="248">01 / SOẠN</text><text x="381" y="248">02 / HẸN GIỜ</text><text x="682" y="248">03 / KIỂM LẠI</text>
+    </g>
+    <g font-size="27" font-weight="700">
+      <text x="80" y="292">Đúng người</text><text x="381" y="292">Đúng ngày</text><text x="682" y="292">Đúng trạng thái</text>
+    </g>
+    <g font-size="20">
+      <text x="80" y="329">Rà nội dung</text><text x="381" y="329">Rõ múi giờ</text><text x="682" y="329">Mở thư đang chờ</text>
+    </g>
+    <path d="M312 290h34m-9-8 9 8-9 8M613 290h34m-9-8 9 8-9 8" fill="none" stroke="#347366" stroke-width="3"/>
+    <path d="M780 382v34H180v-34m-8 9 8-9 8 9" fill="none" stroke="#347366" stroke-width="3"/>
+    <text x="480" y="454" font-size="23" font-weight="700" text-anchor="middle">Hủy lịch → về bản nháp để sửa hoặc dừng</text>
+    <text x="56" y="510" font-size="16" fill="#527065">SƠ ĐỒ MINH HỌA · KHÔNG PHẢI GIAO DIỆN GMAIL · 05/11/2026</text>
+  </g>
+</svg>

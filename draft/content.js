@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-04',
+  updated: '2026-11-05',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -677,7 +677,107 @@ window.HANDBOOK_CONTENT = {
         "caption": "Sơ đồ minh họa: tập trung vào phần bài viết, điều chỉnh cách đọc và đối chiếu nội dung khi dùng tùy chọn nghe nếu có. Minh họa nguyên gốc: AI dạo chơi, 02/11/2026; không phải ảnh chụp Chrome hay kết quả thử nghiệm."
       },
       "promptLabel": "Mẫu ghi chú"
+    },
+{
+  "slug": "hen-gio-gui-email-bang-gmail",
+  "type": "tutorial",
+  "topic": "organization",
+  "title": "Viết thư tối nay, hẹn Gmail gửi vào sáng mai",
+  "dek": "Đặt giờ gửi một email, kiểm tra thư đang chờ và biết cách hủy lịch trước khi đổi ý.",
+  "why": {
+    "benefit": "Bạn vừa viết xong một email nhắc việc vào cuối buổi tối. Gửi ngay thì chưa đúng lúc, để đến sáng lại sợ quên. Với một thư thông thường đã chốt nội dung, hẹn giờ là cách tách lúc soạn khỏi lúc gửi mà không phải cài thêm công cụ.",
+    "context": "Điểm cần học nằm ở bước kiểm lại: thư đang chờ gửi ở đâu, giờ đã chọn có đúng không và muốn sửa thì làm thế nào. Ta sẽ tập bằng một email không nhạy cảm gửi tới chính mình, rồi hủy lịch ngay sau khi kiểm tra để không bỏ quên thư thử.",
+    "situations": [
+      "Soạn một email nhắc việc thông thường vào buổi tối và muốn gửi trong giờ làm việc hôm sau.",
+      "Tập kiểm tra rồi hủy một thư hẹn giờ bằng chính địa chỉ email của mình trước khi áp dụng với người khác."
+    ]
+  },
+  "updated": "2026-11-05",
+  "readTime": "6 phút",
+  "level": "Cơ bản",
+  "outcome": "Bạn biết đặt lịch, tìm đúng thư đang chờ và đưa thư thử về bản nháp sau khi kiểm tra.",
+  "preparation": [
+    "Gmail trên trình duyệt máy tính, đã đăng nhập đúng tài khoản. Bài dùng tên nút tiếng Việt kèm tiếng Anh để đối chiếu.",
+    "Một câu thử vô hại, không có tệp đính kèm; người nhận là chính địa chỉ bạn đang dùng.",
+    "Chọn một giờ còn xa, chẳng hạn sáng hôm sau, để đủ thời gian kiểm và hủy. Đừng dùng email có hạn chót quan trọng làm bài tập."
+  ],
+  "steps": [
+    {
+      "title": "Soạn một thư bạn sẵn sàng tự nhận",
+      "body": "Mở thư mới, ghi tiêu đề “Thử hẹn giờ, sẽ hủy sau khi kiểm tra” và một câu nhắc việc giả. Rà đầy đủ địa chỉ người nhận, để trống Cc/Bcc và không đính kèm gì. Dừng lại nếu đang ở tài khoản dùng chung hoặc chưa chắc địa chỉ đó thuộc về mình. Dù chỉ tập, thao tác hẹn giờ vẫn có thể dẫn tới một email thật nếu bạn không hủy."
+    },
+    {
+      "title": "Chọn lúc gửi thay vì nhấn Gửi",
+      "body": "Theo Google Workspace Updates, bấm mũi tên cạnh Gửi → Gửi theo lịch biểu (Schedule send), rồi chọn ngày và giờ. Đọc lại ngày trước khi xác nhận, nhất là khi chọn sát nửa đêm. Nếu không thấy đúng tùy chọn, giữ thư nháp và đối chiếu hướng dẫn chính thức cuối bài; đừng cài tiện ích lạ chỉ để hoàn thành bài tập."
+    },
+    {
+      "title": "Ghi rõ giờ bạn đang dùng",
+      "body": "Gmail Help lưu ý thư dùng múi giờ lúc đặt lịch và có thể gửi trễ vài phút. Hãy ghi ngày, giờ, múi giờ dự kiến vào ghi chú riêng. Nếu người nhận ở nơi khác, tự kiểm chênh lệch giờ trước khi gửi thư thật. Tránh giao cho chức năng này những việc cần đến đúng một phút, như đăng ký suất giới hạn hoặc nộp hồ sơ sát hạn."
+    },
+    {
+      "title": "Mở lại thư trong Đã lên lịch",
+      "body": "Google cho biết thư đang xếp hàng xuất hiện trong Đã lên lịch (Scheduled). Mở đúng thư thử và đối chiếu người nhận, tiêu đề, nội dung cùng thời gian bạn vừa chọn. Đây là lúc phát hiện nhầm ngày hoặc nhầm tài khoản. Nếu không tìm thấy thư, chưa coi bài tập thành công và đừng vội tạo thêm một bản giống hệt."
+    },
+    {
+      "title": "Hủy trước khi sửa, đặt lại nếu còn muốn gửi",
+      "body": "Theo Gmail Help: trong Đã lên lịch, mở thư → Hủy gửi (Cancel send). Thư trở về bản nháp. Muốn sửa rồi gửi sau, chỉnh nội dung và đặt lịch lại. Khi áp dụng với công việc thật, rà xem thông tin còn đúng trước lần đặt lịch mới, nhất là nếu địa điểm hoặc người tham gia vừa thay đổi."
+    },
+    {
+      "title": "Kết thúc bài thử bằng một trạng thái rõ ràng",
+      "body": "Với bài tập này, dừng ở bản nháp: không đặt lịch lại. Kiểm tra thư thử không còn trong Đã lên lịch, rồi ghi “đã hủy lịch thử” vào mẫu bên dưới. Nếu không còn thấy tùy chọn hủy hoặc nghi thư đã gửi, kiểm tra trạng thái thực tế; đừng coi hướng dẫn hủy lịch là cách thu hồi thư đã đến người khác. Bài này dựa trên tài liệu Google, chưa thử gửi trên tài khoản thật."
     }
+  ],
+  "promptLabel": "Mẫu tự kiểm trước khi hẹn giờ",
+  "prompt": "GHI CHÚ RIÊNG, KHÔNG CẦN GỬI AI\nMục đích của thư: [một câu]\nNgười nhận đã kiểm tra: [có/chưa]\nNội dung và tệp đính kèm đã chốt: [có/chưa]\nNgày / giờ / múi giờ dự kiến: [___]\nĐã mở lại đúng thư để kiểm: [có/chưa]\nTrạng thái cuối: [đang chờ gửi / đã hủy lịch thử]\nĐiều cần xem lại nếu hoàn cảnh thay đổi: [___]",
+  "example": {
+    "label": "Tình huống tự tạo, không phải kết quả thử nghiệm",
+    "input": "Bạn soạn một câu nhắc mang sổ vào sáng mai, gửi tới chính mình để tập. Khi kiểm lại, bạn nhận ra mình chọn nhầm ngày.",
+    "output": "Bạn hủy lịch, thấy thư trở về bản nháp và ghi lại lỗi chọn ngày. Bài tập kết thúc ở đây; không có lý do phải gửi thử cho một người khác."
+  },
+  "checklist": [
+    "Người nhận đã được rà theo địa chỉ đầy đủ, không chỉ theo tên hiển thị.",
+    "Ngày, giờ và múi giờ dự kiến được ghi rõ.",
+    "Đã mở lại đúng thư sau khi đặt lịch, không chỉ dựa vào trí nhớ.",
+    "Thư thử đã được hủy lịch và để ở bản nháp.",
+    "Email thật không chứa thông tin còn chờ duyệt hoặc một cam kết chưa được chốt."
+  ],
+  "limits": {
+    "cost": "Tài liệu Gmail kiểm tra ngày 05/11/2026 không yêu cầu mua gói riêng để dùng các bước này. Bài tập không cần tiện ích hay dịch vụ AI trả phí. Gói tài khoản, bộ nhớ và kết nối mạng bạn đang dùng vẫn có điều kiện, chi phí riêng; đây không phải bảng giá cho mọi loại tài khoản.",
+    "privacy": "Google nêu nội dung Gmail được lưu tại trung tâm dữ liệu của hãng. Đừng coi thư hẹn giờ là nội dung chỉ nằm trên máy. Chỉ tập bằng câu vô hại; không đưa mật khẩu, thông tin khách hàng hay tài liệu nội bộ vào ví dụ hoặc ảnh chụp. Với tài khoản công việc, tuân thủ quy định của tổ chức.",
+    "caution": "Gmail Help nêu tối đa 100 thư được lên lịch, không phải hạn mức gửi 100 thư mỗi ngày. Tính năng chọn thời điểm gửi không xác nhận người nhận đã đọc. Nhãn nút có thể đổi theo giao diện; nguồn Việt đã được đối chiếu với bản Anh. Không có thử nghiệm độc lập về thời gian gửi trong bài."
+  },
+  "sources": [
+    {
+      "title": "Lên lịch gửi email — Máy tính (đối chiếu bản tiếng Anh)",
+      "publisher": "Gmail Help",
+      "date": "Kiểm tra 05/11/2026",
+      "url": "https://support.google.com/mail/answer/9214606?co=GENIE.Platform%3DDesktop&hl=vi"
+    },
+    {
+      "title": "Schedule emails to send — Computer",
+      "publisher": "Gmail Help",
+      "date": "Kiểm tra 05/11/2026",
+      "url": "https://support.google.com/mail/answer/9214606?co=GENIE.Platform%3DDesktop&hl=en"
+    },
+    {
+      "title": "Write now, send later with Schedule send in Gmail",
+      "publisher": "Google Workspace Updates",
+      "date": "01/04/2019; kiểm tra 05/11/2026",
+      "url": "https://workspaceupdates.googleblog.com/2019/04/write-now-send-later-with-schedule-send.html"
+    },
+    {
+      "title": "How Gmail protects your privacy & keeps you in control",
+      "publisher": "Gmail Help",
+      "date": "Kiểm tra 05/11/2026",
+      "url": "https://support.google.com/mail/answer/10434152?hl=en"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/hen-gio-gui-email-bang-gmail.svg",
+    "alt": "Sơ đồ ba trạng thái: soạn thư, chờ đến giờ gửi, kiểm lại. Nhánh hủy đưa thư đang chờ về bản nháp để sửa hoặc dừng.",
+    "caption": "Sơ đồ minh họa luồng kiểm tra một thư hẹn giờ và nhánh hủy về bản nháp. Minh họa nguyên gốc: AI dạo chơi, 05/11/2026; không phải ảnh chụp Gmail hay kết quả thử gửi."
+  }
+}
   ],
   cases: [
     {
