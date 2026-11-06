@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-05',
+  updated: '2026-11-06',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -776,6 +776,118 @@ window.HANDBOOK_CONTENT = {
     "src": "illustrations/hen-gio-gui-email-bang-gmail.svg",
     "alt": "Sơ đồ ba trạng thái: soạn thư, chờ đến giờ gửi, kiểm lại. Nhánh hủy đưa thư đang chờ về bản nháp để sửa hoặc dừng.",
     "caption": "Sơ đồ minh họa luồng kiểm tra một thư hẹn giờ và nhánh hủy về bản nháp. Minh họa nguyên gốc: AI dạo chơi, 05/11/2026; không phải ảnh chụp Gmail hay kết quả thử gửi."
+  }
+},
+{
+  "slug": "lay-lai-doan-van-cu-trong-google-docs",
+  "type": "tutorial",
+  "topic": "organization",
+  "title": "Lấy lại một đoạn cũ trong Google Docs, giữ nguyên phần vừa sửa",
+  "dek": "Tìm phiên bản còn đoạn cần dùng, tạo bản sao để đối chiếu rồi chỉ đưa phần đã chọn trở lại tài liệu hiện tại.",
+  "why": {
+    "benefit": "Một đoạn hướng dẫn trong tài liệu đã bị viết đè, nhưng địa điểm và lịch trình ở phía dưới vừa được cập nhật đúng. Quay cả tài liệu về hôm qua có thể làm những thay đổi mới ấy biến mất khỏi bản đang làm. Việc cần cứu thực ra chỉ là một đoạn.",
+    "context": "Google Docs cho phép tạo bản sao của một phiên bản cũ. Ta sẽ dùng bản sao như tài liệu đối chiếu, lấy đúng phần cần giữ rồi kiểm lại bản hiện tại. Hãy tập trên một tài liệu tự tạo trước, để việc tìm lại chữ cũ không thành một lần sửa nhầm nữa.",
+    "situations": [
+      "Lấy lại đoạn chuẩn bị trong một bản kế hoạch, trong khi cần giữ địa điểm mới được cập nhật.",
+      "Tìm cách diễn đạt cũ của một đoạn văn sau vài lượt biên tập, nhưng giữ các sửa đổi mới ở phần còn lại."
+    ]
+  },
+  "updated": "2026-11-06",
+  "readTime": "7 phút",
+  "level": "Cơ bản",
+  "outcome": "Một đoạn văn được lấy lại đúng chỗ, các thay đổi mới ở phần khác còn nguyên và bản sao đối chiếu có quyền truy cập phù hợp.",
+  "preparation": [
+    "Google Docs trên máy tính, đúng tài khoản và có quyền chỉnh sửa. Theo Google Workspace Learning Center, người xem hoặc chỉ được nhận xét không xem được lịch sử phiên bản.",
+    "Một tài liệu tự tạo có lịch sử chứa đoạn cần tìm. Dùng ví dụ giả ở cuối bài để tập; không dùng hợp đồng, hồ sơ học sinh hay tài liệu đang có nhiều người cùng sửa.",
+    "Ghi hai điều trước khi làm: đoạn muốn lấy lại và chi tiết mới bắt buộc phải giữ. Kiểm quyền được sao chép nếu áp dụng với tài liệu của tổ chức."
+  ],
+  "steps": [
+    {
+      "title": "Đánh dấu bản đang làm trước khi tìm lại",
+      "body": "Với tài liệu mẫu, dùng File → Version history → Name current version để đặt một tên dễ nhận, chẳng hạn “Trước khi lấy lại đoạn chuẩn bị”. Google có hướng dẫn chính thức cho lệnh này; giao diện tiếng Việt có thể dùng nhãn Tệp, Nhật ký phiên bản hoặc Lịch sử phiên bản. Ghi riêng tên tài liệu và chi tiết mới cần giữ, ví dụ “Địa điểm: Phòng B”. Tên phiên bản là mốc trong lịch sử, chưa tạo một tệp dự phòng riêng."
+    },
+    {
+      "title": "Tìm đúng đoạn, đừng chỉ nhìn ngày",
+      "body": "Theo Google Workspace Learning Center: File → Version history → See version history, rồi chọn một mốc thời gian để xem bản cũ. Đọc cả câu trước và sau đoạn cần lấy. Trong ví dụ, tìm dòng chuẩn bị mang sách; tránh lấy luôn địa điểm cũ chỉ vì chúng xuất hiện cùng một bản. Nếu có nhiều người biên tập tài liệu thật, thống nhất phần cần sửa trước khi tiếp tục."
+    },
+    {
+      "title": "Tạo bản sao từ chính phiên bản cũ",
+      "body": "Google Docs Help hướng dẫn: ở bảng lịch sử bên phải, bấm Tuỳ chọn khác (⋮) cạnh phiên bản đã chọn → Tạo bản sao (Make a copy), nhập tên và chọn nơi lưu. Đặt tên như “Đối chiếu đoạn chuẩn bị, bản cũ” để phân biệt. Dùng menu cạnh mốc lịch sử, không sao chép nhầm bản hiện tại. Đừng chọn Khôi phục phiên bản này (Restore this version): lệnh đó quay tài liệu về phiên bản đã chọn."
+    },
+    {
+      "title": "Kiểm nơi lưu trước khi xác nhận",
+      "body": "Nếu chỉ bạn cần bản đối chiếu, chọn thư mục riêng và không chọn Chia sẻ với cùng nhóm người. Google Drive lưu ý tệp trong thư mục chung kế thừa quyền của thư mục, nên bỏ một ô chia sẻ chưa đủ bảo đảm riêng tư. Sau khi tạo, mở Chia sẻ, kiểm cả Quyền truy cập chung và danh sách người có quyền. Nếu không xác định được ai sẽ thấy bản sao, dừng và hỏi người quản lý tài liệu; không tự đổi quyền của thư mục chung."
+    },
+    {
+      "title": "Chỉ chuyển phần đã chọn về bản hiện tại",
+      "body": "Mở bản sao cũ và bản gốc ở hai tab, kiểm tên trước mỗi lần dán. Chép đúng đoạn cần lấy từ bản sao, trở lại bản gốc và thay đúng đoạn đó. Với ví dụ, chỉ sửa dòng chuẩn bị; giữ nguyên dòng “Địa điểm: Phòng B”. Đây là cách thực hành đề xuất từ các chức năng đã có tài liệu, chưa phải kết quả kiểm thử trên một tài khoản thật."
+    },
+    {
+      "title": "Đọc lại cả phần giữ và phần vừa lấy",
+      "body": "Rà đoạn đã chèn, dấu câu, định dạng và hai đoạn liền kề. Sau đó đối chiếu chi tiết mới đã ghi ở bước đầu. Nếu địa điểm bị đổi lại thành Phòng A, thao tác chưa đạt yêu cầu dù đoạn chuẩn bị đã trở về. Giữ tên bản sao rõ ràng để không tiếp tục biên tập nhầm tệp; không xóa lịch sử trong bài tập này."
+    }
+  ],
+  "promptLabel": "Mẫu ghi chú phục hồi một đoạn",
+  "prompt": "GHI CHÚ RIÊNG, KHÔNG CẦN GỬI AI\nTài liệu hiện tại: [tên]\nĐoạn cần lấy lại: [vị trí hoặc câu mở đầu]\nChi tiết mới phải giữ: [___]\nMốc lịch sử đã tìm: [ngày/giờ hoặc tên phiên bản]\nTên bản sao đối chiếu: [___]\nNơi lưu và người có quyền xem đã kiểm: [có/chưa]\nĐã chép đúng đoạn vào bản gốc: [có/chưa]\nChi tiết mới vẫn còn nguyên: [có/chưa]",
+  "example": {
+    "label": "Bài tập tự tạo, không phải kết quả thử nghiệm",
+    "input": "Tạo tài liệu giả gồm ba dòng: “Buổi đọc sách”, “Chuẩn bị: một cuốn sách cũ và bút”, “Địa điểm: Phòng A”. Đặt tên phiên bản “Bản đầu”. Sau đó đổi dòng chuẩn bị thành “Chưa chốt” và địa điểm thành “Phòng B”. Chờ thay đổi được lưu rồi làm theo hướng dẫn.",
+    "output": "Trong bản hiện tại, dòng chuẩn bị trở lại thành “một cuốn sách cũ và bút”, còn địa điểm vẫn là “Phòng B”. Bản đối chiếu cũ được giữ riêng, không dùng làm bản đang làm."
+  },
+  "checklist": [
+    "Đã xác định rõ đoạn cần lấy và phần mới phải giữ.",
+    "Bản sao được tạo từ đúng mốc lịch sử, có tên phân biệt với bản gốc.",
+    "Đã kiểm quyền truy cập thực tế của bản sao và nơi lưu.",
+    "Chỉ đoạn cần lấy được thay, các thông tin mới vẫn còn nguyên.",
+    "Đã đọc lại ngữ cảnh, dấu câu và định dạng sau khi dán."
+  ],
+  "limits": {
+    "cost": "Google cho biết người có Tài khoản Google có thể tạo tài liệu trong Docs. Các hướng dẫn lịch sử và sao chép được kiểm tra ngày 06/11/2026 không nêu yêu cầu mua gói riêng cho quy trình này; không cần tiện ích khôi phục hoặc AI trả phí. Dung lượng, kết nối và tài khoản tổ chức vẫn chịu điều kiện của gói đang dùng.",
+    "privacy": "Theo Google, nội dung Docs được lưu tại trung tâm dữ liệu của hãng; tạo bản sao không biến tài liệu thành dữ liệu chỉ nằm trên máy. Chỉ sao chép khi có quyền và chọn nơi lưu phù hợp. Không tải tài liệu thật lên một công cụ AI chỉ để lấy lại đoạn chữ đã có trong lịch sử.",
+    "caution": "Google lưu ý các bản sửa đổi đôi khi được hợp nhất, nên không hứa tìm lại được mọi lần gõ. Không dùng lệnh xóa lịch sử: tài liệu hiện hành cảnh báo thao tác này không thể hoàn tác. Nếu thiếu phiên bản hoặc nút sao chép bị hạn chế, dừng để kiểm quyền và hỏi chủ sở hữu. Bài không kiểm thử trực tiếp thao tác Google Docs."
+  },
+  "sources": [
+    {
+      "title": "Tips to edit and collaborate on files — xem và khôi phục phiên bản",
+      "publisher": "Google Workspace Learning Center",
+      "date": "Kiểm tra 06/11/2026",
+      "url": "https://support.google.com/a/users/answer/13004165?hl=en"
+    },
+    {
+      "title": "Tìm nội dung thay đổi trong tệp — sao chép và đặt tên phiên bản",
+      "publisher": "Google Docs Editors Help",
+      "date": "Kiểm tra 06/11/2026; đối chiếu bản tiếng Anh",
+      "url": "https://support.google.com/docs/answer/190843?co=GENIE.Platform%3DDesktop&hl=vi"
+    },
+    {
+      "title": "Get on the same page — lệnh Name current version",
+      "publisher": "Google Workspace Blog",
+      "date": "Bài giới thiệu năm 2017; kiểm tra 06/11/2026",
+      "url": "https://workspace.google.com/blog/product-announcements/get-same-page-new-google-docs-features-power-team-collaboration"
+    },
+    {
+      "title": "Chia sẻ và quản lý quyền truy cập — quyền kế thừa từ thư mục",
+      "publisher": "Google Drive Help",
+      "date": "Kiểm tra 06/11/2026",
+      "url": "https://support.google.com/drive/answer/7166529?hl=vi"
+    },
+    {
+      "title": "Understand the basics of privacy in Google Docs, Sheets, Slides & Vids",
+      "publisher": "Google Docs Editors Help",
+      "date": "Kiểm tra 06/11/2026",
+      "url": "https://support.google.com/docs/answer/10381817?hl=en"
+    },
+    {
+      "title": "Google Docs — câu hỏi thường gặp về tài khoản",
+      "publisher": "Google Workspace",
+      "date": "Kiểm tra 06/11/2026",
+      "url": "https://workspace.google.com/intl/en_us/products/docs/"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/lay-lai-doan-van-cu-trong-google-docs.svg",
+    "alt": "Sơ đồ lấy riêng dòng chuẩn bị từ bản cũ sang bản hiện tại, đồng thời giữ địa điểm mới là Phòng B. Cả hai tài liệu là dữ liệu giả.",
+    "caption": "Sơ đồ minh họa bằng dữ liệu giả: lấy lại dòng chuẩn bị nhưng giữ địa điểm mới. Minh họa nguyên gốc: AI dạo chơi, 06/11/2026; không phải ảnh chụp Google Docs hay kết quả thử nghiệm."
   }
 }
   ],

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Lấy một đoạn, giữ phần vừa sửa</title>
+  <desc id="desc">Hai tờ giấy bằng dữ liệu giả. Lấy dòng chuẩn bị từ bản cũ, giữ địa điểm Phòng B trong bản hiện tại.</desc>
+  <rect width="960" height="540" rx="24" fill="#f4f1e8"/>
+  <circle cx="886" cy="26" r="158" fill="#e8e1cf"/>
+  <g font-family="Arial, sans-serif" fill="#203c44">
+    <text x="56" y="60" font-size="17" font-weight="700" letter-spacing="2">AI DẠO CHƠI · TỔ CHỨC CÁ NHÂN</text>
+    <text x="56" y="116" font-size="38" font-weight="700">Lấy một đoạn, giữ phần vừa sửa</text>
+    <text x="56" y="155" font-size="21">Bản cũ để đối chiếu. Bản hiện tại để tiếp tục.</text>
+    <g fill="#fff" stroke="#d1cebf" stroke-width="2">
+      <rect x="56" y="198" width="354" height="245" rx="18"/>
+      <rect x="550" y="198" width="354" height="245" rx="18"/>
+    </g>
+    <g font-size="18" font-weight="700" fill="#805b36">
+      <text x="80" y="235">BẢN SAO CŨ</text><text x="574" y="235">BẢN HIỆN TẠI</text>
+    </g>
+    <g font-size="23">
+      <text x="80" y="276">Buổi đọc sách</text><text x="574" y="276">Buổi đọc sách</text>
+    </g>
+    <g fill="#dfefe2"><rect x="76" y="298" width="314" height="57" rx="8"/><rect x="570" y="298" width="314" height="57" rx="8"/></g>
+    <g font-size="26" font-weight="700" fill="#285943">
+      <text x="91" y="334">Sách cũ + bút</text><text x="585" y="334">Sách cũ + bút</text>
+    </g>
+    <path d="M424 326h110m-15-12 15 12-15 12" fill="none" stroke="#397855" stroke-width="4"/>
+    <text x="80" y="399" font-size="25" fill="#7e8077">Phòng A</text>
+    <text x="574" y="399" font-size="28" font-weight="700">Phòng B</text>
+    <text x="732" y="399" font-size="17" fill="#397855">GIỮ NGUYÊN</text>
+    <text x="56" y="482" font-size="22" font-weight="700">Kiểm lại thông tin mới sau khi dán.</text>
+    <text x="56" y="517" font-size="15" fill="#69756d">SƠ ĐỒ MINH HỌA · DỮ LIỆU GIẢ · KHÔNG PHẢI GIAO DIỆN GOOGLE DOCS · 06/11/2026</text>
+  </g>
+</svg>
