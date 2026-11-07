@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-06',
+  updated: '2026-11-07',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -888,6 +888,112 @@ window.HANDBOOK_CONTENT = {
     "src": "illustrations/lay-lai-doan-van-cu-trong-google-docs.svg",
     "alt": "Sơ đồ lấy riêng dòng chuẩn bị từ bản cũ sang bản hiện tại, đồng thời giữ địa điểm mới là Phòng B. Cả hai tài liệu là dữ liệu giả.",
     "caption": "Sơ đồ minh họa bằng dữ liệu giả: lấy lại dòng chuẩn bị nhưng giữ địa điểm mới. Minh họa nguyên gốc: AI dạo chơi, 06/11/2026; không phải ảnh chụp Google Docs hay kết quả thử nghiệm."
+  }
+},
+{
+  "slug": "loc-bang-chung-bang-filter-view-google-sheets",
+  "type": "tutorial",
+  "topic": "organization",
+  "title": "Lọc bảng Google Sheets dùng chung mà không đổi góc nhìn của người khác",
+  "dek": "Dùng chế độ xem bộ lọc để tìm đúng nhóm việc, rồi trở về bảng đầy đủ mà không phải xóa hay chuyển các dòng.",
+  "why": {
+    "benefit": "Trong bảng chuẩn bị một buổi đọc sách, bạn chỉ muốn thấy những việc chưa xong. Người cùng nhóm lại đang kiểm toàn bộ danh sách. Nếu mỗi người bật một bộ lọc chung, các dòng đang đọc có thể biến mất khỏi màn hình người kia, dù dữ liệu chưa bị xóa.",
+    "context": "Google Sheets có chế độ xem bộ lọc cho tình huống này. Ta sẽ tập trên sáu việc giả, lọc phần cần xem và kiểm lại danh sách đầy đủ. Điều cần nhớ là góc nhìn riêng không tạo ra một bản dữ liệu riêng: sửa nội dung ô vẫn là sửa bảng đang dùng.",
+    "situations": [
+      "Người phụ trách một hoạt động muốn rà việc chưa xong trong bảng kế hoạch nhóm mà không làm người khác mất chỗ đang đọc.",
+      "Người chỉ có quyền xem cần tìm một nhóm dòng trong bảng đã được chia sẻ, không cần xin thêm quyền chỉnh sửa."
+    ]
+  },
+  "updated": "2026-11-07",
+  "readTime": "6 phút",
+  "level": "Cơ bản",
+  "outcome": "Một góc nhìn chỉ hiện các việc chưa xong; đóng góc nhìn đó vẫn thấy đủ sáu việc ban đầu.",
+  "preparation": [
+    "Google Sheets trên trình duyệt máy tính. Bắt đầu bằng bảng mẫu tự tạo bên dưới, chưa cần mời ai hay đổi quyền chia sẻ.",
+    "Google phân biệt rõ: người có quyền chỉnh sửa có thể lưu chế độ xem; người chỉ được xem có thể dùng chế độ xem tạm thời, không lưu được. Chế độ xem đã lưu có thể được người có quyền truy cập bảng mở lại, không phải ghi chú bí mật.",
+    "Với bảng thật, chỉ làm trên dữ liệu bạn được phép truy cập. Không dùng danh sách học sinh, lương hay thông tin khách hàng để tập."
+  ],
+  "steps": [
+    {
+      "title": "Tạo bảng nhỏ để biết chính xác điều gì phải còn nguyên",
+      "body": "Dán mẫu ở mục dưới vào ô A1 của một bảng trống. Mỗi việc có một mã riêng; bảng gồm hàng tiêu đề và sáu dòng, từ A1 đến C7. Đọc lại mã, tên việc và trạng thái trước khi lọc. Mục tiêu của bài tập là chỉ xem V01, V03 và V06, không sửa trạng thái của chúng."
+    },
+    {
+      "title": "Chọn chế độ xem, tránh bộ lọc chung",
+      "body": "Chọn vùng A1:C7. Theo Google Help, vào Dữ liệu → Tạo chế độ xem bộ lọc (Data → Create filter view). Tránh chọn Tạo bộ lọc (Create a filter), vì bộ lọc thông thường hiện cho mọi người truy cập bảng. Kiểm vùng dữ liệu của chế độ xem bao gồm cả ba cột và bảy hàng."
+    },
+    {
+      "title": "Chỉ giữ trạng thái cần rà",
+      "body": "Ở tiêu đề cột Trạng thái, mở biểu tượng lọc. Trong Lọc theo giá trị (Filter by values), chỉ giữ “Chưa xong”, bỏ các giá trị còn lại rồi xác nhận OK. Bài tập này không cần sắp xếp hay dùng công thức."
+    },
+    {
+      "title": "Kiểm bằng mã việc, không chỉ bằng số dòng",
+      "body": "Kết quả mong đợi từ dữ liệu giả là V01, V03, V06. Nếu kết quả khác, kiểm lại vùng A1:C7, dấu tiếng Việt và khoảng trắng trong trạng thái. Đừng sửa dữ liệu thật để làm cho một điều kiện lọc khớp; trước hết hãy xem lại điều kiện."
+    },
+    {
+      "title": "Đặt tên nếu cần dùng lại",
+      "body": "Nếu có quyền chỉnh sửa, chọn Lưu chế độ xem (Save view) → đặt tên “Việc chưa xong” → Lưu (Save). Để mở lại, vào Dữ liệu → Thay đổi chế độ xem (Data → Change view). Nếu chỉ có quyền xem, dùng góc nhìn tạm thời; đừng xin quyền sửa chỉ để lưu bộ lọc."
+    },
+    {
+      "title": "Đóng góc nhìn và kiểm đủ danh sách",
+      "body": "Bấm Đóng ở góc trên bên phải của chế độ xem. Với bảng mẫu chưa có bộ lọc nào khác, phải thấy lại V01 đến V06 và trạng thái ban đầu. Nếu còn thiếu dòng, kiểm các bộ lọc hoặc hàng ẩn đã tồn tại; không xóa hàng để “dọn” kết quả."
+    }
+  ],
+  "promptLabel": "Bảng giả để tự thử",
+  "prompt": "Mã việc\tCông việc\tTrạng thái\nV01\tChọn sách\tChưa xong\nV02\tChuẩn bị bàn\tĐã xong\nV03\tIn câu hỏi\tChưa xong\nV04\tKiểm đèn\tĐã xong\nV05\tĐặt nước\tĐang chờ\nV06\tChuẩn bị bút\tChưa xong",
+  "example": {
+    "label": "Kết quả mong đợi từ dữ liệu giả, chưa thử trên tài khoản thật",
+    "input": "Sáu việc trong bảng A1:C7; lọc cột Trạng thái theo giá trị “Chưa xong”.",
+    "output": "Khi lọc: V01 Chọn sách, V03 In câu hỏi, V06 Chuẩn bị bút. Khi đóng chế độ xem: đủ sáu mã, tên việc và trạng thái không đổi."
+  },
+  "checklist": [
+    "Đã dùng chế độ xem bộ lọc, không nhầm với bộ lọc chung.",
+    "Vùng lọc gồm đủ các cột và sáu việc của mẫu.",
+    "Ba mã hiện ra đúng là V01, V03, V06.",
+    "Đóng chế độ xem thấy đủ sáu việc, không sửa hay xóa ô nào.",
+    "Không đặt thông tin nhạy cảm trong tên chế độ xem đã lưu."
+  ],
+  "limits": {
+    "cost": "Google cho biết ai có Tài khoản Google đều có thể tạo bảng trong Sheets. Tài liệu bộ lọc được kiểm tra ngày 07/11/2026 không nêu gói mua riêng cho thao tác này. Bài không cần Gemini, tiện ích hay API trả phí; tài khoản tổ chức vẫn theo điều kiện dịch vụ đang dùng.",
+    "privacy": "Dữ liệu Sheets được lưu trong hệ thống Google. Chế độ xem chỉ thay cách hiển thị, không cấp quyền theo từng hàng và không che bí mật khỏi người đã có quyền xem bảng. Không gửi liên kết bảng chỉ vì đã lọc bớt dòng. Nếu người nhận chỉ được xem một phần, cần một tài liệu riêng đã rà nội dung và quyền chia sẻ.",
+    "caution": "Chế độ xem không phải bản sao để thử sửa ô. Theo tài liệu kỹ thuật Google, bộ lọc không thay giá trị dữ liệu; thao tác gõ, dán hoặc xóa ô là việc khác. Mỗi lần chỉ áp dụng một chế độ xem. Hướng dẫn dựa trên nguồn chính thức, chưa kiểm thử trực tiếp trong Sheets; tên nút có thể đổi theo ngôn ngữ và giao diện."
+  },
+  "sources": [
+    {
+      "title": "Sắp xếp và lọc dữ liệu: tạo, lưu và đóng chế độ xem",
+      "publisher": "Google Docs Editors Help",
+      "date": "Kiểm tra 07/11/2026; đối chiếu tiếng Anh",
+      "url": "https://support.google.com/docs/answer/3540681?co=GENIE.Platform%3DDesktop&hl=vi"
+    },
+    {
+      "title": "Filters, filter views & slicers: quyền lưu và người xem được chế độ đã lưu",
+      "publisher": "Google Docs Editors Help",
+      "date": "Kiểm tra 07/11/2026",
+      "url": "https://support.google.com/docs/answer/9245556?hl=en"
+    },
+    {
+      "title": "Manage data visibility with filters: phạm vi của bộ lọc",
+      "publisher": "Google for Developers",
+      "date": "Kiểm tra 07/11/2026",
+      "url": "https://developers.google.com/workspace/sheets/api/guides/filters"
+    },
+    {
+      "title": "Understand the basics of privacy in Google Docs, Sheets, Slides & Vids",
+      "publisher": "Google Docs Editors Help",
+      "date": "Kiểm tra 07/11/2026",
+      "url": "https://support.google.com/docs/answer/10381817?hl=en"
+    },
+    {
+      "title": "Google Sheets: câu hỏi thường gặp về tài khoản và tính năng",
+      "publisher": "Google Workspace",
+      "date": "Kiểm tra 07/11/2026",
+      "url": "https://workspace.google.com/intl/en_us/products/sheets/"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/loc-bang-chung-bang-filter-view-google-sheets.svg",
+    "alt": "Sơ đồ từ sáu mã việc trong bảng đầy đủ sang ba mã V01, V03, V06 có trạng thái Chưa xong; đóng chế độ xem trở lại đủ sáu việc.",
+    "caption": "Sơ đồ minh họa bằng dữ liệu giả, không phải ảnh giao diện Google Sheets. Minh họa nguyên gốc: AI dạo chơi, 07/11/2026. Lọc chỉ đổi các dòng đang thấy, không xóa việc."
   }
 }
   ],

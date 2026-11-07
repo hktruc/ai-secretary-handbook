@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+<title id="title">Một bảng, hai góc nhìn</title>
+<desc id="desc">Dữ liệu giả có sáu việc. Chế độ xem Chưa xong chỉ hiện V01, V03, V06. Đóng chế độ xem để trở lại bảng đầy đủ.</desc>
+<rect width="960" height="540" rx="24" fill="#f4f1e8"/>
+<circle cx="900" cy="20" r="150" fill="#e8e1cf"/>
+<g font-family="Arial, sans-serif" fill="#203c44">
+<text x="50" y="58" font-size="17" font-weight="700" letter-spacing="2">AI DẠO CHƠI · TỔ CHỨC CÁ NHÂN</text>
+<text x="50" y="113" font-size="39" font-weight="700">Một bảng, hai góc nhìn</text>
+<text x="50" y="151" font-size="22">Lọc việc cần rà. Giữ nguyên dữ liệu.</text>
+<g fill="#fff" stroke="#d1cebf" stroke-width="2">
+<rect x="50" y="185" width="345" height="264" rx="18"/>
+<rect x="565" y="185" width="345" height="264" rx="18"/>
+</g>
+<g font-size="18" font-weight="700" fill="#805b36">
+<text x="72" y="220">BẢNG ĐẦY ĐỦ</text><text x="587" y="220">GÓC NHÌN: CHƯA XONG</text>
+</g>
+<g font-size="21">
+<text x="75" y="258">V01 · Chọn sách</text>
+<text x="75" y="290" fill="#78817c">V02 · Chuẩn bị bàn</text>
+<text x="75" y="322">V03 · In câu hỏi</text>
+<text x="75" y="354" fill="#78817c">V04 · Kiểm đèn</text>
+<text x="75" y="386" fill="#78817c">V05 · Đặt nước</text>
+<text x="75" y="418">V06 · Chuẩn bị bút</text>
+</g>
+<g fill="#dfefe2">
+<rect x="584" y="241" width="307" height="49" rx="8"/>
+<rect x="584" y="303" width="307" height="49" rx="8"/>
+<rect x="584" y="365" width="307" height="49" rx="8"/>
+</g>
+<g font-size="23" font-weight="700" fill="#285943">
+<text x="600" y="273">V01 · Chọn sách</text>
+<text x="600" y="335">V03 · In câu hỏi</text>
+<text x="600" y="397">V06 · Chuẩn bị bút</text>
+</g>
+<path d="M415 280h130m-14-12 14 12-14 12 M545 374H415m14-12-14 12 14 12" fill="none" stroke="#397855" stroke-width="4"/>
+<text x="453" y="263" font-size="19">Lọc</text>
+<text x="443" y="410" font-size="19">Đóng</text>
+<text x="50" y="488" font-size="22" font-weight="700">Góc nhìn riêng không phải dữ liệu riêng.</text>
+<text x="50" y="521" font-size="14" fill="#69756d">SƠ ĐỒ · DỮ LIỆU GIẢ · KHÔNG PHẢI GIAO DIỆN GOOGLE SHEETS · AI DẠO CHƠI · 07/11/2026</text>
+</g>
+</svg>
