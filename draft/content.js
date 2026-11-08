@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-07',
+  updated: '2026-11-08',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -1024,3 +1024,88 @@ window.HANDBOOK_CONTENT = {
     }
   ]
 };
+
+
+window.HANDBOOK_CONTENT.articles.push({
+  "slug": "them-thoi-gian-hoan-tac-gui-gmail",
+  "type": "tutorial",
+  "topic": "organization",
+  "title": "Thêm vài giây để dừng một email vừa gửi trong Gmail",
+  "dek": "Đặt khoảng hoàn tác trước khi cần dùng, rồi tập bằng một thư không có dữ liệu thật gửi cho chính mình.",
+  "why": {
+    "benefit": "Bạn vừa bấm Gửi thì nhận ra tiêu đề còn chữ “bản nháp”. Lúc đó điều cần nhất không phải một cách viết lại nhanh hơn, mà là biết nút nào có thể dừng thư trong khoảng thời gian rất ngắn.",
+    "context": "Undo Send là tính năng sẵn có, không phải công bố mới hôm nay. Ta sẽ chuẩn bị khoảng hủy gửi trên Gmail web, tập nhận ra nút Hoàn tác và kiểm bản nháp trước khi quyết định gửi lại. Đừng coi đây là cách lấy lại mọi email đã đến người nhận.",
+    "situations": [
+      "Người dùng Gmail web muốn có thêm thời gian phát hiện lỗi ngay sau khi bấm Gửi.",
+      "Tập xử lý một thư thử gửi cho chính mình, trước khi dùng với trao đổi thật."
+    ]
+  },
+  "updated": "2026-11-08",
+  "readTime": "5 phút",
+  "level": "Cơ bản",
+  "outcome": "Biết khoảng hủy gửi đang đặt, vị trí nút Hoàn tác và cách kiểm bản nháp trở lại mà không gửi thử cho người khác.",
+  "preparation": [
+    "Máy tính có trình duyệt và tài khoản Gmail của bạn đã đăng nhập; bài này hướng dẫn trên web.",
+    "Chỉ dùng thư thử không có tệp đính kèm hoặc dữ liệu riêng. Nếu không muốn gửi thử, dừng sau khi kiểm cài đặt.",
+    "Đọc kỹ địa chỉ người nhận để chắc chắn đó là hộp thư do chính bạn kiểm soát."
+  ],
+  "steps": [
+    {
+      "title": "Chọn khoảng hủy gửi khi chưa vội",
+      "body": "Theo <a href=\"https://support.google.com/mail/answer/2819488?co=GENIE.Platform%3DDesktop&amp;hl=en\" target=\"_blank\" rel=\"noopener\">Gmail Help</a>, trên máy tính mở Settings → See all settings. Tìm Undo Send, chọn Send cancellation period là 5, 10, 20 hoặc 30 giây, rồi bấm Save changes ở cuối trang. Có thể chọn 30 giây để có khoảng xử lý dài nhất trong các mức được tài liệu nêu. Nhãn tiếng Việt có thể khác; kiểm đúng dòng trước khi lưu."
+    },
+    {
+      "title": "Viết một thư mà gửi nhầm cũng không lộ thông tin",
+      "body": "Nếu muốn tập, soạn thư mới với tiêu đề “Thư thử thao tác hoàn tác”, nội dung “Đây là nội dung giả để kiểm tra thao tác.” Nhập địa chỉ của chính mình, không chọn theo gợi ý chỉ vì tên trông quen. Không dùng Reply all, không thêm Cc/Bcc và không đính kèm tệp. Đọc lại ô người nhận trước khi bấm Gửi. Bài tập không cần kết nối chatbot hoặc tiện ích mở rộng."
+    },
+    {
+      "title": "Bấm Hoàn tác ngay trong thông báo gửi",
+      "body": "Gmail Help nêu thông báo Message sent ở góc dưới bên trái có lựa chọn Undo. Sau khi bấm Gửi, chọn Undo ngay; đừng dùng việc này để thử xem có thể đợi sát hạn đến đâu. <a href=\"https://blog.google/products-and-platforms/products/gmail/how-to-unsend-email-gmail/\" target=\"_blank\" rel=\"noopener\">Bài hướng dẫn của Google</a> cho biết bản nháp sẽ mở lại để sửa. Nếu không thấy nút, không tiếp tục gửi thêm nhiều thư để thử vận may."
+    },
+    {
+      "title": "Kiểm bản nháp, chưa gửi lại theo phản xạ",
+      "body": "Khi khung soạn thư trở lại, dừng một nhịp. Kiểm người nhận, tiêu đề và nội dung cần sửa; không bấm Gửi lần nữa chỉ để đóng thao tác. Với bài tập, có thể để thư ở trạng thái nháp. Ghi điều bạn thực sự nhìn thấy, chẳng hạn bản nháp đã mở lại hay không tìm được nút. Cẩm nang chưa thử trực tiếp trên tài khoản hoặc phiên bản trình duyệt của bạn, nên không thay quan sát bằng một câu xác nhận có sẵn."
+    },
+    {
+      "title": "Nếu đã lỡ khoảng hoàn tác, xử lý như thư có thể đã đi",
+      "body": "Không coi việc xóa thư trong hộp thư của mình là bằng chứng đã xóa bản phía người nhận. Nếu thư thật có lỗi, kiểm nội dung đã gửi rồi quyết định cách đính chính phù hợp; với thông tin nhạy cảm, tuân theo quy trình của tổ chức thay vì dựa vào một mẹo thu hồi. Muốn chủ động chừa nhiều thời gian rà trước lúc gửi, xem bài hẹn giờ gửi Gmail trong thư viện. Hẹn giờ và hoàn tác giải quyết hai thời điểm khác nhau."
+    }
+  ],
+  "promptLabel": "Phiếu tập tự lưu, không cần AI",
+  "prompt": "THỬ HOÀN TÁC GỬI — chỉ với hộp thư của chính tôi\nKhoảng hủy gửi đã chọn và lưu: [___]\nĐã kiểm người nhận, không Cc/Bcc, không tệp: [___]\nSau khi bấm Undo, tôi thấy: [___]\nBản nháp mở lại hay chưa: [___]\nĐiều cần kiểm trước lần gửi thật: [___]\nKhông ghi địa chỉ email hoặc nội dung riêng vào phiếu công khai.",
+  "example": {
+    "label": "Ví dụ tự tạo — không phải kết quả thử nghiệm",
+    "input": "Một thư thử không đính kèm, gửi tới chính người thao tác, có tiêu đề “Thư thử thao tác hoàn tác”.",
+    "output": "Kết quả mong đợi là khung bản nháp mở lại sau khi bấm Undo. Nếu chưa quan sát thấy, ghi “chưa xác nhận” và kiểm tài liệu; không tự kết luận đã hủy thành công."
+  },
+  "checklist": [
+    "Đã lưu cài đặt, không chỉ thay lựa chọn rồi rời trang.",
+    "Thư thử chỉ gửi tới chính mình, không có dữ liệu thật hoặc tệp.",
+    "Biết tìm Undo ngay sau khi gửi; không chờ gần hết khoảng hủy.",
+    "Kiểm bản nháp trở lại và không gửi lại ngoài ý muốn."
+  ],
+  "limits": {
+    "cost": "Tài liệu Gmail Help được kiểm tra ngày 08/11/2026 không nêu yêu cầu mua gói AI hoặc phí riêng cho Undo Send. Bài tập không cần dịch vụ bổ sung; tài khoản và kết nối mạng vẫn theo điều kiện bạn đang dùng.",
+    "privacy": "Đây là thao tác trong dịch vụ email, không phải bài tập xử lý hoàn toàn ngoại tuyến. Chỉ dùng nội dung giả và địa chỉ của chính mình; không chia sẻ ảnh màn hình có danh sách thư hoặc người nhận thật. Hoàn tác không thay việc kiểm dữ liệu trước khi gửi.",
+    "caution": "Khoảng hủy gửi là hữu hạn, tối đa 30 giây trong tài liệu được kiểm tra. Không có cơ sở từ các nguồn này để hứa lấy lại một thư sau khi hết khoảng đó. Bài dành cho Gmail web trên máy tính, không suy rộng cài đặt sang Outlook, Apple Mail hoặc mọi ứng dụng điện thoại. Hướng dẫn dựa trên tài liệu hãng, chưa kiểm thử thao tác thật."
+  },
+  "sources": [
+    {
+      "title": "Send or unsend Gmail messages — Computer",
+      "publisher": "Gmail Help",
+      "date": "Kiểm tra 08/11/2026",
+      "url": "https://support.google.com/mail/answer/2819488?co=GENIE.Platform%3DDesktop&hl=en"
+    },
+    {
+      "title": "How to undo send in Gmail for up to 30 seconds",
+      "publisher": "Google Blog",
+      "date": "07/02/2023; kiểm tra 08/11/2026",
+      "url": "https://blog.google/products-and-platforms/products/gmail/how-to-unsend-email-gmail/"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/them-thoi-gian-hoan-tac-gui-gmail.svg",
+    "alt": "Sơ đồ minh họa đặt khoảng hủy gửi, bấm Undo ngay sau khi gửi và kiểm bản nháp trở lại; ngoài khoảng hủy không bảo đảm lấy lại thư.",
+    "caption": "Sơ đồ minh họa nguyên gốc: AI dạo chơi, 08/11/2026. Không phải ảnh giao diện Gmail; ví dụ chỉ dùng thư giả gửi cho chính mình."
+  }
+});
