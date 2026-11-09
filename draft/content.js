@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-08',
+  updated: '2026-11-09',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -1107,5 +1107,106 @@ window.HANDBOOK_CONTENT.articles.push({
     "src": "illustrations/them-thoi-gian-hoan-tac-gui-gmail.svg",
     "alt": "Sơ đồ minh họa đặt khoảng hủy gửi, bấm Undo ngay sau khi gửi và kiểm bản nháp trở lại; ngoài khoảng hủy không bảo đảm lấy lại thư.",
     "caption": "Sơ đồ minh họa nguyên gốc: AI dạo chơi, 08/11/2026. Không phải ảnh giao diện Gmail; ví dụ chỉ dùng thư giả gửi cho chính mình."
+  }
+});
+
+window.HANDBOOK_CONTENT.articles.push({
+  "slug": "danh-dau-pdf-va-kiem-ban-luu-trong-firefox",
+  "type": "tutorial",
+  "topic": "learning",
+  "title": "Đánh dấu PDF trong Firefox rồi kiểm lại bản đã lưu",
+  "dek": "Tô một đoạn cần nhớ, thêm câu hỏi ở lề và mở lại bản tải xuống để biết ghi chú đã thực sự đi cùng tài liệu.",
+  "why": {
+    "benefit": "Bạn đã tô những dòng quan trọng trong một tài liệu PDF, nhưng hôm sau mở lại không còn thấy dấu tô hay ghi chú. Chỗ dễ bỏ sót nằm ở cuối buổi đọc: nhìn thấy dấu trên tab đang mở chưa chứng minh mình đã có một tệp chứa những dấu ấy.",
+    "context": "Firefox có công cụ tô sáng và thêm chữ ngay trong trình đọc PDF. Với một tài liệu ngắn, ta sẽ đánh dấu vừa đủ, lưu thành bản riêng rồi mở lại từ thư mục. Một câu hỏi còn đọc được khi quay lại có ích hơn cả trang màu mà không biết mình muốn nhớ điều gì.",
+    "situations": [
+      "Đọc một tài liệu hướng dẫn công khai và muốn giữ lại một câu quan trọng cùng câu hỏi cần tìm hiểu.",
+      "Rà bản nháp PDF tự tạo, ghi đề nghị sửa ở lề nhưng vẫn giữ nguyên tệp gốc để đối chiếu."
+    ]
+  },
+  "updated": "2026-11-09",
+  "readTime": "6 phút",
+  "level": "Cơ bản",
+  "outcome": "Một bản PDF có đoạn tô sáng và ghi chú đọc được sau khi mở lại, được lưu ở nơi dễ tìm, có tên phân biệt rõ với bản gốc.",
+  "preparation": [
+    "Firefox trên máy tính và một PDF ngắn không chứa thông tin riêng, tốt nhất có chữ chọn được cùng khoảng trắng để ghi chú. Dùng tài liệu của mình hoặc tài liệu công khai được phép sử dụng.",
+    "Chọn trước một câu muốn nhớ và một câu hỏi ngắn. Không tập bằng hợp đồng đang ký, hồ sơ học sinh, giấy tờ tùy thân hay tài liệu có hạn chế chỉnh sửa.",
+    "Ghi tên tệp gốc và nơi lưu. Bài này dùng công cụ có sẵn, không cần cài thêm tiện ích hay đưa PDF lên website chỉnh sửa."
+  ],
+  "steps": [
+    {
+      "title": "Mở đúng tệp bằng Firefox",
+      "body": "Theo <a href=\"https://www.firefox.com/en-US/features/pdf-editor/\" target=\"_blank\" rel=\"noopener\">hướng dẫn của Firefox</a>, kéo PDF vào một tab trống hoặc chọn File → Open. Có thể dùng Ctrl+O trên Windows/Linux, Command+O trên macOS rồi chọn tệp. Kiểm tên tài liệu và số trang trước khi làm; nếu đang thấy một ứng dụng khác, chưa phải trình đọc PDF của Firefox."
+    },
+    {
+      "title": "Tô đúng câu cần nhớ",
+      "body": "Chọn đoạn chữ rồi bấm biểu tượng tô sáng xuất hiện cạnh vùng chọn. Mozilla cũng hướng dẫn dùng biểu tượng tô sáng ở góc trên bên phải để tô một vùng tự do. Chọn một màu dễ đọc; với bản quét không chọn được từng chữ, chỉ đánh dấu vùng, không coi đó là nhận dạng chữ OCR."
+    },
+    {
+      "title": "Thêm một câu hỏi ở chỗ trống",
+      "body": "Chọn Text, chỉnh cỡ và màu chữ, bấm vào khoảng trống rồi nhập câu hỏi. Ví dụ: “Cần chuẩn bị gì trước bước này?”. Đây là chữ thêm vào trang, không phải sửa lại câu gốc. Tránh đặt ghi chú đè lên nội dung cần đọc; kiểm dấu tiếng Việt ngay sau khi nhập."
+    },
+    {
+      "title": "Lưu một bản có tên dễ phân biệt",
+      "body": "Bấm Save trong thanh công cụ PDF để tải bản có chú thích về máy, như <a href=\"https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-or-choose-another-viewer\" target=\"_blank\" rel=\"noopener\">Mozilla hướng dẫn</a>. Nếu có hộp chọn tên, dùng “tai-lieu-da-danh-dau.pdf” và chọn nơi dễ tìm. Không xác nhận ghi đè bản gốc trong bài tập. Nếu tải tự động, xem tên tệp thực tế trước khi làm tiếp."
+    },
+    {
+      "title": "Tìm bản vừa tải, không chỉ nhìn lại tab cũ",
+      "body": "Mở bảng Downloads của Firefox. Dùng biểu tượng thư mục cạnh tệp để mở vị trí lưu; trên macOS là biểu tượng kính lúp, Show in Finder. Chọn đúng tệp vừa tạo rồi mở nó bằng Firefox qua File → Open. Bước này kiểm một bản đã lưu, thay vì kiểm lại thay đổi còn nằm trong tab ban đầu."
+    },
+    {
+      "title": "Đọc lại dấu và câu hỏi trong bản mới",
+      "body": "Đến trang đã đánh dấu. Câu tô sáng phải vẫn đọc được, câu hỏi không mất dấu và không che chữ gốc. So số trang với bản ban đầu. Nếu không thấy dấu, kiểm đúng tên tệp và trạng thái hiển thị highlight trước khi kết luận; chỉ dùng bản mới sau khi tự kiểm đạt."
+    }
+  ],
+  "promptLabel": "Mẫu ghi chú cho một lượt đọc",
+  "prompt": "GHI CHÚ ĐỌC PDF, KHÔNG CẦN GỬI AI\nTên bản gốc: [___]\nTrang cần quay lại: [___]\nCâu muốn nhớ: [___]\nMột câu hỏi ở lề: [___]\nTên bản đã đánh dấu: [___]\nThư mục lưu thực tế: [___]\nĐã mở lại tệp mới và đọc được dấu/chữ: [có/chưa]",
+  "example": {
+    "label": "Tình huống minh họa, chưa kiểm thử thao tác Firefox",
+    "input": "Một PDF tự tạo ghi “Buổi đọc sách bắt đầu lúc 9 giờ. Mỗi người mang một cuốn sách.” Tô câu về việc mang sách, rồi thêm ở lề: “Có cần ghi tên sách trước không?”.",
+    "output": "Trong bản mới mở từ thư mục, câu về sách có dấu tô và câu hỏi còn rõ tiếng Việt. Bản gốc vẫn được giữ riêng. Đây là tiêu chí tự kiểm, không phải kết quả thử nghiệm đã đo."
+  },
+  "checklist": [
+    "Đang dùng trình đọc PDF của Firefox, không phải một website đòi tải tệp lên.",
+    "Chỉ đánh dấu đoạn cần dùng; chữ gốc và ghi chú đều đọc rõ.",
+    "Biết chính xác tên và thư mục của bản đã lưu.",
+    "Đã mở lại chính tệp mới và kiểm dấu tiếng Việt, số trang, vị trí ghi chú.",
+    "Bản gốc còn riêng; chưa chia sẻ tài liệu hay ghi chú ngoài ý muốn."
+  ],
+  "limits": {
+    "cost": "Trang chính thức của Firefox mô tả trình chỉnh PDF tích hợp là miễn phí, không cần plugin riêng. Quy trình này không dùng gói AI hoặc dịch vụ PDF trả phí. Thông tin được kiểm tra ngày 09/11/2026.",
+    "privacy": "Quy trình mở tệp trong Firefox và lưu bản sửa về máy, không yêu cầu tải tài liệu lên website chỉnh PDF. Hãy kiểm thư mục lưu có đang được đồng bộ hoặc chia sẻ không. Ghi chú có thể đi cùng bản PDF khi bạn gửi tệp; không viết thông tin riêng mà người nhận không được phép thấy.",
+    "caution": "Không dùng nét vẽ hay ô màu để che thông tin nhạy cảm: bài này không hướng dẫn xóa dữ liệu an toàn. Nếu tệp cần mật khẩu hoặc chặn sửa, xin bản được phép sử dụng, không tìm cách vượt hạn chế. Mozilla lưu ý một số PDF có thể lỗi phông, màu hoặc trang; khi gặp lỗi, đối chiếu bằng trình đọc khác. Chưa kiểm thử trực tiếp trong Firefox; tên nút có thể khác theo phiên bản và ngôn ngữ."
+  },
+  "sources": [
+    {
+      "title": "Edit PDFs in Firefox: mở tệp, thêm chữ, tô sáng và chi phí",
+      "publisher": "Firefox",
+      "date": "Kiểm tra 09/11/2026",
+      "url": "https://www.firefox.com/en-US/features/pdf-editor/"
+    },
+    {
+      "title": "View and edit PDF files using Firefox’s built-in viewer",
+      "publisher": "Mozilla Support",
+      "date": "Kiểm tra 09/11/2026",
+      "url": "https://support.mozilla.org/en-US/kb/view-pdf-files-firefox-or-choose-another-viewer"
+    },
+    {
+      "title": "Keyboard shortcuts: mở tệp bằng bàn phím",
+      "publisher": "Mozilla Support",
+      "date": "Kiểm tra 09/11/2026",
+      "url": "https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly"
+    },
+    {
+      "title": "Where to find and manage downloaded files in Firefox",
+      "publisher": "Mozilla Support",
+      "date": "Kiểm tra 09/11/2026",
+      "url": "https://support.mozilla.org/en-US/kb/where-find-and-manage-downloaded-files-firefox"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/danh-dau-pdf-va-kiem-ban-luu-trong-firefox.svg",
+    "alt": "Sơ đồ ba bước: đánh dấu câu trong PDF, lưu bản riêng, mở lại tệp mới để kiểm câu tô và ghi chú. Tài liệu minh họa không có dữ liệu thật.",
+    "caption": "Sơ đồ minh họa, không phải ảnh giao diện Firefox. Minh họa nguyên gốc: AI dạo chơi, 09/11/2026. Chỉ coi bản lưu là hoàn tất sau khi đã mở lại và kiểm."
   }
 });
