@@ -1210,3 +1210,111 @@ window.HANDBOOK_CONTENT.articles.push({
     "caption": "Sơ đồ minh họa, không phải ảnh giao diện Firefox. Minh họa nguyên gốc: AI dạo chơi, 09/11/2026. Chỉ coi bản lưu là hoàn tất sau khi đã mở lại và kiểm."
   }
 });
+
+
+window.HANDBOOK_CONTENT.articles.push({
+  "slug": "quet-hai-trang-thanh-pdf-google-drive-android",
+  "type": "tutorial",
+  "topic": "daily",
+  "title": "Quét hai trang giấy thành một PDF bằng Google Drive trên Android",
+  "dek": "Gom một tài liệu giấy vào đúng một tệp, rồi kiểm đủ trang, đọc rõ chữ và biết bản quét đang nằm ở đâu.",
+  "why": {
+    "benefit": "Bạn cần giữ lại một tờ hướng dẫn hai mặt, nhưng thư viện ảnh đã có hàng chục hình gần giống nhau. Đến lúc tìm, có ảnh mất mép chữ, có trang không rõ thuộc bộ nào. Đặt tên và kiểm bản lưu ngay từ đầu giúp tránh phải đoán lại sau này.",
+    "context": "Google Drive trên Android có sẵn thao tác quét tài liệu. Ta sẽ tập với hai trang tự viết, lưu thành một PDF rồi mở lại để đối chiếu. Điểm cần quyết định trước khi chụp: bản quét được lưu lên Google Drive, nên phải chọn đúng tài khoản và nơi lưu phù hợp.",
+    "situations": [
+      "Giữ một bản hướng dẫn giấy gồm hai trang mà bạn được phép số hóa.",
+      "Tập tạo PDF bằng điện thoại trước khi dùng với tài liệu thật."
+    ]
+  },
+  "updated": "2026-11-10",
+  "readTime": "6 phút",
+  "level": "Cơ bản",
+  "outcome": "Một PDF gồm hai trang theo đúng thứ tự, có tên dễ tìm, chữ đọc được và quyền truy cập đã được kiểm tra.",
+  "preparation": [
+    "Điện thoại Android có ứng dụng Google Drive đã đăng nhập, kết nối mạng và còn dung lượng Google.",
+    "Hai trang giấy tự viết bằng nội dung giả, đánh số 1 và 2. Không dùng giấy tờ tùy thân, hồ sơ sức khỏe hoặc tài liệu có thông tin người khác để tập.",
+    "Một thư mục của bạn đã kiểm quyền truy cập. Chỉ dùng tài liệu thật khi được phép đưa lên dịch vụ đám mây; giữ giấy gốc sau bài tập."
+  ],
+  "steps": [
+    {
+      "title": "Chọn nơi lưu trước khi đưa giấy lên camera",
+      "body": "Kiểm tài khoản đang dùng trong Drive. Ở thư mục định lưu, mở More (ba chấm) → Manage access. Xem cả người có quyền và General access. Tệp lưu trong thư mục chia sẻ kế thừa quyền truy cập của thư mục, theo <a href=\"https://support.google.com/drive/answer/7166529?co=GENIE.Platform%3DAndroid&amp;hl=en\" target=\"_blank\" rel=\"noopener\">hướng dẫn chia sẻ của Google</a>. Nếu nơi lưu không phù hợp, chọn thư mục riêng đã kiểm, đừng đổi quyền cả thư mục chung chỉ để tập quét."
+    },
+    {
+      "title": "Chụp trang đầu, nhìn kỹ bốn mép",
+      "body": "Trong ứng dụng Drive, bấm biểu tượng Camera ở góc dưới bên phải. Hướng máy vào trang 1, xem đường viền xanh rồi chụp. Dùng Crop & Rotate để chỉnh vùng và hướng; Retake nếu ảnh nhòe. Các nút được mô tả trong <a href=\"https://support.google.com/drive/answer/3145835?co=GENIE.Platform%3DAndroid&amp;hl=en\" target=\"_blank\" rel=\"noopener\">hướng dẫn quét trên Android</a>."
+    },
+    {
+      "title": "Thêm trang thứ hai vào cùng lượt quét",
+      "body": "Bấm Add (+) rồi chụp trang 2. Kiểm cả hai trang trước khi hoàn tất. Chữ sát mép, dòng cuối và số trang đều phải còn đọc được. Chụp lại khi cần; đừng cố cứu ảnh mờ bằng một màu lọc quá đậm."
+    },
+    {
+      "title": "Chọn PDF và một tên có nghĩa",
+      "body": "Bấm Done, đặt tên “huong-dan-thu-cong-2-trang”, chọn định dạng .pdf. Bấm Location để chọn thư mục đã kiểm rồi Save. Đừng chọn .jpg nếu mục tiêu là giữ hai trang trong một PDF."
+    },
+    {
+      "title": "Mở chính tệp đã lưu để kiểm",
+      "body": "Quay lại thư mục vừa chọn và mở PDF có tên đó. Đối chiếu từng trang với giấy: đủ hai trang, thứ tự 1 rồi 2, không mất mép và đọc được chữ nhỏ khi phóng to. Chỉ coi bài tập hoàn tất khi bản đã lưu mở được. Nếu Drive còn báo đang tải lên hoặc lỗi, chưa coi tệp đã lưu xong trên đám mây. Nếu chưa thấy tệp, kiểm đúng tài khoản, nơi lưu, mạng và thông báo lỗi trước khi quét thêm một bộ trùng."
+    },
+    {
+      "title": "Rà quyền của bản PDF trước khi dùng tiếp",
+      "body": "Ở chính tệp, mở More → Manage access. Restricted chỉ có nghĩa người đã được cấp quyền mới mở được, không tự động có nghĩa chỉ mình bạn. Đối chiếu danh sách người có quyền với mục đích lưu cá nhân. Trong bài tập này, không thêm người và không bật Anyone with the link. Ghi lại tên tệp, thư mục và kết quả kiểm bên dưới."
+    }
+  ],
+  "promptLabel": "Mẫu kiểm một bản quét",
+  "prompt": "BẢN QUÉT THỬ, KHÔNG CẦN GỬI AI\nTên tệp PDF: [___]\nTài khoản và thư mục lưu: [ghi riêng, không chia sẻ mẫu đã điền]\nSố trang dự kiến / thực tế: [___] / [___]\nThứ tự, mép giấy và chữ nhỏ: [đạt/chưa đạt]\nNgười có quyền và truy cập chung: [đã kiểm/chưa kiểm]\nĐã mở lại bản lưu: [có/chưa]\nGiấy gốc đang giữ ở: [___]",
+  "example": {
+    "label": "Dữ liệu giả để tự thực hành, chưa thử trực tiếp trên Android",
+    "input": "Trang 1 tự viết: “BẢN TẬP QUÉT. Chuẩn bị: giấy màu, kéo.” Trang 2: “BẢN TẬP QUÉT. Kết thúc: dọn bàn, cất dụng cụ.” Đánh số từng trang và dùng tên tệp trong hướng dẫn.",
+    "output": "Tiêu chí đạt: một PDF mở được, có trang 1 rồi trang 2, đọc rõ “giấy màu” và “cất dụng cụ”; biết đúng thư mục và người có quyền. Đây là kết quả cần tự kiểm, không phải báo cáo thử nghiệm."
+  },
+  "checklist": [
+    "Giấy tập không chứa dữ liệu riêng; được phép lưu nội dung lên Google.",
+    "Đang dùng đúng tài khoản và thư mục đã kiểm.",
+    "Một PDF có đủ hai trang theo thứ tự, không cắt mất chữ.",
+    "Đã mở lại tệp trong thư mục, không chỉ xem màn hình chụp.",
+    "Đã xem người có quyền lẫn General access; chưa chia sẻ ngoài ý muốn."
+  ],
+  "limits": {
+    "cost": "Bài tập không yêu cầu mua gói AI hay Google One. Google mô tả tài khoản có tối đa 15 GB dung lượng không tính phí, dùng chung giữa Drive, Gmail và Photos; PDF chiếm dung lượng này. Khi hết chỗ, Drive không nhận tệp mới. Kiểm mức còn lại của tài khoản trước khi làm; không cần mua thêm chỉ để thử hai trang. Nguồn chi phí và dung lượng được kiểm ngày 10/11/2026.",
+    "privacy": "Đây là lưu lên đám mây, không phải chỉ lưu trong điện thoại. Google cho biết dữ liệu Drive được mã hóa khi truyền và khi lưu, đồng thời nội dung được xử lý để cung cấp dịch vụ. Những điều đó không thay thế việc bạn quyết định tài liệu nào được phép tải lên. Với tài khoản cơ quan hoặc trường học, tuân theo chính sách của đơn vị.",
+    "caution": "Hướng dẫn dựa trên tài liệu Google, chưa kiểm thử thao tác thật trên Android. Nhãn và bố cục có thể khác theo phiên bản, ngôn ngữ; nếu không thấy nút quét, đối chiếu nguồn Android bên dưới. Ảnh quét rõ không bảo đảm nhận dạng chữ chính xác. Không dùng công cụ làm sạch ảnh để che thông tin nhạy cảm; không xem bản quét như bản chứng thực hoặc bỏ giấy gốc chỉ vì đã tạo PDF."
+  },
+  "sources": [
+    {
+      "title": "Scan documents with Google Drive — Android",
+      "publisher": "Google Drive Help",
+      "date": "Kiểm tra 10/11/2026",
+      "url": "https://support.google.com/drive/answer/3145835?co=GENIE.Platform%3DAndroid&hl=en"
+    },
+    {
+      "title": "Share and manage access: quyền thư mục và quyền của tệp",
+      "publisher": "Google Drive Help",
+      "date": "Kiểm tra 10/11/2026",
+      "url": "https://support.google.com/drive/answer/7166529?co=GENIE.Platform%3DAndroid&hl=en"
+    },
+    {
+      "title": "How Drive protects your privacy & keeps you in control",
+      "publisher": "Google Drive Help",
+      "date": "Kiểm tra 10/11/2026",
+      "url": "https://support.google.com/drive/answer/10375054?hl=en"
+    },
+    {
+      "title": "How your Google storage works",
+      "publisher": "Google One Help",
+      "date": "Kiểm tra 10/11/2026",
+      "url": "https://support.google.com/googleone/answer/9312312?hl=en"
+    },
+    {
+      "title": "Sign up for Google One: dung lượng không tính phí và gói mở rộng",
+      "publisher": "Google One Help",
+      "date": "Kiểm tra 10/11/2026",
+      "url": "https://support.google.com/googleone/answer/9004013?hl=en"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/quet-hai-trang-thanh-pdf-google-drive-android.svg",
+    "alt": "Sơ đồ hai trang giấy giả được gom vào một PDF trên Google Drive, sau đó kiểm đủ trang, chữ rõ và quyền truy cập.",
+    "caption": "Sơ đồ minh họa, không phải ảnh giao diện Google Drive. Nội dung giả. Minh họa: AI dạo chơi, 10/11/2026. Kiểm thư mục và quyền trước khi lưu; mở lại PDF để kiểm chất lượng."
+  }
+});

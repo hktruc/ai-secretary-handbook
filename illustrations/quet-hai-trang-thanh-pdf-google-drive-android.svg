@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+<title id="title">Hai trang giấy, một PDF đã kiểm</title>
+<desc id="desc">Sơ đồ minh họa với dữ liệu giả: chọn nơi lưu, quét hai trang vào PDF, mở lại để kiểm đủ trang, chữ rõ và quyền truy cập.</desc>
+<rect width="960" height="540" rx="24" fill="#f5f1e7"/>
+<circle cx="930" cy="20" r="150" fill="#e9e2cf"/>
+<g font-family="Arial, sans-serif" fill="#23454a">
+<text x="50" y="55" font-size="17" font-weight="700" letter-spacing="2">AI DẠO CHƠI · ĐỜI SỐNG</text>
+<text x="50" y="108" font-size="36" font-weight="700">Hai trang giấy → một PDF</text>
+<text x="50" y="145" font-size="21">Chọn nơi lưu trước. Mở bản lưu để kiểm sau.</text>
+<g stroke="#d6d4cb" stroke-width="2" fill="#fff">
+<rect x="50" y="190" width="250" height="270" rx="20"/>
+<rect x="355" y="190" width="250" height="270" rx="20"/>
+<rect x="660" y="190" width="250" height="270" rx="20"/>
+</g>
+<g font-size="21" font-weight="700">
+<text x="74" y="228">1 · Giấy tập</text>
+<text x="379" y="228">2 · Lưu lên Drive</text>
+<text x="684" y="228">3 · Mở lại và kiểm</text>
+</g>
+<g stroke="#c9d5cf" stroke-width="2">
+<rect x="105" y="273" width="145" height="150" rx="7" fill="#e3eee7"/>
+<rect x="77" y="253" width="145" height="150" rx="7" fill="#f8faf6"/>
+</g>
+<text x="91" y="281" font-size="14" font-weight="700">BẢN TẬP QUÉT · 1</text>
+<text x="91" y="320" font-size="18">Giấy màu, kéo</text>
+<text x="121" y="447" font-size="17">Trang 1 + trang 2</text>
+<path d="M318 320h20m-8-8 8 8-8 8" stroke="#5f8a72" stroke-width="4" fill="none"/>
+<rect x="382" y="253" width="196" height="144" rx="12" fill="#f2f6f0" stroke="#c9d5cf" stroke-width="2"/>
+<text x="480" y="298" text-anchor="middle" font-size="30" font-weight="700">PDF · 2 trang</text>
+<text x="480" y="340" text-anchor="middle" font-size="17">Đúng tài khoản</text>
+<text x="480" y="369" text-anchor="middle" font-size="17">Đúng thư mục</text>
+<text x="385" y="432" font-size="17">Đây là bản trên đám mây</text>
+<path d="M623 320h20m-8-8 8 8-8 8" stroke="#5f8a72" stroke-width="4" fill="none"/>
+<g fill="#e1eee3">
+<rect x="683" y="254" width="204" height="48" rx="10"/>
+<rect x="683" y="318" width="204" height="48" rx="10"/>
+<rect x="683" y="382" width="204" height="48" rx="10"/>
+</g>
+<g font-size="20" font-weight="700">
+<text x="699" y="284">✓ Trang 1 rồi 2</text>
+<text x="699" y="348">✓ Chữ và mép rõ</text>
+<text x="699" y="412">✓ Quyền phù hợp</text>
+</g>
+<text x="50" y="505" font-size="12" fill="#6f776f">SƠ ĐỒ · DỮ LIỆU GIẢ · KHÔNG PHẢI GIAO DIỆN DRIVE · AI DẠO CHƠI · 10/11/2026</text>
+</g>
+</svg>
