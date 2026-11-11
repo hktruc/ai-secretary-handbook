@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-10',
+  updated: '2026-11-11',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -8,6 +8,100 @@ window.HANDBOOK_CONTENT = {
     { id: 'daily', label: 'Đời sống hằng ngày', icon: '☼' }
   ],
   articles: [
+{
+  "slug": "noi-thanh-ban-nhap-google-docs",
+  "type": "tutorial",
+  "topic": "creativity",
+  "title": "Nói thành bản nháp trong Google Docs, rồi sửa cho đúng ý mình",
+  "dek": "Khi biết mình muốn nói gì nhưng ngại trang giấy trắng, hãy thử một phút nói thành chữ trước khi biên tập.",
+  "why": {
+    "benefit": "Bạn giải thích một ý cho người khác khá tự nhiên, nhưng khi ngồi viết lại thì cứ sửa câu mở đầu. Thay vì cố viết hay ngay từ đầu, có thể tách việc tìm ý khỏi việc trau chuốt: nói một đoạn ngắn, nhìn lại phần chữ rồi chọn điều đáng giữ.",
+    "context": "Google Docs có công cụ nhập bằng giọng nói. Giá trị ở đây không phải tạo hộ một bài hoàn chỉnh, mà là đưa lời của chính bạn thành bản nháp có thể sửa. Thử bằng một chủ đề thông thường trước; đừng bắt đầu với cuộc họp riêng hay dữ liệu của người khác.",
+    "situations": [
+      "Người chuẩn bị một bài chia sẻ ngắn muốn ghi lại ý mình vừa nghĩ ra.",
+      "Người học tự giải thích một khái niệm quen thuộc rồi xem phần nào còn thiếu rõ ràng."
+    ]
+  },
+  "updated": "2026-11-11",
+  "readTime": "6 phút",
+  "level": "Cơ bản",
+  "outcome": "Một đoạn nháp từ lời nói của bạn, một bản đã biên tập và danh sách những chỗ cần kiểm lại.",
+  "preparation": [
+    "Máy tính có micro hoạt động, mạng và tài khoản Google để mở tài liệu của bạn.",
+    "Theo Google Help được kiểm tra 11/11/2026, dùng bản mới của Chrome, Edge hoặc Safari; tiếng Việt có trong danh sách hỗ trợ. Tài khoản tổ chức có thể bị quản trị viên tắt tính năng.",
+    "Một chủ đề không nhạy cảm và ba ý muốn nói. Đây là bài hướng dẫn dựa trên tài liệu hãng, chưa thử nhận dạng trên thiết bị hoặc giọng của người đọc."
+  ],
+  "steps": [
+    {
+      "title": "Viết ba từ khóa, chưa viết cả bài",
+      "body": "Chọn một việc nhỏ, chẳng hạn giải thích cách bạn sắp lại góc đọc sách. Ghi ba điểm: tình trạng ban đầu, việc đã thay đổi, điều muốn giữ. Mỗi điểm chỉ vài từ để khi nói không biến thành đọc một bài đã viết sẵn. Đừng đưa tên hoặc thông tin riêng của người khác vào bài tập."
+    },
+    {
+      "title": "Mở một tài liệu riêng để thử",
+      "body": "Tạo tài liệu trống và đặt tên “Nháp từ lời nói”. Mở Chia sẻ để kiểm đối tượng có quyền xem; tránh thư mục dùng chung nếu không muốn bản nháp được người khác thấy. Đặt con trỏ vào phần thân tài liệu. Trong menu Tools/Công cụ, chọn Voice typing/Nhập bằng giọng nói. Đây là đường menu theo Google Help, nhãn có thể khác theo ngôn ngữ."
+    },
+    {
+      "title": "Nói một đoạn ngắn rồi dừng micro",
+      "body": "Chọn tiếng Việt trong hộp ngôn ngữ nếu chưa đúng. Bấm biểu tượng micro và chỉ cho phép truy cập micro trên trang bạn đang chủ động dùng; nói ở tốc độ bình thường. Sau khoảng một phút, bấm lại để dừng. Không cần nói liên tục cho đủ độ dài: mục tiêu đầu tiên là thấy lời mình xuất hiện đúng trong tài liệu."
+    },
+    {
+      "title": "Sửa nghĩa trước khi sửa văn",
+      "body": "Đọc lại ngay khi còn nhớ mình vừa nói gì. Rà từ phủ định, con số và tên riêng trước. Đánh dấu [chưa rõ] ở chỗ không nhớ chắc, không tự đoán cho câu trôi chảy. Thêm dấu câu bằng bàn phím nếu nhận dạng chưa đúng; Google lưu ý dấu câu không hỗ trợ ở mọi ngôn ngữ, còn lệnh điều khiển bằng giọng nói chỉ dùng tiếng Anh theo điều kiện ngôn ngữ hãng nêu."
+    },
+    {
+      "title": "Giữ bản gốc rồi mới rút gọn",
+      "body": "Chép đoạn đã sửa lỗi nhận dạng sang phần “Bản biên tập” bên dưới. Chia thành ba đoạn: vấn đề, cách làm, điều rút ra. Xóa từ đệm và câu lặp nhưng giữ chi tiết làm rõ ý. Nếu dùng chatbot hỗ trợ, chỉ gửi phần không nhạy cảm đã kiểm; prompt bên dưới là tùy chọn, không cần mua hay dùng AI để hoàn thành bài tập này."
+    },
+    {
+      "title": "Đọc thành tiếng để kiểm lần cuối",
+      "body": "Đọc bản biên tập và hỏi: “Có câu nào không còn giống điều mình muốn nói?” So từng con số, mốc thời gian và lời khẳng định với bản gốc. Ghi lại hai lỗi nhận dạng đã gặp để lần sau nói rõ hơn. Kết thúc bằng việc kiểm micro đã dừng, tài liệu đã lưu và quyền chia sẻ vẫn đúng."
+    }
+  ],
+  "promptLabel": "Prompt biên tập tùy chọn, chỉ dùng với đoạn đã kiểm và không nhạy cảm",
+  "prompt": "Hãy biên tập đoạn tôi tự nói dưới đây thành 3 đoạn ngắn: vấn đề, cách làm, điều rút ra. Giữ ý, mức độ chắc chắn và giọng tự nhiên của tôi. Bỏ từ đệm, không thêm sự kiện, thành tích, lời trích dẫn hoặc kết luận. Giữ nguyên [chưa rõ] và liệt kê riêng câu cần tôi xác minh. Sau bản sửa, nêu ngắn những chỗ đã thay đổi.\n\nĐoạn đã kiểm lỗi nhận dạng:\n[Dán đoạn không nhạy cảm tại đây]",
+  "example": {
+    "label": "Ví dụ tự tạo, không phải kết quả nhận dạng hay thử nghiệm",
+    "input": "“Tôi để sách lẫn trên bàn nên hay tìm mất công. Tôi chia hai chồng, đang đọc và đọc sau. Mới thử hai hôm, chưa biết có giữ được lâu không.”",
+    "output": "“Trước đây, sách để lẫn trên bàn nên tôi thường mất công tìm. Tôi thử chia thành hai chồng: đang đọc và đọc sau. Mới áp dụng hai hôm, tôi chưa biết mình có duy trì được lâu không.” Bản sửa giữ giới hạn hai hôm, không biến thành tuyên bố đã hình thành thói quen."
+  },
+  "checklist": [
+    "Đã dừng micro sau khi nói, không để thu âm ngoài ý muốn.",
+    "Từ phủ định, số và tên riêng đã được kiểm bằng chính ý định của người nói.",
+    "Bản gốc và bản biên tập vẫn tách rõ.",
+    "Không có thông tin hoặc thành tích do AI tự thêm.",
+    "Tài liệu không chia sẻ rộng hơn dự định."
+  ],
+  "limits": {
+    "cost": "Google cho biết người có tài khoản Google có thể tạo tài liệu; một số tính năng khác cần gói Workspace. Trang hướng dẫn Voice typing không nêu phí riêng cho thao tác này. Bài không yêu cầu Gemini hoặc chatbot trả phí. Bạn vẫn cần thiết bị và kết nối; không mua gói chỉ vì chưa thấy menu.",
+    "privacy": "Google nêu trình duyệt quyết định cách xử lý giọng nói rồi gửi văn bản tới Docs; không mặc định đây là nhận dạng hoàn toàn trên máy. Theo tài liệu quyền riêng tư, tệp lưu trong hạ tầng Google. Kiểm quyền chia sẻ và chính sách của tổ chức; không dùng bài tập này để thu âm người khác mà chưa được đồng ý.",
+    "caution": "Không phải công cụ chép tự động một cuộc họp hay tệp âm thanh trong phạm vi bài này. Không bảo đảm độ chính xác, tốc độ hoặc dấu câu tiếng Việt. Nếu không thấy Voice typing, kiểm trình duyệt hỗ trợ và chính sách quản trị; đừng cài tiện ích lạ hay tắt bảo vệ để thử. Với nội dung quan trọng, người nói vẫn phải rà bản chữ."
+  },
+  "sources": [
+    {
+      "title": "Type & edit with your voice: trình duyệt, menu, tiếng Việt và giới hạn",
+      "publisher": "Google Docs Editors Help",
+      "date": "Kiểm tra 11/11/2026",
+      "url": "https://support.google.com/docs/answer/4492226?hl=en"
+    },
+    {
+      "title": "Understand the basics of privacy in Google Docs, Sheets, Slides & Vids",
+      "publisher": "Google",
+      "date": "Kiểm tra 11/11/2026",
+      "url": "https://support.google.com/docs/answer/10381817?hl=en"
+    },
+    {
+      "title": "Google Docs: tài khoản và các tính năng trả phí",
+      "publisher": "Google Workspace",
+      "date": "Kiểm tra 11/11/2026",
+      "url": "https://workspace.google.com/products/docs/"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/noi-thanh-ban-nhap-google-docs.svg",
+    "alt": "Ba bước tách biệt: nói một phút, kiểm bản chữ, biên tập mà giữ ý. Micro cần dừng trước khi rà bản nháp.",
+    "caption": "Sơ đồ minh họa nguyên gốc: AI dạo chơi, 11/11/2026. Không phải ảnh chụp giao diện Google Docs."
+  }
+},
 {
   "slug": "tai-ban-do-ngoai-tuyen-google-maps",
   "type": "tutorial",
