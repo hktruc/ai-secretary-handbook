@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-11',
+  updated: '2026-11-12',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -8,6 +8,95 @@ window.HANDBOOK_CONTENT = {
     { id: 'daily', label: 'Đời sống hằng ngày', icon: '☼' }
   ],
   articles: [
+{
+  "slug": "gom-tab-chrome-theo-viec",
+  "type": "tutorial",
+  "topic": "organization",
+  "title": "Gom tab Chrome theo việc, rồi mở lại mà không tìm từ đầu",
+  "dek": "Một nhóm tab có tên rõ ràng giúp cất việc đang dở, nhưng không thay thế việc lưu tài liệu.",
+  "why": {
+    "benefit": "Bạn đang đọc vài trang để chọn điểm đi cuối tuần thì phải chuyển sang việc khác. Khi quay lại, những trang cần so sánh đã lẫn giữa nhiều tab. Gom chúng theo một kết quả cần đạt giúp bạn biết mình đang giữ gì và nên tiếp tục từ đâu.",
+    "context": "Thay vì tổ chức tất cả cửa sổ ngay lập tức, hãy thử với ba trang công khai. Bài này dùng nhóm tab có sẵn trong Chrome trên máy tính, không cần cài tiện ích hay dùng AI. Điểm cần hiểu trước là đóng nhóm khác với xóa nhóm, và giữ tab không có nghĩa giữ mọi dữ liệu bên trong trang.",
+    "situations": [
+      "Người tìm một địa điểm tham quan muốn giữ ba nguồn để so sánh vào hôm sau.",
+      "Người tự học đang đọc một hướng dẫn và hai tài liệu tham khảo, cần chuyển việc mà không mất dấu."
+    ]
+  },
+  "updated": "2026-11-12",
+  "readTime": "5 phút",
+  "level": "Cơ bản",
+  "outcome": "Một nhóm gồm ba tab, có tên theo việc cần làm và đã thử đóng rồi mở lại; kèm ghi chú bước tiếp theo.",
+  "preparation": [
+    "Chrome bản mới trên máy tính và ba trang công khai không chứa thông tin riêng.",
+    "Lưu tài liệu và nội dung biểu mẫu đang sửa trước khi thử. Không dùng tab giao dịch hoặc công việc quan trọng làm mẫu.",
+    "Hướng dẫn đối chiếu tài liệu Google ngày 12/11/2026; chưa thử trên thiết bị của người đọc. Nhãn menu có thể khác theo ngôn ngữ và phiên bản."
+  ],
+  "steps": [
+    {
+      "title": "Chọn đúng một việc cần tiếp tục",
+      "body": "Ví dụ tự tạo: chọn một bảo tàng để đi cuối tuần. Giữ ba trang gồm giờ mở cửa, giá vé và đường đi. Ghi lại URL cùng điều cần kiểm vào một ghi chú riêng; đây cũng là cách đối chiếu khi mở lại, không phụ thuộc trí nhớ."
+    },
+    {
+      "title": "Tạo nhóm có tên dễ nhận",
+      "body": "Bấm phải một tab, chọn Add tab to group → New group. Đặt tên theo việc, chẳng hạn “Chọn bảo tàng”, rồi kéo hai tab còn lại vào nhóm. Chọn màu dễ nhìn; màu chỉ để nhận biết, không tự biểu thị mức ưu tiên."
+    },
+    {
+      "title": "Thu gọn để chuyển việc",
+      "body": "Bấm tên nhóm để thu gọn hoặc mở rộng. Trước khi cất, xem cả ba trang có thật sự giúp quyết định không. Ghi một câu tiếp theo, chẳng hạn “Kiểm giờ Chủ nhật trên trang chính thức”; tên nhóm không thay cho ghi chú này."
+    },
+    {
+      "title": "Thử đóng rồi mở lại",
+      "body": "Bấm phải tên nhóm → Close group. Sau đó mở menu ba chấm → Tab groups và chọn nhóm. Không chọn Delete group hay Ungroup: theo Google, các thao tác đó xóa nhóm; nếu đồng bộ cùng tài khoản, thay đổi có thể ảnh hưởng thiết bị khác."
+    },
+    {
+      "title": "Kiểm kết quả bằng danh sách đã ghi",
+      "body": "So ba URL sau khi mở lại với ghi chú ban đầu. Mở từng trang để kiểm nội dung còn truy cập được. Nếu thiếu, dùng ghi chú để tìm lại; đừng kết luận đã sao lưu chỉ vì tên nhóm vẫn hiện. Một biểu mẫu chưa lưu hoặc phiên đăng nhập có thể không còn như trước."
+    },
+    {
+      "title": "Giữ nhóm nhỏ và có điểm kết thúc",
+      "body": "Khi đã chọn xong địa điểm, lưu kết luận cùng nguồn cần giữ vào tài liệu của bạn. Chỉ dọn nhóm khi chắc không còn cần quay lại. Nếu làm thử chưa thành công, kiểm phiên bản Chrome và tài liệu nguồn trước khi cài thêm công cụ."
+    }
+  ],
+  "promptLabel": "Prompt tùy chọn để đặt tên nhóm, không cần gửi lịch sử duyệt web",
+  "prompt": "Từ danh sách tiêu đề công khai tôi cung cấp, đề xuất tối đa 3 nhóm theo kết quả cần đạt. Mỗi nhóm có tên ngắn và một bước tiếp theo. Không suy đoán nội dung trang chỉ từ tiêu đề; chỗ thiếu thông tin ghi “cần đọc thêm”. Không yêu cầu lịch sử duyệt web hoặc URL riêng tư.\n\nDanh sách: [Chỉ dán tiêu đề không nhạy cảm]",
+  "example": {
+    "label": "Ví dụ minh họa tự tạo, không phải kết quả thử nghiệm",
+    "input": "Ba trang công khai: giờ mở cửa bảo tàng, bảng giá vé, hướng dẫn đường đi.",
+    "output": "Nhóm “Chọn bảo tàng”. Ghi chú: “Kiểm giờ Chủ nhật, sau đó so chi phí di chuyển”. Khi mở lại phải đủ ba URL; chưa thể kết luận chuyến đi đã được đặt hay giá vé còn hiệu lực."
+  },
+  "checklist": [
+    "Đã đặt tên nhóm theo việc, không chỉ đặt “Tab mới”.",
+    "Đã phân biệt Close group với Delete group và Ungroup.",
+    "Mở lại và đối chiếu đủ ba URL.",
+    "Tài liệu, biểu mẫu quan trọng đã được lưu riêng.",
+    "Biết nhóm có đang đồng bộ qua tài khoản dùng chung hay không."
+  ],
+  "limits": {
+    "cost": "Tính năng nhóm tab có sẵn trong Chrome; tài liệu Google được kiểm tra không nêu phí riêng. Bài không yêu cầu gói AI, tiện ích hoặc thuê bao. Kết nối mạng vẫn cần để tải nội dung trang.",
+    "privacy": "Không cần bật thêm đồng bộ chỉ để làm bài tập. Google cho phép chọn dữ liệu lưu vào tài khoản; khi lịch sử và tab được đồng bộ, thay đổi nhóm có thể theo sang thiết bị cùng tài khoản. Kiểm Settings → You and Google → tên tài khoản trước khi đưa tab riêng vào nhóm; tránh tài khoản hoặc hồ sơ trình duyệt dùng chung.",
+    "caution": "Nhóm tab là cách tổ chức đường truy cập, không phải bản sao lưu trang, tệp hay trạng thái biểu mẫu. Không bảo đảm nội dung dùng được ngoại tuyến. Giao diện và chính sách máy do tổ chức quản lý có thể khác. Bài không khẳng định đã đo tiết kiệm thời gian hay bộ nhớ."
+  },
+  "sources": [
+    {
+      "title": "Manage tabs in Chrome: nhóm tab, đóng, mở lại và xóa",
+      "publisher": "Google Chrome Help",
+      "date": "Kiểm tra 12/11/2026",
+      "url": "https://support.google.com/chrome/answer/2391819?co=GENIE.Platform%3DDesktop&hl=en"
+    },
+    {
+      "title": "Get your bookmarks, passwords and more on all your devices",
+      "publisher": "Google Chrome Help",
+      "date": "Kiểm tra 12/11/2026",
+      "url": "https://support.google.com/chrome/answer/165139?hl=en"
+    },
+    {
+      "title": "Chrome: các công cụ nhóm và sắp xếp tab tích hợp",
+      "publisher": "Google",
+      "date": "Kiểm tra 12/11/2026",
+      "url": "https://www.google.com/chrome/"
+    }
+  ]
+},
 {
   "slug": "noi-thanh-ban-nhap-google-docs",
   "type": "tutorial",
