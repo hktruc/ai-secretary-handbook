@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-12',
+  updated: '2026-11-13',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -8,6 +8,101 @@ window.HANDBOOK_CONTENT = {
     { id: 'daily', label: 'Đời sống hằng ngày', icon: '☼' }
   ],
   articles: [
+{
+  "slug": "tao-muc-luc-google-docs-de-tim-lai-noi-dung",
+  "type": "tutorial",
+  "topic": "organization",
+  "title": "Tạo mục lục Google Docs để tìm lại nội dung, không cuộn cả tài liệu",
+  "dek": "Định dạng tiêu đề đúng giúp bản ghi chép có đường đi rõ ràng; mục lục đẹp nhưng thiếu mục vẫn cần sửa.",
+  "why": {
+    "benefit": "Một bản ghi chép học tập dài dần sau mỗi buổi. Bạn nhớ có đoạn nói về một khái niệm nhưng cứ cuộn lên xuống để tìm. Vấn đề không hẳn là tài liệu quá dài: các phần chưa có cấu trúc để người đọc đi thẳng tới chỗ cần.",
+    "context": "Thử với một tài liệu ngắn trước. Dùng kiểu tiêu đề của Google Docs để tạo mục lục, sau đó kiểm bằng cách bấm từng mục. Đây là thao tác tổ chức văn bản, không cần AI viết lại nội dung hay cài tiện ích. Bài hướng dẫn trên máy tính, đối chiếu tài liệu Google ngày 13/11/2026, chưa thử trên tài khoản của người đọc.",
+    "situations": [
+      "Người tự học muốn tra lại ba phần của một ghi chú đã viết.",
+      "Người soạn hướng dẫn muốn người nhận tìm được mục chuẩn bị mà không đọc từ đầu."
+    ]
+  },
+  "updated": "2026-11-13",
+  "readTime": "5 phút",
+  "level": "Cơ bản",
+  "outcome": "Một tài liệu có ba tiêu đề đúng cấp và mục lục bấm được; sau khi đổi tên một phần, bạn biết cách cập nhật và kiểm lại.",
+  "preparation": [
+    "Một Google Doc bạn có quyền chỉnh sửa; nên tạo bản thử riêng không chứa thông tin cá nhân.",
+    "Ví dụ tự tạo gồm ba phần: Chuẩn bị, Thực hiện, Kiểm kết quả. Mỗi phần có hai câu nội dung của bạn.",
+    "Dùng máy tính và trình duyệt; tên menu có thể khác theo ngôn ngữ. Không thay kiểu trên tài liệu dùng chung khi người khác đang biên tập."
+  ],
+  "steps": [
+    {
+      "title": "Chia phần theo câu hỏi của người đọc",
+      "body": "Trong bản thử, viết ba phần: cần gì trước khi bắt đầu, làm những gì, và nhìn vào đâu để biết đã đúng. Đừng đặt một tiêu đề cho mỗi câu. Nếu không thể diễn đạt điều mỗi phần giải quyết, hãy sửa cách chia trước khi trang trí."
+    },
+    {
+      "title": "Gán kiểu tiêu đề thay vì chỉ làm chữ to",
+      "body": "Chọn dòng tên phần, vào Format → Paragraph styles → Heading 1 → Apply. Dùng cùng cấp cho ba phần ngang hàng; chỉ dùng Heading 2 cho ý con. Theo hướng dẫn Google, kiểu tiêu đề là cấu trúc của tài liệu, không chỉ là cỡ chữ."
+    },
+    {
+      "title": "Thử đường đi bằng bảng đề cương",
+      "body": "Mở View → Show outline rồi bấm một tiêu đề. Với giao diện có bảng tabs, mở Show tabs & outlines, chọn tab cần xem rồi Show outline trong tùy chọn tab. Nếu không thấy tên phần, kiểm xem dòng đó đã mang kiểu Heading thay vì chỉ in đậm. Subtitle không xuất hiện trong outline theo tài liệu Google."
+    },
+    {
+      "title": "Đặt mục lục ở nơi người đọc bắt đầu",
+      "body": "Đặt con trỏ ở đầu nội dung, chọn Insert → Page elements → Table of contents và chọn kiểu. Mục lục liên kết tới các tiêu đề. Bài thử chỉ dùng một tab tài liệu để dễ đối chiếu; chưa cần gom nhiều tab hoặc mục con."
+    },
+    {
+      "title": "Đổi một tiêu đề để kiểm khả năng cập nhật",
+      "body": "Đổi “Thực hiện” thành “Thực hiện từng bước”. Bấm mục lục rồi Refresh. So lại cả tên và đường dẫn bằng cách bấm mục vừa đổi. Theo Google, thêm hoặc sửa tiêu đề cần cập nhật mục lục; đừng mặc định bản đang nhìn luôn là bản mới nhất."
+    },
+    {
+      "title": "Kiểm cấu trúc, rồi mới chỉnh vẻ ngoài",
+      "body": "Tự đưa ra ba nhiệm vụ: tìm danh sách chuẩn bị, tìm thao tác đầu, tìm dấu hiệu hoàn thành. Nếu đi nhầm hoặc phải đoán, sửa tên phần. Cuối cùng đọc lại các đoạn để chắc rằng việc định dạng chưa xóa hay chuyển nhầm nội dung. Có thể nhờ người khác thử trên bản không nhạy cảm, nhưng không cần mở quyền công khai."
+    }
+  ],
+  "promptLabel": "Prompt tùy chọn để rà cách chia mục, không gửi tài liệu riêng",
+  "prompt": "Tôi đang chia một hướng dẫn minh họa thành các phần. Chỉ dựa vào tên mục bên dưới, hãy chỉ ra mục trùng ý, mục quá mơ hồ và chỗ thiếu bước kiểm kết quả. Đề xuất tối đa hai cấp tiêu đề; không viết thêm sự kiện, không suy đoán nội dung chưa được cung cấp. Tôi sẽ tự quyết định thay đổi.\n\nTên mục: [dán các tên mục không nhạy cảm]",
+  "example": {
+    "label": "Ví dụ minh họa tự tạo, chưa phải kết quả thử nghiệm",
+    "input": "Một hướng dẫn chăm cây gồm Chuẩn bị; Thực hiện; Kiểm kết quả. Tên mục đang chỉ in đậm.",
+    "output": "Gán Heading 1 cho cả ba phần, chèn mục lục, rồi đổi tên phần giữa thành “Thực hiện từng bước”. Sau Refresh, mục lục phải hiện tên mới và bấm tới đúng phần. Đây là phép thử cấu trúc, không phải lời khuyên chăm cây."
+  },
+  "checklist": [
+    "Ba phần ngang hàng có cùng cấp tiêu đề.",
+    "Bấm từng mục tới đúng nội dung.",
+    "Sau khi đổi tên, đã Refresh và kiểm lại.",
+    "Không mất đoạn văn khi chỉnh định dạng.",
+    "Không chia sẻ công khai tài liệu chỉ để người khác thử mục lục."
+  ],
+  "limits": {
+    "cost": "Các hướng dẫn Google được kiểm không yêu cầu thuê bao AI hoặc tiện ích trả phí cho thao tác này. Cần tài khoản và quyền chỉnh sửa phù hợp; bài không sử dụng tính năng Gemini.",
+    "privacy": "Nội dung Google Docs được lưu trên dịch vụ Google. Kiểm nút Share và danh sách người có quyền trước khi đưa dữ liệu riêng vào. Mục lục hay việc thu gọn nội dung không phải biện pháp phân quyền. Không dán tài liệu bí mật vào chatbot để nhờ đặt tiêu đề.",
+    "caution": "Chỉ đối chiếu tài liệu hãng, chưa kiểm trên mọi phiên bản giao diện. Định dạng không kiểm chứng sự đúng đắn của nội dung. Mục lục có thể bị cũ hoặc thiếu tiêu đề; cần bấm kiểm. Hướng dẫn này dùng một tab và không khẳng định cấu trúc xuất sang mọi định dạng sẽ giống nguyên bản."
+  },
+  "sources": [
+    {
+      "title": "Add a title, heading, or table of contents: kiểu tiêu đề, chèn và làm mới mục lục",
+      "publisher": "Google Docs Editors Help",
+      "date": "Kiểm tra 13/11/2026",
+      "url": "https://support.google.com/docs/answer/116338?co=GENIE.Platform%3DDesktop&hl=en"
+    },
+    {
+      "title": "View document outlines: điều hướng và tiêu đề trong đề cương",
+      "publisher": "Google Docs Editors Help",
+      "date": "Kiểm tra 13/11/2026",
+      "url": "https://support.google.com/docs/answer/6367684?co=GENIE.Platform%3DDesktop&hl=en"
+    },
+    {
+      "title": "Use document tabs: mở bảng tab và đề cương trong từng tab",
+      "publisher": "Google Docs Editors Help",
+      "date": "Kiểm tra 13/11/2026",
+      "url": "https://support.google.com/docs/answer/15499791?hl=en"
+    },
+    {
+      "title": "Understand the basics of privacy in Google Docs, Sheets, Slides & Vids",
+      "publisher": "Google Docs Editors Help",
+      "date": "Kiểm tra 13/11/2026",
+      "url": "https://support.google.com/docs/answer/10381817?hl=en"
+    }
+  ]
+},
 {
   "slug": "gom-tab-chrome-theo-viec",
   "type": "tutorial",
