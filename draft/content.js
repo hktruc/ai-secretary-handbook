@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-13',
+  updated: '2026-11-14',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -8,6 +8,100 @@ window.HANDBOOK_CONTENT = {
     { id: 'daily', label: 'Đời sống hằng ngày', icon: '☼' }
   ],
   articles: [
+{
+  "slug": "tim-lai-tep-dinh-kem-gmail",
+  "type": "tutorial",
+  "topic": "organization",
+  "title": "Tìm lại tệp đính kèm trong Gmail mà không lục từng thư",
+  "dek": "Ghép vài dấu hiệu chắc chắn, rồi kiểm chính tệp cần dùng. Đừng coi kết quả đầu tiên là bản cuối.",
+  "why": {
+    "benefit": "Bạn nhớ đã nhận một bản hướng dẫn nhưng không nhớ tiêu đề thư. Gõ tên chung thì ra nhiều cuộc trao đổi, còn tìm tên tệp đoán chừng lại chẳng thấy gì. Thêm thật nhiều điều kiện ngay từ đầu có thể khiến việc tìm khó hơn.",
+    "context": "Hãy tìm từ một dấu hiệu chắc chắn, thu hẹp dần và giữ đường quay lại thư gốc. Quy trình dưới đây không cần giao cả hộp thư cho chatbot. Ta dùng tình huống giả tìm bản hướng dẫn của một buổi đọc sách; không dùng email hay tệp riêng của bất kỳ ai.",
+    "situations": [
+      "Người tự học cần tìm lại PDF hướng dẫn trong thư đã nhận từ một khóa học.",
+      "Người tổ chức nhóm đọc sách cần phân biệt bản đính kèm ban đầu với bản gửi sửa sau."
+    ]
+  },
+  "updated": "2026-11-14",
+  "readTime": "5 phút",
+  "level": "Cơ bản",
+  "outcome": "Tìm được thư có tệp phù hợp, đối chiếu đúng nội dung và biết vì sao chọn bản đó.",
+  "preparation": [
+    "Gmail trên trình duyệt máy tính, đăng nhập đúng tài khoản và có mạng.",
+    "Chọn một tài liệu không nhạy cảm mà bạn có quyền xem. Bài tập chỉ tìm và đọc, không xóa thư, tạo bộ lọc hay chuyển tiếp.",
+    "Ghi riêng một dấu hiệu bạn nhớ chắc: tên người gửi, vài chữ trong tên tệp hoặc loại tệp. Không cần đoán đủ mọi thứ."
+  ],
+  "steps": [
+    {
+      "title": "Bắt đầu bằng loại tệp",
+      "body": "Gõ <code>filename:pdf</code> vào ô tìm kiếm Gmail rồi Enter. Theo <a href=\"https://support.google.com/mail/answer/7190?hl=en\" target=\"_blank\" rel=\"noopener\">bảng toán tử của Google</a>, <code>filename:</code> tìm theo tên hoặc loại tệp đính kèm. Nếu nhớ tên, thử <code>filename:huong-dan</code>. Đây là tên giả để minh họa, không phải tệp có sẵn trong hộp thư của bạn."
+    },
+    {
+      "title": "Thêm đúng một dấu hiệu",
+      "body": "Khi kết quả quá rộng, thêm <code>from:</code> với địa chỉ người gửi đã biết. Mẫu: <code>from:nguon@example.com filename:pdf</code>. Thay địa chỉ giả trước khi dùng. Nếu không chắc người gửi, đừng thêm điều kiện này; thử một từ trong tiêu đề với <code>subject:</code>."
+    },
+    {
+      "title": "Đổi cách tìm khi tài liệu là liên kết",
+      "body": "Tệp Google Drive được chia sẻ không nhất thiết là PDF đính kèm. Thử <code>has:drive</code> thay cho <code>filename:pdf</code>, hoặc <code>has:document</code> nếu nhớ đó là Google Docs. Các toán tử này được Google liệt kê riêng; không suy ra rằng một lần tìm PDF đã kiểm hết tài liệu."
+    },
+    {
+      "title": "Nhìn ngày trước khi chọn bản",
+      "body": "Nếu giao diện có Most relevant, đổi sang Most recent để xem theo thời gian. Google mô tả lựa chọn này trong <a href=\"https://support.google.com/mail/answer/6593?co=GENIE.Platform%3DDesktop&amp;hl=en\" target=\"_blank\" rel=\"noopener\">hướng dẫn tìm thư</a>. Mở thư phù hợp và xem ngày gửi, tên tệp, lời nhắn sửa đổi; ngày thư mới hơn không tự chứng minh nội dung đã được duyệt."
+    },
+    {
+      "title": "Không có kết quả thì nới dần",
+      "body": "Bỏ từng điều kiện bạn không chắc, thay vì kết luận tệp đã mất. Tìm kiếm thường không gồm Spam và Trash; chỉ khi cần, thêm <code>in:anywhere</code>. Gmail cũng có thể hiện kết quả liên quan khi không tìm được kết quả khớp, nên vẫn phải đọc lại. Không mở tệp đáng ngờ chỉ vì nó xuất hiện trong kết quả."
+    },
+    {
+      "title": "Mở bản định dùng và kiểm một chi tiết",
+      "body": "Với tình huống giả, cần bản có dòng “Mang theo một quyển sách đã đọc”. Hãy kiểm dòng đó trong chính tài liệu, không chỉ nhìn tên “ban-moi.pdf”. Nếu hai bản mâu thuẫn và không có lời xác nhận bản nào chính thức, ghi “chưa xác định bản dùng”, thay vì tự chọn rồi gửi cho cả nhóm."
+    }
+  ],
+  "promptLabel": "Mẫu tự kiểm, không cần gửi AI",
+  "prompt": "TÌM MỘT TỆP TRONG GMAIL\nTài liệu cần tìm: [___]\nDấu hiệu nhớ chắc: [___]\nTruy vấn đã thử: [___]\nThư và tệp đã mở: [ghi riêng]\nChi tiết dùng để phân biệt phiên bản: [___]\nKết luận: [đúng bản/chưa xác định/chưa tìm thấy]\nKhông có kết quả không đồng nghĩa tệp không tồn tại.",
+  "example": {
+    "label": "Tình huống giả, không phải kết quả kiểm thử Gmail",
+    "input": "Bạn cần hướng dẫn buổi đọc sách. Thư A có PDF tên ban-moi.pdf nhưng nội dung cũ; thư B giải thích đã sửa mục chuẩn bị và kèm PDF khác.",
+    "output": "Chỉ chọn B sau khi đọc được lời sửa và chi tiết cần kiểm trong tài liệu. Nếu B chỉ nói “gửi tham khảo”, chưa đủ căn cứ gọi đó là bản chính thức."
+  },
+  "checklist": [
+    "Đúng tài khoản và đã thay địa chỉ mẫu.",
+    "Phân biệt tệp đính kèm với liên kết Drive.",
+    "Đã mở tệp, không chỉ đọc tên hoặc đoạn trích.",
+    "Biết chi tiết nào chứng minh đúng phiên bản; nếu thiếu thì ghi chưa xác định.",
+    "Chưa xóa, chuyển tiếp hoặc đổi quyền tài liệu trong lúc tìm."
+  ],
+  "limits": {
+    "cost": "Các bước dùng tìm kiếm thông thường. Tài liệu Google không yêu cầu mua Gemini cho cách này; chức năng hỏi Gemini trong Gmail là phần riêng, cần gói đủ điều kiện. Không cần mua tiện ích hoặc API để thực hành.",
+    "privacy": "Tìm trực tiếp không có nghĩa dữ liệu chỉ nằm trên máy. Theo <a href=\"https://support.google.com/mail/answer/10434152?hl=en\" target=\"_blank\" rel=\"noopener\">Google</a>, Gmail lưu thư tại trung tâm dữ liệu và lưu truy vấn để gợi ý tìm kiếm. Đừng chụp cả kết quả có thông tin riêng lên nhóm công khai; nếu nhờ AI viết truy vấn, chỉ đưa mô tả giả, không đưa thư thật.",
+    "caution": "Đã đối chiếu tài liệu Google ngày 14/11/2026, chưa thử trên hộp thư người dùng. Nhãn giao diện có thể khác theo ngôn ngữ. Quy trình không bảo đảm tìm được thư đã bị xóa vĩnh viễn hay nằm ở tài khoản khác, và không xác nhận độ an toàn của tệp."
+  },
+  "sources": [
+    {
+      "title": "Refine searches in Gmail: toán tử tìm thư và tệp",
+      "publisher": "Google Gmail Help",
+      "date": "Kiểm tra 14/11/2026",
+      "url": "https://support.google.com/mail/answer/7190?hl=en"
+    },
+    {
+      "title": "Search in Gmail: sắp xếp, kết quả liên quan và phạm vi tìm kiếm",
+      "publisher": "Google Gmail Help",
+      "date": "Kiểm tra 14/11/2026",
+      "url": "https://support.google.com/mail/answer/6593?co=GENIE.Platform%3DDesktop&hl=en"
+    },
+    {
+      "title": "How Gmail protects your privacy & keeps you in control",
+      "publisher": "Google Gmail Help",
+      "date": "Kiểm tra 14/11/2026",
+      "url": "https://support.google.com/mail/answer/10434152?hl=en"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/tim-lai-tep-dinh-kem-gmail.svg",
+    "alt": "Sơ đồ tìm một PDF bằng dấu hiệu chắc chắn, thu hẹp kết quả rồi mở đúng tài liệu để kiểm chi tiết và phiên bản.",
+    "caption": "Sơ đồ minh họa, không phải ảnh giao diện Gmail. Dữ liệu giả, không phải thư thật. Minh họa nguyên gốc: AI dạo chơi, 14/11/2026."
+  }
+},
 {
   "slug": "tao-muc-luc-google-docs-de-tim-lai-noi-dung",
   "type": "tutorial",
