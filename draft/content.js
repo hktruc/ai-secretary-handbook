@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-14',
+  updated: '2026-11-15',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -8,6 +8,94 @@ window.HANDBOOK_CONTENT = {
     { id: 'daily', label: 'Đời sống hằng ngày', icon: '☼' }
   ],
   articles: [
+{
+  "slug": "dan-lai-doan-da-copy-windows-11",
+  "type": "tutorial",
+  "topic": "daily",
+  "title": "Dán lại đoạn đã copy trên Windows 11, không phải quay về tìm lần nữa",
+  "dek": "Dùng Windows + V để chọn đúng đoạn cần dán, rồi dọn lịch sử sau khi làm việc. Không biến clipboard thành kho lưu bí mật.",
+  "why": {
+    "benefit": "Bạn đang soạn một thông báo, vừa sao chép tiêu đề rồi lại sao chép địa điểm. Khi dán, chỉ địa điểm xuất hiện; tiêu đề phải tìm lại từ đầu. Với một việc có nhiều mẩu thông tin ngắn, thao tác đi qua đi lại dễ làm bạn dán nhầm nội dung.",
+    "context": "Lịch sử clipboard giúp lấy lại mẩu đã sao chép khi tính năng được bật. Ta thử bằng ba dòng giả trong một bản nháp, không gửi hay đăng gì. Đây là công cụ có sẵn của Windows, không cần chatbot đọc nội dung và cũng không phải tính năng mới vừa ra mắt.",
+    "situations": [
+      "Người soạn thông báo cần lần lượt dán tiêu đề, địa điểm và dòng chuẩn bị.",
+      "Người tự học muốn dùng lại vài nhãn ngắn trong ghi chú mà không mở lại trang nguồn."
+    ]
+  },
+  "updated": "2026-11-15",
+  "readTime": "4 phút",
+  "level": "Cơ bản",
+  "outcome": "Chọn và dán lại đúng một mẩu văn bản đã copy, kiểm nơi dán và biết dọn phần không còn cần giữ.",
+  "preparation": [
+    "Máy Windows 11 của bạn; với máy cơ quan, tuân thủ quy định của đơn vị, không tự vượt chính sách quản trị.",
+    "Mở một tài liệu nháp không nhạy cảm. Chỉ dùng ba dòng giả bên dưới; chưa thử trong ô gửi email, bình luận hoặc biểu mẫu thật.",
+    "Trong Settings → System → Clipboard, kiểm mục đồng bộ giữa thiết bị. Bài tập không cần bật đồng bộ; nếu máy đã bật, chỉ dùng dữ liệu giả và cân nhắc chính sách đang áp dụng."
+  ],
+  "steps": [
+    {
+      "title": "Bật lịch sử nếu bạn muốn lưu các lần copy",
+      "body": "Nhấn <code>Windows + V</code>, chọn <em>Turn on</em> nếu xuất hiện. <a href=\"https://support.microsoft.com/en-us/windows/apps/using-the-clipboard\">Microsoft Support</a> hướng dẫn đây là cách bật lần đầu. Không kỳ vọng tìm lại nội dung cũ chưa từng được tính năng ghi nhận."
+    },
+    {
+      "title": "Tạo ba mẩu dễ phân biệt",
+      "body": "Trong tài liệu nháp, gõ ba dòng: “Buổi đọc sách”, “Phòng A” và “Mang một quyển sách”. Bôi đen từng dòng rồi nhấn Ctrl + C, làm đủ ba lượt. Đừng dùng mật khẩu, mã đăng nhập hay số giấy tờ để thử."
+    },
+    {
+      "title": "Chọn đúng chỗ rồi chọn đúng đoạn",
+      "body": "Đặt con trỏ ở dòng trống trong bản nháp. Nhấn Windows + V và chọn mẩu “Buổi đọc sách”, dù đó không phải mẩu vừa copy cuối cùng. Microsoft mô tả cách chọn mẩu trong <a href=\"https://www.microsoft.com/en-us/windows/learning-center/how-to-use-clipboard-history-in-windows-11\">hướng dẫn Windows 11</a>. Đọc lại kết quả trước khi chuyển sang ô khác."
+    },
+    {
+      "title": "Thử một nhãn thường dùng, không giữ nội dung riêng",
+      "body": "Nếu muốn dùng lại nhãn “Ghi chú:”, copy nó rồi chọn ghim trong bảng lịch sử. Chỉ thử với nhãn chung; đừng ghim thông tin thay đổi theo từng người hoặc từng buổi. Theo Microsoft, mẩu đã ghim được giữ khi khởi động lại, nên không coi tắt máy là đã xóa hết."
+    },
+    {
+      "title": "Dọn lịch sử có chủ đích",
+      "body": "Mở Windows + V, dùng menu ba chấm của một mẩu → Delete để xóa riêng. Clear all không xóa mẩu đã ghim; kiểm và xóa riêng những mẩu đó khi không cần. Đừng chọn xóa tất cả nếu còn mẩu chưa lưu ở nơi khác. Chỉ kiểm bằng dữ liệu thử, không khẳng định thao tác này xóa mọi dấu vết trong các ứng dụng."
+    },
+    {
+      "title": "Nếu không thấy mẩu, kiểm từng khả năng",
+      "body": "Thử copy lại một dòng chữ ngắn. Theo Microsoft, ứng dụng hoặc chính sách máy quản lý có thể ảnh hưởng tính năng. Lịch sử tối đa 25 mẩu, mỗi mẩu tối đa 4 MB; mẩu cũ không ghim có thể bị thay thế. Đừng cài tiện ích lạ hay sửa Registry chỉ để hoàn thành bài tập này."
+    }
+  ],
+  "promptLabel": "Phiếu thử, không cần gửi AI",
+  "prompt": "THỬ DÁN LẠI ĐÚNG MẨU\nDữ liệu giả:\nBuổi đọc sách\nPhòng A\nMang một quyển sách\n\nTôi đã copy riêng ba dòng: [có/chưa]\nMẩu tôi chọn trong Windows + V: [___]\nNơi tôi đặt con trỏ: [___]\nNội dung thực sự được dán: [___]\nCó đúng mẩu và đúng nơi không: [___]\nSau khi dọn, còn mẩu ghim nào: [___]",
+  "example": {
+    "label": "Ví dụ minh họa, không phải thử nghiệm trên máy người dùng",
+    "input": "Bạn copy tiêu đề, rồi địa điểm, rồi yêu cầu chuẩn bị. Bạn muốn dán tiêu đề vào đầu thông báo nháp.",
+    "output": "Mở lịch sử và chọn “Buổi đọc sách”, sau đó đọc lại dòng đầu. Nếu thấy “Mang một quyển sách”, chưa đạt: sửa bản nháp, không bấm gửi để thử."
+  },
+  "checklist": [
+    "Đã dùng dữ liệu giả, không copy bí mật để thực hành.",
+    "Đã dán đúng mẩu vào đúng vị trí, không chỉ thấy nó trong lịch sử.",
+    "Không bật đồng bộ chỉ vì nghĩ đó là điều kiện bắt buộc của bài tập.",
+    "Đã kiểm mẩu ghim sau khi dọn.",
+    "Thông tin cần giữ lâu đã lưu trong tài liệu chính, không chỉ nằm trong clipboard."
+  ],
+  "limits": {
+    "cost": "Không cần mua ứng dụng clipboard, gói AI hay API để làm bài này trên Windows 11 đã có. Chi phí máy và giấy phép Windows không được tính là miễn phí chỉ vì dùng tính năng tích hợp.",
+    "privacy": "Lịch sử có thể làm lộ mẩu đã copy khi người khác xem màn hình hoặc sử dụng phiên máy. Tính năng đồng bộ là lựa chọn riêng gắn với tài khoản và có thể đưa văn bản lên đám mây. Không dùng clipboard làm nơi lưu mật khẩu; không chụp bảng lịch sử thật để nhờ AI hỗ trợ.",
+    "caution": "Đối chiếu tài liệu Microsoft ngày 15/11/2026; chưa thử tính năng trên máy Windows của người dùng. Nhãn và vị trí nút có thể khác theo phiên bản/ngôn ngữ. Đây là chỗ giữ tạm, không phải bản sao lưu; không bảo đảm khôi phục mẩu đã mất hoặc tìm được nội dung trước khi bật lịch sử."
+  },
+  "sources": [
+    {
+      "title": "Using the clipboard: bật, xóa, đồng bộ và giới hạn",
+      "publisher": "Microsoft Support",
+      "date": "Kiểm tra 15/11/2026",
+      "url": "https://support.microsoft.com/en-us/windows/apps/using-the-clipboard"
+    },
+    {
+      "title": "How to use clipboard history in Windows 11",
+      "publisher": "Microsoft Windows",
+      "date": "Kiểm tra 15/11/2026",
+      "url": "https://www.microsoft.com/en-us/windows/learning-center/how-to-use-clipboard-history-in-windows-11"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/dan-lai-doan-da-copy-windows-11.svg",
+    "alt": "Ba mẩu giả được copy; Windows cộng V giúp chọn tiêu đề thay vì mẩu cuối, sau đó kiểm bản nháp và dọn lịch sử.",
+    "caption": "Sơ đồ minh họa nguyên gốc, không phải ảnh giao diện Windows. Dữ liệu giả. Minh họa: AI dạo chơi, 15/11/2026."
+  }
+},
 {
   "slug": "tim-lai-tep-dinh-kem-gmail",
   "type": "tutorial",
