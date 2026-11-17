@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-15',
+  updated: '2026-11-17',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -8,6 +8,90 @@ window.HANDBOOK_CONTENT = {
     { id: 'daily', label: 'Đời sống hằng ngày', icon: '☼' }
   ],
   articles: [
+{
+  "slug": "gui-link-dung-doan-chrome",
+  "type": "tutorial",
+  "topic": "daily",
+  "title": "Gửi link đến đúng đoạn cần đọc trong Chrome",
+  "dek": "Đỡ nhắn “kéo xuống gần cuối trang”: chọn một đoạn ngắn, tạo liên kết và mở thử trước khi gửi.",
+  "why": {
+    "benefit": "Bạn gửi một bài hướng dẫn dài để cùng bàn một chi tiết, nhưng người nhận chỉ thấy đầu trang. Hai người lại mất thêm vài tin nhắn chỉ chỗ. Một liên kết đến đoạn cần đọc giúp cuộc trao đổi bắt đầu ở cùng một ý, đồng thời vẫn giữ nguyên trang nguồn để đọc ngữ cảnh.",
+    "context": "Bài này dùng tính năng có sẵn trong Chrome trên máy tính, không cần chatbot hay tiện ích. Ta thực hành với trang trợ giúp công khai của Google, rồi chuẩn bị một tin nhắn nháp. Đây là cách dùng một tính năng lâu năm, không phải thông báo sản phẩm mới.",
+    "situations": [
+      "Bạn tự học và muốn lưu đúng đoạn giải thích để ôn lại sau.",
+      "Bạn gửi hướng dẫn công khai cho bạn bè nhưng chỉ cần họ đọc một mục."
+    ]
+  },
+  "updated": "2026-11-17",
+  "readTime": "4 phút",
+  "level": "Cơ bản",
+  "outcome": "Tạo được một liên kết đến đoạn chữ, kiểm nó ở tab mới và kèm đường tìm thủ công nếu phần tô sáng không hoạt động.",
+  "preparation": [
+    "Chrome trên máy tính và một trang web công khai có chữ chọn được. Hướng dẫn này không bao quát giao diện điện thoại.",
+    "Mở trang Google Chrome Help “Share or link to quotes & text in Chrome” trong nguồn cuối bài. Không dùng trang tài khoản, nội dung riêng tư hay đường dẫn chứa mã truy cập.",
+    "Một nơi ghi nháp để dán liên kết. Chưa cần mở hộp gửi tin nhắn thật."
+  ],
+  "steps": [
+    {
+      "title": "Chọn một ý đủ rõ, không chọn cả trang",
+      "body": "Trong trang trợ giúp, tìm mục hướng dẫn tạo liên kết. Đọc cả đoạn trước khi chọn: phần được tô sáng chỉ dẫn mắt tới một chỗ, không chứng minh rằng cách hiểu của bạn là đúng. Với bài tập, chọn một câu ngắn trong phần các bước."
+    },
+    {
+      "title": "Lấy liên kết cho đoạn đã chọn",
+      "body": "Kéo chuột bôi đen câu, nhấp chuột phải rồi chọn <em>Copy link to highlight</em> (sao chép liên kết đến phần văn bản được đánh dấu). Theo <a href=\"https://support.google.com/chrome/answer/10256233?co=GENIE.Platform%3DDesktop&amp;hl=en\">Google Chrome Help</a>, nếu không chọn được mục này, tính năng có thể không hoạt động với nội dung đã chọn."
+    },
+    {
+      "title": "Dán vào bản nháp và đọc địa chỉ",
+      "body": "Dán liên kết vào ghi chú. Kiểm tên miền vẫn là trang nguồn dự định chia sẻ. Tài liệu kỹ thuật của Google mô tả đoạn văn bản có thể nằm trong phần fragment của URL; vì vậy đừng xem đường dẫn dài như một chiếc phong bì kín. Chỉ thực hành với chữ công khai, không đưa dữ liệu riêng vào liên kết."
+    },
+    {
+      "title": "Mở thử như người nhận",
+      "body": "Dán nguyên liên kết vào một tab mới rồi mở. Tự kiểm: đúng trang chưa, đúng câu chưa, có tô sáng không? Nếu chỉ mở đầu trang, đừng ghi “bấm là tới đúng đoạn”. Thử chọn một câu rõ hơn hoặc dùng đường dẫn thường kèm tên mục. Việc mở được trên máy bạn chưa chứng minh mọi trình duyệt đều hiển thị giống nhau."
+    },
+    {
+      "title": "Thêm một câu chỉ đường dự phòng",
+      "body": "Dùng mẫu bên dưới để nói rõ người nhận nên xem gì. Giữ tên mục hoặc vài từ có thể tìm bằng Ctrl + F. Chỉ gửi sau khi đọc lại người nhận và nội dung; bài tập kết thúc ở bản nháp, không cần gửi thử cho ai."
+    }
+  ],
+  "promptLabel": "Mẫu tin nhắn có thể sao chép",
+  "prompt": "Mình gửi hướng dẫn về [việc đang trao đổi].\nBạn xem mục [tên mục], đặc biệt câu bắt đầu bằng “[vài từ ngắn]”.\n[Liên kết đã mở thử]\nNếu không thấy phần tô sáng, dùng Ctrl + F tìm “[cụm từ]”.\nMình muốn trao đổi về: [một câu hỏi cụ thể].",
+  "example": {
+    "label": "Tình huống minh họa, không phải báo cáo thử nghiệm giao diện",
+    "input": "Bạn muốn chỉ cho một người bạn bước lấy liên kết trong trang Chrome Help công khai.",
+    "output": "Bản nháp gồm liên kết tự tạo, tên trang và cụm “Copy link to highlight” để tìm thủ công. Chỉ đánh dấu đã kiểm khi bạn thực sự mở liên kết và nhìn thấy đúng đoạn; ví dụ này không cung cấp URL giả để coi như kết quả đã chạy."
+  },
+  "checklist": [
+    "Liên kết trỏ tới đúng tên miền và trang công khai.",
+    "Đã mở lại liên kết, không chỉ nhìn thấy thông báo đã sao chép.",
+    "Câu được chọn có đủ ngữ cảnh, không làm lệch ý nguồn.",
+    "Tin nhắn có tên mục hoặc cụm từ tìm kiếm dự phòng.",
+    "Không có dữ liệu riêng hay mã truy cập trong URL hoặc lời nhắn."
+  ],
+  "limits": {
+    "cost": "Bài tập dùng thao tác tích hợp, không cần gói AI, API trả phí hay tiện ích bổ sung. Chi phí Internet và thiết bị vẫn tùy người dùng.",
+    "privacy": "Lời khuyên thực hành: coi toàn bộ URL là thông tin sẽ được người nhận đọc và có thể chuyển tiếp. Không thử bằng đoạn từ hồ sơ cá nhân hoặc tài liệu nội bộ. Liên kết không thay thế việc cấp quyền truy cập hợp lệ.",
+    "caution": "Không phải mọi nội dung đều hỗ trợ tạo liên kết. Tài liệu kỹ thuật nêu rằng thay đổi văn bản có thể khiến đoạn không còn khớp; hãy giữ tên nguồn và đường tìm thủ công. Đây là hướng dẫn tổng hợp từ tài liệu chính thức kiểm ngày 17/11/2026, không khẳng định đã thử thao tác menu Chrome trên máy người dùng."
+  },
+  "sources": [
+    {
+      "title": "Share or link to quotes & text in Chrome — Computer",
+      "publisher": "Google Chrome Help",
+      "date": "Kiểm tra 17/11/2026",
+      "url": "https://support.google.com/chrome/answer/10256233?co=GENIE.Platform%3DDesktop&hl=en"
+    },
+    {
+      "title": "Boldly link where no one has linked before: Text Fragments",
+      "publisher": "Google web.dev",
+      "date": "Kiểm tra 17/11/2026",
+      "url": "https://web.dev/articles/text-fragments"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/gui-link-dung-doan-chrome.svg",
+    "alt": "Sơ đồ bốn bước: chọn một câu công khai, lấy liên kết, mở lại để kiểm, rồi viết lời nhắn có đường tìm dự phòng.",
+    "caption": "Sơ đồ minh họa nguyên gốc, không phải ảnh giao diện Chrome. Minh họa: AI dạo chơi, 17/11/2026."
+  }
+},
 {
   "slug": "dan-lai-doan-da-copy-windows-11",
   "type": "tutorial",

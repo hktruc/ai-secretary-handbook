@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+<title id="title">Gửi đúng đoạn, giữ ngữ cảnh</title><desc id="desc">Bốn bước tạo và kiểm liên kết tới đoạn văn bản công khai.</desc>
+<rect width="960" height="540" rx="24" fill="#f6f4ec"/>
+<g font-family="Arial, sans-serif" fill="#183c36"><text x="60" y="78" font-size="18" letter-spacing="3">MẸO ĐỌC VÀ CHIA SẺ</text><text x="60" y="134" font-size="38" font-weight="700">Gửi đúng đoạn, giữ ngữ cảnh</text><text x="60" y="172" font-size="20">Một liên kết tốt vẫn cần được mở thử.</text></g>
+<g font-family="Arial, sans-serif"><rect x="60" y="215" width="400" height="98" rx="16" fill="#dce9df"/><text x="82" y="251" font-size="22" fill="#183c36" font-weight="700">01 · Chọn một câu</text><text x="82" y="283" font-size="18" fill="#183c36">Dùng chữ công khai, đọc cả ngữ cảnh.</text>
+<rect x="490" y="215" width="410" height="98" rx="16" fill="#dce9df"/><text x="512" y="251" font-size="22" fill="#183c36" font-weight="700">02 · Lấy liên kết</text><text x="512" y="283" font-size="18" fill="#183c36">Copy link to highlight</text>
+<rect x="60" y="333" width="400" height="98" rx="16" fill="#fff"/><text x="82" y="369" font-size="22" fill="#183c36" font-weight="700">03 · Mở lại để kiểm</text><text x="82" y="401" font-size="18" fill="#183c36">Đúng trang? Đúng câu? Có tô sáng?</text>
+<rect x="490" y="333" width="410" height="98" rx="16" fill="#fff"/><text x="512" y="369" font-size="22" fill="#183c36" font-weight="700">04 · Thêm lời chỉ đường</text><text x="512" y="401" font-size="18" fill="#183c36">Tên mục + cụm từ để tìm dự phòng.</text>
+<text x="60" y="485" font-size="16" fill="#596b64">Sơ đồ minh họa · Không phải giao diện Chrome</text><text x="60" y="513" font-size="14" fill="#596b64">Minh họa: AI dạo chơi · 17/11/2026</text></g></svg>
