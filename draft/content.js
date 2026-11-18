@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-17',
+  updated: '2026-11-18',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -8,6 +8,84 @@ window.HANDBOOK_CONTENT = {
     { id: 'daily', label: 'Đời sống hằng ngày', icon: '☼' }
   ],
   articles: [
+{
+  "slug": "dat-nguon-va-ghi-chu-canh-nhau-windows-11",
+  "type": "tutorial",
+  "topic": "organization",
+  "title": "Đặt nguồn và ghi chú cạnh nhau trên Windows 11",
+  "dek": "Đọc một đoạn rồi ghi lại ý chính mà không phải liên tục đổi cửa sổ. Bắt đầu với hai ô, không phải một màn hình chật kín ứng dụng.",
+  "why": {
+    "benefit": "Bạn đang đọc một hướng dẫn và muốn ghi lại cách làm. Mỗi lần chuyển sang trang ghi chú, bạn lại quên một chi tiết rồi quay về tìm. Đặt nguồn và bản nháp cạnh nhau giúp giữ chỗ đang đọc và đối chiếu ngay, thay vì cố nhớ cả đoạn.",
+    "context": "Ta dùng Snap có sẵn trong Windows 11 để sắp hai cửa sổ, rồi thực hành viết ba dòng ghi chú từ một trang công khai. Không cần AI, tiện ích hay màn hình thứ hai. Đây là kỹ năng tổ chức chỗ làm việc, không phải tính năng vừa ra mắt.",
+    "situations": [
+      "Bạn tự học một hướng dẫn công khai và muốn ghi lại các bước bằng lời của mình.",
+      "Bạn đối chiếu một bản nháp tự viết với tài liệu nguồn không chứa thông tin riêng."
+    ]
+  },
+  "updated": "2026-11-18",
+  "readTime": "4 phút",
+  "level": "Cơ bản",
+  "outcome": "Có một cửa sổ nguồn và một cửa sổ ghi chú cùng nhìn thấy, kèm ba dòng ghi rõ điều đã hiểu và điều cần kiểm lại.",
+  "preparation": [
+    "Máy Windows 11, một cửa sổ trình duyệt và một cửa sổ ứng dụng ghi chú đang mở. Hai tab trong cùng một cửa sổ chưa phải hai cửa sổ riêng.",
+    "Dùng trang Microsoft Support về Snap ở cuối bài làm nguồn công khai. Tạo bản ghi chú trống; không dùng hồ sơ cá nhân để thực hành.",
+    "Lưu công việc đang làm trước khi sắp lại màn hình. Bài tập không yêu cầu cài phần mềm hoặc mua gói AI."
+  ],
+  "steps": [
+    {
+      "title": "Giữ đúng hai thứ cần đối chiếu",
+      "body": "Mở trang nguồn và bản ghi chú. Tạm gác các cửa sổ không liên quan. Chọn trước một mục ngắn cần học; nếu mở cả chục tài liệu, bố cục đẹp cũng không giúp xác định nên đọc gì."
+    },
+    {
+      "title": "Chia hai cửa sổ bằng bàn phím",
+      "body": "Chọn cửa sổ nguồn, nhấn <strong>Windows + mũi tên trái</strong>. Chọn cửa sổ ghi chú từ gợi ý Snap Assist, hoặc chuyển sang nó rồi nhấn <strong>Windows + mũi tên phải</strong>. Đây là thao tác được mô tả trong <a href=\"https://support.microsoft.com/en-us/windows/experience/snap-your-windows\">Microsoft Support</a>."
+    },
+    {
+      "title": "Chỉnh bố cục vừa mắt, đừng cố nhét thêm",
+      "body": "Có thể nhấn <strong>Windows + Z</strong> để chọn bố cục Snap, hoặc kéo đường phân cách để đổi độ rộng. Microsoft lưu ý lựa chọn bố cục phụ thuộc kích thước màn hình. Với bài tập này, ưu tiên đọc rõ câu nguồn hơn việc nhìn thấy nhiều ứng dụng cùng lúc."
+    },
+    {
+      "title": "Viết ba dòng rồi kiểm từng dòng",
+      "body": "Đọc mục hướng dẫn bàn phím trong nguồn, sau đó dùng mẫu bên dưới để ghi bằng lời của bạn. Với mỗi ý, nhìn lại câu gốc: có thêm điều nguồn chưa nói không? Nếu chưa hiểu, giữ nó ở dòng “cần kiểm”, đừng biến suy đoán thành hướng dẫn."
+    },
+    {
+      "title": "Lưu ghi chú trước khi rời việc",
+      "body": "Lưu bằng chức năng của ứng dụng ghi chú, rồi mở lại để kiểm nội dung. Việc xếp cửa sổ không thay cho lưu tệp. Nếu không thấy Snap hoạt động, kiểm <strong>Settings → System → Multitasking → Snap windows</strong> theo nguồn Microsoft; trên máy cơ quan, không tự vượt cài đặt bị quản trị khóa."
+    }
+  ],
+  "promptLabel": "Mẫu ghi chú ba dòng",
+  "prompt": "Nguồn: [tên trang + liên kết]\nĐiều tôi hiểu: [một câu tự viết]\nThao tác sẽ thử: [một bước cụ thể]\nĐiều còn cần kiểm: [chi tiết chưa chắc, hoặc “không có”]\nĐã mở lại bản lưu: [có/chưa]",
+  "example": {
+    "label": "Tình huống tự tạo, không phải báo cáo đã thử trên Windows",
+    "input": "Một người đọc hướng dẫn Snap công khai và ghi chú trong ứng dụng riêng.",
+    "output": "Hai cửa sổ cùng hiện trên màn hình; bản ghi có liên kết nguồn, một thao tác muốn thử và một chỗ chưa chắc. Chỉ đánh dấu đã lưu khi thực sự mở lại được ghi chú."
+  },
+  "checklist": [
+    "Nguồn và ghi chú là hai cửa sổ riêng, cùng nhìn thấy nội dung cần đọc.",
+    "Cỡ chữ vẫn dễ đọc; không thu nhỏ chỉ để nhét thêm cửa sổ.",
+    "Mỗi câu ghi chú phân biệt điều nguồn nói với suy nghĩ của mình.",
+    "Bản ghi đã được lưu và mở lại kiểm, không chỉ đang hiển thị.",
+    "Không để dữ liệu riêng xuất hiện khi chụp hoặc chia sẻ màn hình."
+  ],
+  "limits": {
+    "cost": "Bài tập dùng tính năng của Windows 11 đã có trên máy; không yêu cầu dịch vụ AI trả phí hay tiện ích mới. Chi phí thiết bị và ứng dụng ghi chú tùy lựa chọn sẵn có.",
+    "privacy": "Lời khuyên thực hành: chỉ mở tài liệu công khai hoặc dữ liệu giả khi tập. Trước khi chia sẻ màn hình, kiểm cả hai bên; một cửa sổ ghi chú đặt cạnh nguồn vẫn có thể chứa nội dung không nên gửi.",
+    "caution": "Hướng dẫn đối chiếu tài liệu Microsoft ngày 18/11/2026; chưa thử các phím trên máy Windows của người đọc. Màn hình nhỏ có thể khó đọc khi chia đôi. Nếu không phù hợp, quay về đọc từng cửa sổ; không cần thay máy hay cài thêm công cụ chỉ để làm bài tập."
+  },
+  "sources": [
+    {
+      "title": "Snap Your Windows",
+      "publisher": "Microsoft Support",
+      "date": "Kiểm tra 18/11/2026",
+      "url": "https://support.microsoft.com/en-us/windows/experience/snap-your-windows"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/dat-nguon-va-ghi-chu-canh-nhau-windows-11.svg",
+    "alt": "Sơ đồ hai vùng cạnh nhau: bên trái là nguồn công khai, bên phải là ghi chú gồm điều hiểu, thao tác thử và điều cần kiểm.",
+    "caption": "Sơ đồ minh họa nguyên gốc, không phải ảnh giao diện Windows. Dữ liệu giả. Minh họa: AI dạo chơi, 18/11/2026."
+  }
+},
 {
   "slug": "gui-link-dung-doan-chrome",
   "type": "tutorial",
