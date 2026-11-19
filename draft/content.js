@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-18',
+  updated: '2026-11-19',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -8,6 +8,84 @@ window.HANDBOOK_CONTENT = {
     { id: 'daily', label: 'Đời sống hằng ngày', icon: '☼' }
   ],
   articles: [
+{
+  "slug": "luu-trang-web-de-doc-khi-mat-mang",
+  "type": "tutorial",
+  "topic": "learning",
+  "title": "Lưu một trang web để đọc khi mất mạng, rồi mở thử bản đã lưu",
+  "dek": "Thêm vào danh sách đọc chưa phải là bài kiểm ngoại tuyến. Hãy chuẩn bị một bản tải xuống và kiểm phần thật sự cần đọc trước khi đi.",
+  "why": {
+    "benefit": "Bạn định đọc một bài hướng dẫn trên chuyến đi, nhưng đến lúc mở lại thì mạng yếu. Trang vẫn nằm trong danh sách đã lưu mà nội dung cần xem không hiện đầy đủ. Điều cần chuẩn bị không chỉ là một địa chỉ để tìm lại, mà là bản có thể đọc ngay trên máy.",
+    "context": "Ta dùng Chrome trên máy tính để tải một trang công khai, đặt tên dễ nhận ra và kiểm bản lưu riêng. Bài tập tập trung vào chữ và hình cần đọc, không sao lưu cả website hay video. Đây là một thói quen chuẩn bị tài liệu, không cần AI hoặc tiện ích mới.",
+    "situations": [
+      "Bạn muốn đọc một hướng dẫn công khai trên laptop khi đi tàu hoặc ở nơi mạng yếu.",
+      "Bạn chuẩn bị một tài liệu tham khảo ngắn trước buổi tự học, để không phụ thuộc vào tab đang mở."
+    ]
+  },
+  "updated": "2026-11-19",
+  "readTime": "5 phút",
+  "level": "Cơ bản",
+  "outcome": "Có một bản trang đã lưu, mở lại được từ máy và một ghi chú phân biệt phần đọc được với phần vẫn cần mạng.",
+  "preparation": [
+    "Chrome trên máy tính, mạng đang hoạt động và một thư mục dễ tìm. Hướng dẫn này không mô tả menu trên điện thoại.",
+    "Chọn một trang công khai đơn giản có quyền đọc, chẳng hạn trang Google Chrome Help trong nguồn cuối bài. Không dùng trang tài khoản, hóa đơn hay hồ sơ riêng.",
+    "Lưu công việc đang làm trước khi kiểm ngoại tuyến. Nếu đang gọi video hoặc có ứng dụng cần mạng, đợi lúc phù hợp, không ngắt kết nối giữa việc."
+  ],
+  "steps": [
+    {
+      "title": "Chốt phần thực sự cần mang theo",
+      "body": "Trước khi tải, ghi tên mục và hai chi tiết cần đọc. Ví dụ với trang trợ giúp: cần biết đường vào thao tác lưu và cách mở tệp sau đó. Tiêu chí này giúp phân biệt một bản trông đẹp với một bản đủ dùng."
+    },
+    {
+      "title": "Tải trang, không chỉ thêm vào danh sách đọc",
+      "body": "Khi trang đã mở trong Chrome, chọn menu ba chấm → <strong>Cast, save, and share → Save page as…</strong>, chọn nơi lưu rồi bấm <strong>Save</strong>. Theo <a href=\"https://support.google.com/chrome/answer/7343019?co=GENIE.Platform%3DDesktop&amp;hl=en\">Google Chrome Help</a>, cần có mạng lúc lưu; đọc ngoại tuyến bằng cách mở tệp đã tải. Reading list phục vụ tìm lại trang, không phải bằng chứng rằng bản ngoại tuyến đã đủ."
+    },
+    {
+      "title": "Đặt tên để phân biệt với nguồn đang sống",
+      "body": "Dùng tên như “Huong-dan-Chrome_2026-11-19”, giữ nguyên phần đuôi tệp mà hộp lưu đề xuất. Nếu thao tác tạo thêm thư mục tài nguyên đi kèm, giữ nó cùng bản lưu trong lúc kiểm. Ghi lại URL gốc và ngày lưu vào ghi chú riêng, không coi bản này là phiên bản luôn được cập nhật."
+    },
+    {
+      "title": "Mở bản trên máy rồi kiểm phần đã chọn",
+      "body": "Từ thư mục lưu, mở tệp thay vì bấm lại bookmark. Google cho biết tệp mở bằng trình duyệt mặc định, có thể không phải Chrome. Đọc lại hai chi tiết đã chốt và xem hình cần thiết có hiện không. Đừng kết luận chỉ từ tên tệp hay thông báo tải xong."
+    },
+    {
+      "title": "Kiểm ngoại tuyến vào lúc không làm gián đoạn việc khác",
+      "body": "Khi an toàn để tạm ngắt kết nối, mở lại chính bản lưu và thử đọc các mục đã chọn. Nếu chữ hoặc hình quan trọng mất, ghi rõ chưa đạt và chuẩn bị nguồn thay thế được phép tải. Không coi nút tìm kiếm, liên kết sang trang khác hay video là đã được mang theo chỉ vì chúng còn xuất hiện trong bản lưu. Kết nối lại sau khi kiểm."
+    }
+  ],
+  "promptLabel": "Phiếu kiểm bản đọc ngoại tuyến",
+  "prompt": "Tên trang: [tên nguồn]\nURL gốc: [địa chỉ công khai]\nNgày lưu: [ngày thực tế]\nTệp nằm ở: [thư mục dễ tìm]\nHai chi tiết cần đọc: [1] / [2]\nĐã mở lại tệp khi không có mạng: [có/chưa]\nPhần còn thiếu hoặc cần mạng: [ghi rõ]",
+  "example": {
+    "label": "Ví dụ tự tạo, không phải báo cáo đã thử tải trang",
+    "input": "Một người muốn đọc mục lưu trang trong Google Chrome Help khi đi xa.",
+    "output": "Bản tải xuống có tên và ngày, cùng phiếu kiểm ghi rõ mở được mục cần đọc hay chưa. Chỉ đánh dấu “có” sau khi thực sự mở lại tệp không có mạng; ví dụ không khẳng định trang nào luôn lưu đủ."
+  },
+  "checklist": [
+    "Đã mở tệp trong thư mục lưu, không nhầm với tab nguồn trực tuyến.",
+    "Hai chi tiết cần đọc vẫn đầy đủ và dễ hiểu.",
+    "Đã kiểm các hình quan trọng, không chỉ đoạn chữ đầu trang.",
+    "Ghi URL gốc và ngày lưu để đối chiếu khi có mạng trở lại.",
+    "Không có tài liệu riêng hoặc dữ liệu đăng nhập trong bản thử."
+  ],
+  "limits": {
+    "cost": "Không cần mua gói AI hoặc cài tiện ích cho bài tập. Vẫn cần dung lượng lưu trữ và mạng khi tải; ứng dụng hoặc thiết bị khác có thể có chi phí riêng.",
+    "privacy": "Bản tải xuống là một bản sao cần được bảo vệ như tài liệu khác. Chỉ thực hành với trang công khai; không gửi bản sao cho người khác nếu chưa có quyền chia sẻ. Không dùng cách lưu trang để vượt đăng nhập hoặc quyền truy cập.",
+    "caution": "Hướng dẫn từ tài liệu Google kiểm ngày 19/11/2026, chưa thử menu trên máy người đọc. Bản lưu không phải bản sao đầy đủ mọi chức năng; bài kiểm tại chỗ mới xác nhận phần nào dùng được. Khi thông tin liên quan lịch, giá hoặc quy định, mở lại nguồn mới trước khi hành động."
+  },
+  "sources": [
+    {
+      "title": "Read pages later & offline — Computer",
+      "publisher": "Google Chrome Help",
+      "date": "Kiểm tra 19/11/2026",
+      "url": "https://support.google.com/chrome/answer/7343019?co=GENIE.Platform%3DDesktop&hl=en"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/luu-trang-web-de-doc-khi-mat-mang.svg",
+    "alt": "Sơ đồ từ trang công khai đến bản tải trên máy và bước mở lại không có mạng để kiểm chữ, hình cần đọc.",
+    "caption": "Sơ đồ minh họa nguyên gốc, không phải ảnh giao diện Chrome. Minh họa: AI dạo chơi, 19/11/2026."
+  }
+},
 {
   "slug": "dat-nguon-va-ghi-chu-canh-nhau-windows-11",
   "type": "tutorial",
