@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-19',
+  updated: '2026-11-20',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -8,6 +8,83 @@ window.HANDBOOK_CONTENT = {
     { id: 'daily', label: 'Đời sống hằng ngày', icon: '☼' }
   ],
   articles: [
+{
+  "slug": "tao-danh-sach-trang-thai-google-sheets",
+  "type": "tutorial",
+  "topic": "organization",
+  "updated": "2026-11-20",
+  "readTime": "6 phút",
+  "level": "Cơ bản",
+  "title": "Tạo danh sách trạng thái trong Google Sheets, rồi thử một giá trị sai",
+  "dek": "Ba lựa chọn nhất quán giúp bạn lọc danh sách việc. Hãy thử một ô hợp lệ và một ô ngoài danh sách trước khi áp dụng rộng.",
+  "why": {
+    "benefit": "Một người viết “Xong”, người khác viết “Đã xong”. Cả hai hiểu như nhau, nhưng khi lọc theo đúng một nhãn, có thể sót việc. Thống nhất cách nhập ngay ở cột trạng thái dễ hơn dọn bảng sau mỗi tuần.",
+    "context": "Ta làm một bảng việc giả trên Google Sheets máy tính. Danh sách thả xuống chuẩn hóa tên trạng thái, không tự biết việc đã hoàn thành hay chưa.",
+    "situations": [
+      "Bạn theo dõi đầu việc chuẩn bị cho một buổi học.",
+      "Bạn muốn chia sẻ mẫu theo dõi tiến độ đã thống nhất nhãn với đồng đội."
+    ]
+  },
+  "outcome": "Có một cột chọn trạng thái trên ba hàng thử, với một lần kiểm giá trị đúng, một lần kiểm giá trị ngoài danh sách và một lần kiểm ô kế bên không đổi.",
+  "preparation": [
+    "Dùng Google Sheets trên máy tính và tệp thử bạn có quyền chỉnh sửa. Chưa sửa bảng dùng chung đang vận hành.",
+    "Tạo hai cột A1 “Việc” và B1 “Trạng thái”. Gõ ba việc giả vào A2:A4: in tài liệu, kiểm máy chiếu, xếp bàn.",
+    "Thống nhất ba trạng thái: Chưa làm, Đang làm, Xong. Không ghi tên, số điện thoại, điểm học viên hoặc dữ liệu thật vào bảng thử."
+  ],
+  "steps": [
+    {
+      "title": "Chọn đúng ba ô cần kiểm soát",
+      "body": "Bôi đen B2:B4, không chọn B1 hoặc cột tên việc. Mở <strong>Chèn → Danh sách thả xuống</strong> (Insert → Dropdown). Có thể vào <strong>Dữ liệu → Xác thực dữ liệu</strong> (Data → Data validation) rồi thêm quy tắc."
+    },
+    {
+      "title": "Nhập ba lựa chọn, mỗi ô một trạng thái",
+      "body": "Trong điều kiện quy tắc, chọn <strong>Dropdown</strong> và nhập từng nhãn đã thống nhất. Không bật chọn nhiều vì mục đích của bảng này là một trạng thái hiện hành mỗi việc. Kiểm phạm vi vẫn là B2:B4 rồi bấm <strong>Done</strong>."
+    },
+    {
+      "title": "Thử dữ liệu đúng và dữ liệu ngoài danh sách",
+      "body": "Chọn “Đang làm” ở B2. Thử gõ một nhãn hoàn toàn khác như “Tạm hoãn” ở B3. Theo Google, mặc định Sheets từ chối giá trị không khớp. Nếu bản thử chỉ hiện cảnh báo, mở lại quy tắc để xem cài đặt khi nhập dữ liệu không hợp lệ."
+    },
+    {
+      "title": "Chỉ dùng cảnh báo nếu thực sự cần ngoại lệ",
+      "body": "Trong bảng thử, bạn có thể đổi ở <strong>Advanced options</strong> sang <strong>Show a warning</strong> và lặp lại phép thử. Chế độ này cho phép giá trị ngoài danh sách, nên cân nhắc ai sẽ rà ngoại lệ. Sau đó bỏ giá trị thử và đưa quy tắc về cách nhập bạn đã chọn."
+    },
+    {
+      "title": "Rà phạm vi rồi mới nghĩ tới bảng thật",
+      "body": "Kiểm B1 và cột A vẫn như ban đầu. Hàng 5 nằm ngoài vùng thử: nếu muốn dùng quy tắc cho hàng mới, mở bảng quy tắc, kiểm và điều chỉnh phạm vi. Trước khi áp dụng lên dữ liệu có sẵn, rà các nhãn cũ và thống nhất cách quy đổi, không đổi hàng loạt theo phỏng đoán."
+    }
+  ],
+  "promptLabel": "Phiếu kiểm cột trạng thái",
+  "prompt": "Phạm vi cần áp dụng: [ví dụ B2:B4]\nCác trạng thái được phép: [3 nhãn]\nGiá trị đúng đã chọn và kết quả: […]\nGiá trị ngoài danh sách và kết quả: […]\nHàng tiêu đề và cột bên cạnh không đổi: [có/chưa]\nNgười rà ngoại lệ nếu dùng cảnh báo: […]",
+  "example": {
+    "label": "Ví dụ tự tạo, không phải bảng thật",
+    "input": "Dòng kiểm máy chiếu đang làm. Nhãn “Tạm hoãn” chưa được thống nhất.",
+    "output": "Chọn “Đang làm” trong danh sách. Nếu cần lưu lý do hoãn, ghi ở cột ghi chú riêng hoặc cùng nhóm thống nhất thêm một trạng thái; không tự đổi nghĩa nhãn hiện có."
+  },
+  "checklist": [
+    "Chỉ ô cần kiểm soát có quy tắc.",
+    "Chọn được nhãn hợp lệ và biết cách hệ thống phản hồi nhãn ngoài danh sách.",
+    "Đã kiểm hàng mới, cột bên cạnh và dữ liệu cũ trước khi áp dụng rộng.",
+    "Tên nhãn có nghĩa rõ ngay cả khi không nhìn màu."
+  ],
+  "limits": {
+    "cost": "Bài tập không cần mua tiện ích hay gọi AI. Công chuẩn hóa nhãn cũ và rà ngoại lệ vẫn cần tính nếu mở rộng.",
+    "privacy": "Danh sách thả xuống không cấp hoặc giới hạn quyền đọc tệp. Giữ dữ liệu thử giả lập và không chia sẻ bảng khi chưa kiểm người nhận.",
+    "caution": "Đã đối chiếu hướng dẫn máy tính của Google ngày 20/11/2026, chưa thực hiện trên tài khoản người đọc. Tên mục có thể khác theo ngôn ngữ giao diện. Quy tắc không tự cập nhật tiến độ, không chứng minh dữ liệu ngoài vùng thử đã sạch."
+  },
+  "sources": [
+    {
+      "title": "Create an in-cell dropdown list — Computer",
+      "publisher": "Google Docs Editors Help",
+      "date": "Kiểm nguồn 20/11/2026",
+      "url": "https://support.google.com/docs/answer/186103?hl=en-5"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/tao-danh-sach-trang-thai-google-sheets.svg",
+    "alt": "Sơ đồ ba bước: chọn B2:B4, đặt ba lựa chọn, thử một nhãn đúng và một nhãn sai.",
+    "caption": "Minh họa nguyên gốc của AI dạo chơi, không phải ảnh giao diện Google Sheets."
+  }
+},
 {
   "slug": "luu-trang-web-de-doc-khi-mat-mang",
   "type": "tutorial",

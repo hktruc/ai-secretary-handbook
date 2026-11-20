@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img">
+<title>Chọn ô, đặt nhãn và thử đầu vào</title><rect width="960" height="540" fill="#f4f1e8"/>
+<g font-family="Arial, sans-serif">
+<text x="55" y="88" font-size="35" fill="#163839">Ba trạng thái, hai phép thử</text>
+<g fill="#dbe9e3"><rect x="55" y="145" width="260" height="240" rx="18"/><rect x="350" y="145" width="260" height="240" rx="18"/><rect x="645" y="145" width="260" height="240" rx="18"/></g>
+<g fill="#163839" font-size="24"><text x="75" y="195">01 · CHỌN Ô</text><text x="370" y="195">02 · ĐẶT NHÃN</text><text x="665" y="195">03 · THỬ NHẬP</text></g>
+<g fill="#355b5c" font-size="21"><text x="75" y="255">B2 đến B4</text><text x="75" y="302">Không chọn tiêu đề</text><text x="370" y="255">Chưa làm / Đang làm</text><text x="370" y="302">Xong</text><text x="665" y="255">Một giá trị đúng</text><text x="665" y="302">Một nhãn ngoài danh sách</text></g>
+<text x="55" y="468" font-size="19" fill="#355b5c">Sơ đồ minh họa · Không phải ảnh giao diện Google Sheets · 20/11/2026</text></g></svg>
