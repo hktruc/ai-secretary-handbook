@@ -1,5 +1,5 @@
 window.HANDBOOK_CONTENT = {
-  updated: '2026-11-20',
+  updated: '2026-11-21',
   topics: [
     { id: 'learning', label: 'Học tập & ngôn ngữ', icon: 'Aa' },
     { id: 'creativity', label: 'Sáng tạo', icon: '✦' },
@@ -8,6 +8,83 @@ window.HANDBOOK_CONTENT = {
     { id: 'daily', label: 'Đời sống hằng ngày', icon: '☼' }
   ],
   articles: [
+{
+  "slug": "tim-dung-tep-google-drive-theo-ten-va-loai",
+  "type": "tutorial",
+  "topic": "organization",
+  "title": "Tìm đúng tệp trong Google Drive bằng tên và loại",
+  "dek": "Nếu một từ trả về cả slide lẫn PDF, hãy thu hẹp từng bước rồi mở đúng phiên bản trước khi dùng.",
+  "updated": "2026-11-21",
+  "readTime": "5 phút",
+  "level": "Cơ bản",
+  "why": {
+    "benefit": "Bạn nhớ hai chữ trong tên tài liệu, nhưng Drive trả về cả bản nháp, slide và PDF. Lấy kết quả đầu tiên có thể khiến bạn dùng nhầm tệp. Một lượt kiểm ngắn giúp tìm đúng loại và đúng nội dung.",
+    "context": "Ta kết hợp từ khóa với bộ lọc loại tệp, rồi dùng ngày sửa để rà những kết quả gần giống. Bài dành cho Google Drive trên máy tính; không cần Gemini.",
+    "situations": [
+      "Bạn chuẩn bị một buổi học và cần bản PDF để mở, không phải file slide để sửa.",
+      "Bạn muốn tìm một tệp từng dùng nhưng không nhớ nó nằm ở thư mục nào."
+    ]
+  },
+  "outcome": "Mở được tệp đúng loại, kiểm một chi tiết bên trong và biết bỏ bộ lọc nào nếu tìm không ra.",
+  "preparation": [
+    "Mở Drive trên máy tính và kiểm đang ở đúng tài khoản. Chỉ tìm tệp bạn có quyền xem.",
+    "Dùng bộ tệp thử không chứa dữ liệu riêng: một slide và hai PDF tự tạo cùng có từ “Sơ đồ”. Nếu chưa có, có thể chọn tài liệu mẫu sẵn trong khu vực riêng bạn được phép dùng.",
+    "Chốt trước điều cần xác minh, chẳng hạn tệp PDF có trang cuối ghi “Bản dùng thử”. Không chọn chỉ dựa vào chữ “mới” trong tên."
+  ],
+  "steps": [
+    {
+      "title": "Tìm bằng một phần tên dễ nhận",
+      "body": "Nhập “Sơ đồ” trong thanh tìm kiếm Drive rồi nhấn Enter. Lướt tên và loại tệp để nhận ra vì sao có nhiều kết quả. Theo Google, có thể kết hợp chữ gõ với bộ lọc; kết quả không nhất thiết chỉ khớp tên tệp."
+    },
+    {
+      "title": "Thu hẹp theo đúng loại tệp",
+      "body": "Chọn bộ lọc <strong>Loại</strong> (Type) và chọn PDF nếu đang cần bản PDF. Kiểm bộ lọc đã hiện cùng từ khóa trên thanh tìm kiếm."
+    },
+    {
+      "title": "Dùng ngày sửa để rà chứ không để kết luận",
+      "body": "Nếu biết khoảng thời gian, thêm bộ lọc <strong>Đã sửa đổi</strong> (Modified). Nếu không biết, để trống và so các mốc trong danh sách. Một tệp sửa gần nhất không nhất thiết là bản được duyệt."
+    },
+    {
+      "title": "Mở tệp để xác nhận đúng bản",
+      "body": "Kiểm đúng loại, đầy đủ tên và một dấu hiệu bên trong. Với bài thử, xem trang cuối có dòng đã chốt. Nếu hai tệp cùng tên và dấu hiệu chưa đủ, đừng tự đoán bản chuẩn; ghi lại điều chưa xác định."
+    },
+    {
+      "title": "Khi không có kết quả, bỏ một điều kiện",
+      "body": "Gỡ bộ lọc ngày trước nếu đó là thông tin ít chắc nhất. Sau đó thử bớt từ khóa hoặc bỏ bộ lọc loại nếu có thể bạn nhớ sai định dạng. Đừng thay hết một lúc. Nếu vẫn thiếu tệp, kiểm đúng tài khoản và quyền truy cập trước khi kết luận tài liệu đã mất."
+    }
+  ],
+  "promptLabel": "Phiếu tìm và kiểm tệp",
+  "prompt": "Tệp cần tìm: [tên nhớ được]\nLoại: [PDF / trang tính / loại khác]\nKhoảng ngày sửa, nếu biết: […]\nMột dấu hiệu cần thấy trong tệp: […]\nĐã mở đúng tệp: [có/chưa]\nNếu chưa thấy, điều kiện bỏ thử trước: […]",
+  "example": {
+    "label": "Minh họa với dữ liệu giả",
+    "input": "Hai PDF và một slide đều có tên chứa “Sơ đồ”. Chỉ một PDF có trang cuối ghi “Bản dùng thử”.",
+    "output": "Lọc PDF, mở từng ứng viên còn lại và chọn theo trang cuối. Tên giống nhau hoặc ngày sửa mới hơn không đủ thay bước mở tệp."
+  },
+  "checklist": [
+    "Đang dùng đúng tài khoản và thấy bộ lọc PDF đang áp dụng.",
+    "Slide đã bị loại khỏi danh sách ở tình huống giả lập.",
+    "Đã kiểm chi tiết bên trong PDF, không chỉ tên hoặc ảnh xem trước.",
+    "Nếu chưa tìm được, đã ghi điều kiện cần nới và chưa coi tệp bị mất."
+  ],
+  "limits": {
+    "cost": "Bài thử dùng chức năng tìm kiếm thông thường, không cần mua công cụ AI hay cài tiện ích. Dung lượng và điều kiện tài khoản Drive tính riêng.",
+    "privacy": "Không đưa tên tệp nội bộ, ảnh người thật hay nội dung công việc lên bản minh họa công khai. Tìm kiếm không cấp thêm quyền xem; không đổi quyền hoặc gửi liên kết để giải quyết bài thử.",
+    "caution": "Đối chiếu tài liệu Google ngày 21/11/2026, chưa thử trên tài khoản người đọc. Nhãn menu tùy ngôn ngữ. Tìm không thấy không xác nhận tệp đã xóa; ngày sửa không chứng minh bản đã duyệt."
+  },
+  "sources": [
+    {
+      "title": "Search for files in Google Drive — Computer",
+      "publisher": "Google Drive Help",
+      "date": "Kiểm nguồn 21/11/2026",
+      "url": "https://support.google.com/drive/answer/2375114?co=GENIE.Platform%3DDesktop&hl=en"
+    }
+  ],
+  "illustration": {
+    "src": "illustrations/tim-dung-tep-google-drive-theo-ten-va-loai.svg",
+    "alt": "Sơ đồ tìm một phần tên, lọc PDF và mở trang cuối để xác nhận tệp.",
+    "caption": "Sơ đồ nguyên gốc của AI dạo chơi, không phải ảnh giao diện Google Drive."
+  }
+},
 {
   "slug": "tao-danh-sach-trang-thai-google-sheets",
   "type": "tutorial",
