@@ -82,7 +82,7 @@ window.HANDBOOK_CONTENT = {
   "illustration": {
     "src": "illustrations/tim-dung-tep-google-drive-theo-ten-va-loai.svg",
     "alt": "Sơ đồ tìm một phần tên, lọc PDF và mở trang cuối để xác nhận tệp.",
-    "caption": "Sơ đồ nguyên gốc của AI dạo chơi, không phải ảnh giao diện Google Drive."
+    "caption": "Sơ đồ minh họa nguyên gốc của AI dạo chơi, không phải ảnh giao diện Google Drive."
   }
 },
 {
